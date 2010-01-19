@@ -1,0 +1,12 @@
+.leader h1, 
+.leader h2 { font-size:3em; line-height:1.3em; margin-top:.5em; padding-top:0; }
+.leader.continued { -moz-column-count:4; -webkit-column-count:4; margin-top:1em; }
+.leader.continued h1 { font-size:1.4em; line-height:1.1em; padding-top:.24em; }
+.leader.continued .read,
+.leader.continued .read a { color:#bbb; }
+.leader cite { line-height:2.2em; }
+.leader p { font-size:1.4em; line-height:1.6em; margin-top:1.12em; text-align:justify; }
+.leader hr { border:0; text-align:center; margin:0; height:0; }
+.leader hr:after { content:"--"; }
+.leader .dateline { font-size:.85em; }
+.leader .dateline:after { content:" - "; }

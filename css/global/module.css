@@ -1,0 +1,24 @@
+.show .module { background-color:#eee !important; }
+
+.module {
+	margin-bottom: 5px;
+}
+
+.module h1, 
+.module h2, 
+.module h3, 
+.module h4, 
+.module h5, 
+.module h6, 
+.module ul, 
+.module li, 
+.module p, 
+.module img, 
+.module cite, 
+.module blockquote, 
+.module table, 
+.module div {
+	margin-left:5px;
+	margin-right:5px;
+}
+

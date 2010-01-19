@@ -1,0 +1,5 @@
+.footer { padding-top:10px; margin-top:20px; border-top:solid black 1px; }
+.footer p { float:right; font-size:1.1em; line-height:1.7em;}
+.footer small { font-size:1.1em; line-height:1.7em;}
+.footer small .copyright { line-height:1.7em; float:left;width:67px; height:17px; background-image:url(../../img/cc.png); background-repeat:no-repeat;}
+.footer small .copyright span { display:none; }

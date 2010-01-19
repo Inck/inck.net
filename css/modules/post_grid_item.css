@@ -1,0 +1,6 @@
+.post_grid_item { margin-top:3em; }
+.post_grid_item h2 { height:4em; }
+.post_grid_item.first { margin-top:0; }
+.post_grid_item.first img { float:left; }
+.post_grid_item.first h2 { height:inherit; width:290px; float:right; }
+.post_grid_item.first p { height:10em; width:290px; float:right; }

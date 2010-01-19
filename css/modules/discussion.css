@@ -1,0 +1,9 @@
+.discussion .quotation { width:375px; }
+.discussion .byline { width:190px; float:right; }
+.discussion .component .h3, .discussion .component p, .discussion cite.component{ font-size:1.1em; line-height:1.4em;}
+.discussion li { margin-bottom:1.4em;}
+.discussion .quotation p { display:block; margin-left:0; margin-right:0; font-weight:lighter; width:370px;}
+.discussion .quotation p a { text-decoration:underline;}
+.discussion .byline span.timestamp { margin:0; }
+.discussion .byline a {font-weight:bold;}
+

@@ -1,0 +1,6 @@
+.post_summary { line-height:1.5; margin-left:5px; margin-right:5px;}
+.post_summary a {text-transform:none; text-decoration:underline;}
+.post_summary h2, .post_summary p {line-height:1.3em; display:inline; margin-left:0; margin-right:0;}
+.post_summary h2 { font-size:1.4em; font-weight:bold;}
+.post_summary p { font-size:1.1em; }
+

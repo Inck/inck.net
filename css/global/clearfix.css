@@ -1,0 +1,21 @@
+/* Clearfix all modules and the grid itself. */
+.grid:after, .module:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.grid, .module {
+	display: inline-block;
+}
+ 
+html[xmlns] .grid, html[xmlns] .module {
+	display: block;
+}
+ 
+* html .grid, * html .module {
+	height: 1%;
+}

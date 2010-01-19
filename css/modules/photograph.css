@@ -1,0 +1,14 @@
+.photograph { margin-top:2em; margin-bottom:0; }
+.photograph.landing_splash { margin-bottom:10px; }
+.twelve_columns .photograph img { width:1180px; }
+.eleven_columns .photograph img { width:1080px; }
+.ten_columns .photograph img { width:980px; }
+.nine_columns .photograph img { width:880px; }
+.eight_columns .photograph img { width:780px; }
+.seven_columns .photograph img { width:680px; }
+.six_columns .photograph img { width:580px; }
+.five_columns .photograph img { width:480px; }
+.four_columns .photograph img { width:380px; }
+.three_columns .photograph img { width:280px; }
+.two_columns .photograph img { width:180px; }
+.one_column .photograph img { width:80px; }

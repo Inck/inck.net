@@ -1,0 +1,15 @@
+.module.printer {
+	height:34px;
+	width:1200px;
+}
+
+.module.printer.color_mark {
+	background-image:url(../../img/printer_color_mark.png);
+	float:left;
+}
+
+.module.printer.greyscale_mark {
+	background-image:url(../../img/printer_greyscale_mark.png);
+}
+
+.module.printer .printer_mark { margin-right:40px; text-align:right; line-height:34px; float:right;}
