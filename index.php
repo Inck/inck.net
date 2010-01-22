@@ -132,28 +132,29 @@
 									<p><span class="dateline">BROOKLYN</span> Nick is avoiding his departure today, packing sluggishly and pausing often to undertake distractions such as this first log entry of his trip written in the voice of a news article.</p>
 									<p>He has boxed and stacked the majority of the things that he is leaving behind, but has only just begun to pack his suitcase with those things that he is taking with him.</p>
 									<p>"I should think through the first few days to make sure I'm not forgetting anything essential," Nick recalls thinking earlier, looking away from a stack of shirts that he had been considering putting into his suitcase.</p>
-									<p>During the day Nick has also prepared his old iPod to take with him in place of his iPhone,</p>
+									<p>During the day Nick has also prepared his old iPod to take with him in place of his iPhone, which will be left behind, unchecking in iTunes a number of albums that would not fit and</p>
 								</li>
 							</ul>
 						</li>
 						<li class="set three_columns">
 							<ul>
 								<li class="module leader hyphenate">
-									<p>which will be left behind, unchecking in iTunes a number of albums that would not fit and which he does not listen to.</p>
+									<p>which he does not listen to.</p>
 									<p>He also read the New York Times, New Republic, Talking Points Memo, and New Yorker home pages, and a selection of articles within each publication. He also watched the full interview of John Yoo by John Stewart on The Daily Show.</p>									<p>Nick could recall a number of times when he had delayed preparing for a move, which he considered his trip to Venezuela to more closely resemble than a vacation, given its length.</p>
-									<p>Often when leaving for college, moving to new apartments, or relocating to new cities, Nick has delayed packing until the day of his departure, ultimately doing so in a disorganized flurry. <a href="page.php?number=J12&from=1290#continue">Continue on Page J12 &raquo;</a></p>
+									<p>Often when leaving for college, moving to new apartments, or relocating to new cities, Nick has delayed packing until the day of his departure, ultimately doing so in a disorganized flurry.</p>
+									<p>This runs counter to Nick's usual approach to large tasks, which is significant advanced preparation and planning based on the visualization of <a href="page.php?number=J12&from=1522#continue">Continue on Page J12 &raquo;</a></p>
 								</li>
 							</ul>
 						</li>
 						<li class="set three_columns">
 							<ul>
 								<li class="module leader hyphenate">
-									<h2>"Sell Phone" (Ha Ha)</h2>
-									<cite>by Nicholas Hall on December 24th, 2005</cite>
-									<p><span class="dateline">Pants</span> The cellphone previously owned by Nick is no longer owned by Nick, instead being owned by Mo, who is the shit.</p>
+									<h2>Cell Phone No Longer Possessed</h2>
+									<cite>by Nicholas Hall on January 16th, 2005</cite>
+									<p><span class="dateline">Midtown</span> The cellphone previously owned by Nick is no longer owned by Nick, instead being owned by Mo.</p>
 									<p>"Dude I heard you were trying to sell your phone. I totally just lost mine," Mo was quoted as emailing to Nick.</p>
 									<p>Given that Nick hates telephones in general and the cellphone specifically for its relocation of the point of immediate verbal but non-visual contact between people to the individual's body rather than a prescribed location such as a house or office, with specific social expectations attached to their entrance, a new phone has not been purchased.</p>
-									<p>Calls made to Nick had not been returned at press time and probably never will be.</p>
+									<p>Calls to Nick requesting comment had not been returned at press time and never will be.</p>
 								</li>
 							</ul>
 						</li>
@@ -164,7 +165,7 @@
 		<li class="set three_columns">
 			<ul>
 				<li class="module leader hyphenate">
-					<h2>World Reacts as Anxiety is Rejected</h2>
+					<h2>World Reacts as Anxiety is Decided Against</h2>
 					<cite>by Nicholas Hall on January 14th, 2010</cite>
 					<p><span class="dateline">West Village</span> In a stunning turn of events today, Nick has decided against being anxious about the trip on which he is departing. The reaction around the world was overwhelming, as people, objects, and places displayed a remarkably less anxiety-provoking character to him.</p>
 					<p>In countries around the world, crowds of people gathered to represent merely a minor obstacle to be navigated in the normal manner, some even presenting themselves as other individuals, capable of pleasant or wonderful conversations, and of being helpful.</p>
