@@ -8,7 +8,7 @@
 	<script type="text/javascript">Hyphenator.run();</script>
 	<!--[if IE]>
 	<script type="text/javascript">
-		alert("Hey there old timer. You are using Internet Explorer, which is going to break this website. Try Safari, Firefox or Chrome. You'll like the Internet more.");
+		alert("Hey there old timer! You are using Internet Explorer, which is going to break this website in horrible ways. Try Safari, Chrome or Firefox. You will like the Internet more.");
 	</script>
 	<![endif]-->
 	<link rel="icon" href="favicon.gif">
@@ -37,7 +37,7 @@
 					<ul>
 						<li class="module header_logo">
 							<h3><span class="kern_i"><img src="images/i.gif" /></span><span class="kern_n">n</span><span class="kern_c">c</span><span class="kern_k">k</span></h3>
-							<cite>Volume One, Issue One &mdash; Mid-to-Late Afternoon Edition &mdash; Last Updated: <strong>Early Morning</strong></cite>
+							<cite>Volume One, Issue Two &mdash; Mid-to-Late Afternoon Edition &mdash; Last Updated: <strong>Early Morning</strong></cite>
 						</li>
 					</ul>
 				</li>
@@ -65,7 +65,7 @@
 						<li class="module leader hyphenate">
 							<h1><a href="page.php?number=A2">First Week Survived</a></h1>
 							<cite>by Nicholas Hall on January 21st, 2010</cite>
-							<p><span class="dateline">Mérida</span> Nick survived his first week of travel today, as one week passed without his emotional or literal demise. </p>
+							<p><span class="dateline">Mérida</span> Nick survived his first week of travel today, as one week passed without his metaphorical or literal demise. </p>
 							<p>The possibility of his actual death is widely considered to have been nonexistent by authoritative strains of thought in his mind, however any number of other types of grievous emotional, psychological, or monetary harm could have presented themselves.</p>
 							<p>Connections in Aruba and Caracas both presented these risks by way of parallel though different local forms theft.</p>
 							<p>In Aruba the possibility of fiscal catastrophe loomed large as Nick attempted to traverse an area riddled with ungoverned groups that support their communities entirely through the questionable extraction of money from white people. </p>
