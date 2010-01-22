@@ -1,13 +1,15 @@
 <?php
 	if($number = $_GET['number']) {
-		$paragraphs = file("pages/$number.txt");
-		$title = rtrim(array_shift($paragraphs));
+		$paragraphs = file("pages/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+		$title = array_shift($paragraphs);
 	} else {
 		$number = "that does not exist.";
 		exit;
 	}
-	
 	$characters_read = $_GET['from'];
+
+	$filler_paragraphs = file("pages/l9.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	$filler_title = array_shift($filler_paragraphs);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -26,15 +28,14 @@
 	</head>
 	<body>
 		<ul class="grid">
-			<li class="set twelve_columns contained">
+			<li class="set six_columns contained">
 				<ul>
 					<li class="module leader continued hyphenate">
 						<h1><a href="index.php">&laquo; <?php if($characters_read) { echo "Continued from "; } echo $title; ?></a></h1>
-						<img src="images/smoking.jpg" />
 <?php
 	$characters_printing = 0;
 	foreach($paragraphs as $paragraph) {
-		$paragraph = rtrim($paragraph);
+		$paragraph = $paragraph;
 		if($characters_read) {
 			$characters_remaining = $characters_read - $characters_printing;
 			$characters_printing += strlen($paragraph);
@@ -49,6 +50,18 @@
 			echo "\t\t\t\t\t\t<p>" . $paragraph . "</p>\n";
 		}
 	}
+?>
+					</li>
+				</ul>
+			</li>
+			<li class="set six_columns contained">
+				<ul>
+					<li class="module leader continued hyphenate">
+						<h1>Continued from <?php echo $filler_title; ?></h1>
+<?php
+		foreach($filler_paragraphs as $filler_paragraph) {
+			echo "\t\t\t\t\t\t<p class='read'>" . $filler_paragraph . "</p>\n";
+		}
 ?>
 					</li>
 				</ul>
