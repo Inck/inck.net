@@ -91,7 +91,7 @@
 							<ul>
 								<li class="module leader hyphenate">
 									<p>Also the threat was seen in such taxi drivers driving Nick to an ATM, demanding the withdrawal of the maximum amount of money, and leaving Nick in an area of the world with the highest number of murders per capita.</p>
-									<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five minutes of the airport, and the hiring of a taxi <a href="page.php?number=A2&from=1542#continue">Continue on Page A2 &raquo;</a></p>
+									<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five <a href="page.php?number=A2&from=1493#continue">Continue on Page A2 &raquo;</a></p>
 								</li>
 							</ul>
 						</li>
