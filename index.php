@@ -128,7 +128,7 @@
 									<td>-ieron</td>
 								</tr>
 								<tr>
-									<th>-er</th>
+									<th>-ir</th>
 									<td>-í</td>
 									<td>-iste</td>
 									<td>-ió</td>
@@ -180,7 +180,7 @@
 				<li class="module leader hyphenate">
 					<h2>Venezuelan Nerds Discovered</h2>
 					<cite>by Nicholas Hall on January 23rd, 2010</cite>
-					<p>Venezuelan nerds were discovered today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
+					<p><span class="dateline">Mérida</span> Venezuelan nerds were discovered today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
 					<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
 					<p>They were also found to be earnest, smart, and avidly practicing their yo-yo skills.</p>
 					<p>Websites were shared and programing languages discussed. There was agreement in the excellence of CodeIgniter, and in the eventual interestingness of learning Ruby on Rails.</p>
