@@ -178,7 +178,7 @@
 		<li class="set three_columns">
 			<ul>
 				<li class="module leader hyphenate">
-					<h2>Venezuelan Nerds Discovered</h2>
+					<h2>Venezuelan Nerds Found</h2>
 					<cite>by Nicholas Hall on January 23rd, 2010</cite>
 					<p><span class="dateline">Mérida</span> Venezuelan nerds were discovered today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
 					<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
