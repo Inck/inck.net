@@ -1,4 +1,5 @@
 <?php
+	header("Content-Type: application/rss+xml");
 	$directory = opendir('pages');
 	error_reporting(0);
 ?>
@@ -29,9 +30,9 @@
 		<item>
 			<title><?php echo $article[0]; ?></title>
 			<link>http://inck.net/page.php?number=<?php echo $page ?></link>
-			<guid isPermaLink="true">http://inck.net/page.php?number=<?php echo substr($filename, 0, -4); ?></guid>
+			<guid isPermaLink="true">http://inck.net/page.php?number=<?php echo $page ?></guid>
 			<description><?php echo $article[2]; ?></description>
-			<pubDate><?php echo date(DATE_RSS, $article[1]); ?></pubDate>
+			<pubDate><?php echo date(DATE_RSS, strtotime($article[1])); ?></pubDate>
 		</item>
 <?php
 	}
