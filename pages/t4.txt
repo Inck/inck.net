@@ -1,0 +1,21 @@
+Venezuelan Nerds Discovered
+January 23rd, 2010
+
+Venezuelan nerds were discovered today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.
+
+Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States. 
+
+They were also found to be earnest, smart, and avidly practicing their yo-yo skills.
+
+Websites were shared and programing languages discussed. There was agreement in the excellence of CodeIgniter, and in the eventual interestingness of learning Ruby on Rails.
+
+Conversations about Ruby on Rails tended to be short due to its name being difficult as fuck to say with a Spanish pronunciation.
+
+Potential projects were breathlessly discussed and imagined, despite Nick's complete inability to use the subjunctive verb form, in which any such conversation would be correctly conducted.
+
+One such project, creating a communal space for users to discuss and share information on the fact that both power and water go out several unscheduled times per day, was considered particularly interesting. 
+
+After these conversations Nick retreated into his computer, an escape found to be much more normative among this group, and undertook some technical work.
+
+As such this publication now offers its news for consumption through RSS technology.
+

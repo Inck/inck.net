@@ -2,6 +2,7 @@
 	if($number = $_GET['number']) {
 		$paragraphs = file("pages/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		$title = array_shift($paragraphs);
+		$date = array_shift($paragraphs);
 	} else {
 		$number = "that does not exist.";
 		exit;

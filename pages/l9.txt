@@ -1,4 +1,5 @@
 Prosodic Analysis of Plath's "Point Shirley"
+January 16th, 2005
 
 The most striking accentual cola of the last two stanzas of Plath’s Point Shirley is that of three successive stresses. This cola can be expanded by default to include the two unstressed syllables at either end of the set. More than three stressed syllables would clearly be jarring, and outside of a list, difficult to construct in english, in which a plurality of the meter of even every day speech is iambic. For the purposes of this paper I will leave these unstressed syllables to be assumed.
 
