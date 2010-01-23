@@ -92,7 +92,7 @@
 							<ul>
 								<li class="module leader hyphenate">
 									<p>Also the threat was seen in such taxi drivers driving Nick to an ATM, demanding the withdrawal of the maximum amount of money, and leaving Nick in an area of the world with the highest number of murders per capita.</p>
-									<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five <a href="page.php?number=A2&from=1493#continue">Continue on Page A2 &raquo;</a></p>
+									<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five <a href="page.php?number=A2&from=1492#continue">Continue on Page A2 &raquo;</a></p>
 								</li>
 							</ul>
 						</li>
@@ -101,27 +101,39 @@
 				<li class="set nine_columns contained">
 					<ul>
 						<li class="module table">
-							<h3>The Semiotics of the Advertisement in Question</h3>
+							<h3>The Conjugation of the Preterite Form</h3>
 							<table>
 								<tr>
-									<th>Representamen</th>
-									<th>Object</th>
-									<th>Interpretant</th>
+									<th></th>
+									<th>Yo</th>
+									<th>Tú</th>
+									<th>El, Ella o Usted</th>
+									<th>Nosotros</th>
+									<th>Ellos o Ustedes</th>
 								</tr>
 								<tr>
-									<td><dl><dt>Icon</dt><dd>green, "best tasting"</dd></dl></td>
-									<td><dl><dt>Qualisign</dt><dd>tasty gum</dd></dl></td>
-									<td><dl><dt>Rheme</dt><dd>pleasurable</dd></dl></td>
+									<th>-ar</th>
+									<td>-é</td>
+									<td>-aste</td>
+									<td>-ó</td>
+									<td>-amos</td>
+									<td>-aron</td>
 								</tr>
 								<tr>
-									<td><dl><dt>Index</dt><dd>"... using to help you quit."</dd></dl></td>
-									<td><dl><dt>Sinisign</dt><dd>drug gum</dd></dl></td>
-									<td><dl><dt>Dicent</dt><dd>medicinal</dd></dl></td>
+									<th>-er</th>
+									<td>-í</td>
+									<td>-iste</td>
+									<td>-ió</td>
+									<td>-imos</td>
+									<td>-ieron</td>
 								</tr>
 								<tr>
-									<td><dl><dt>Legisign</dt><dd>logical gum</dd></dl></td>
-									<td><dl><dt>Symbol</dt><dd>parenthetical text</dd></dl></td>
-									<td><dl><dt>Argument</dt><dd>logical</dd></dl></td>
+									<th>-er</th>
+									<td>-í</td>
+									<td>-iste</td>
+									<td>-ió</td>
+									<td>-imos</td>
+									<td>-ieron</td>
 								</tr>
 							</table>
 						</li>
@@ -143,7 +155,7 @@
 									<p>This is no longer feared to be the truth.</p>
 									<p>The dramatic change came when Nick, having experienced this assumption of impending annoyance for several weeks, walked for an hour around the West Village in New York City and looked at buildings and groups of people from within a shell of pleasant anonymity. </p>
 									<p>The supposed threat posed by the outside world was put back into its normal perspective, and the decision was made to no longer worry about it.</p>
-									<p>"Yeah I was kind of freaking out about everything and then I decided not to freak out anymore. So now I'm not freaking out," Nick said in a statement <a href="page.php?number=P5&from=1406#continue">Continue on Page F22 &raquo;</a></p>
+									<p>"Yeah I was kind of freaking out about everything and then I decided not to freak out anymore. So now I'm not freaking out," Nick said in a statement <a href="page.php?number=P5&from=1400#continue">Continue on Page F22 &raquo;</a></p>
 								</li>
 							</ul>
 						</li>

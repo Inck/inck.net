@@ -9,8 +9,9 @@
 	}
 	$characters_read = $_GET['from'];
 
-	$filler_paragraphs = file("pages/l9.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	$filler_paragraphs = file("pages/j12.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 	$filler_title = array_shift($filler_paragraphs);
+	$filler_date = array_shift($filler_paragraphs);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -58,7 +59,6 @@
 			<li class="set six_columns contained">
 				<ul>
 					<li class="module leader continued hyphenate">
-						<h1>Continued from <?php echo $filler_title; ?></h1>
 <?php
 		foreach($filler_paragraphs as $filler_paragraph) {
 			echo "\t\t\t\t\t\t<p class='read'>" . $filler_paragraph . "</p>\n";

@@ -9,7 +9,6 @@
 		<description>Mid-to-Late Afternoon Edition</description>
 		<language>en-us</language>
 		<copyright>Copyright 2010 Nicholas Hall</copyright>
-		<lastBuildDate>Sat, 23 Jan 2010 14:21:32 EST</lastBuildDate>
 <?php
 	while($filename = readdir($directory)) {
 		if($filename[0] != ".") {
@@ -20,8 +19,11 @@
 		}
 	}
 	function article_date_sort($a, $b) { return strtotime($a[1]) - strtotime($b[1]); }
-	uasort($articles);
-	
+	uasort($articles, 'article_date_sort');
+	$articles = array_reverse($articles, true);
+?>
+		<lastBuildDate><?php $first = reset($articles); echo date(DATE_RSS, strtotime($first[1])); ?></lastBuildDate>
+<?php
 	foreach($articles as $page => $article) {
 ?>
 		<item>
