@@ -1,5 +1,5 @@
 .header_logo { margin:1em auto 0; text-align:center; }
-.header_logo h3 { font-family:'Hoefler Text', Georgia, serif; font-size:10em; line-height:.8em; color:black; background:transparent url(../../images/line.gif) repeat-x scroll 100px 0; }
+.header_logo h3 { font-family:'Hoefler Text', Georgia, serif; font-size:10em; line-height:.8em; color:black; }
 .header_logo h3 .kern_i img { left:4px; }
 .header_logo h3 .kern_n { letter-spacing:-.06em; }
 .header_logo h3 .kern_c { letter-spacing:-.05em; }
