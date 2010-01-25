@@ -30,7 +30,7 @@
 ?>
 		<item>
 			<title><?php echo $article[0]; ?></title>
-			<link>http://inck.net/<?php if($i) echo "page.php?number=" . $page; // Link top story to a1. ?></link>
+			<link>http://inck.net/<?php if($i) echo "page.php?number=" . $page; // Link top story to a1. ?>#<?php echo $page; ?></link>
 			<guid isPermaLink="true">http://inck.net/page.php?number=<?php echo $page ?></guid>
 			<description><?php echo $article[2]; ?></description>
 			<pubDate><?php echo date(DATE_RSS, strtotime($article[1])); ?></pubDate>

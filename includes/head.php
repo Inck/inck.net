@@ -16,7 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="css/global" />
 		<link rel="stylesheet" type="text/css" href="css/modules" />
 		<link rel="stylesheet" type="text/css" href="css/components" />
-		<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.php">	
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/inck">	
 		<title>Inck ~ <?php if($characters_read) { echo "Continued from "; } echo $title; ?></title>
 	</head>
 	<body>

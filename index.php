@@ -72,7 +72,7 @@
 								<ul>
 									<li class="module leader hyphenate">
 										<p>Also the threat was seen in such taxi drivers driving Nick to an ATM, demanding the withdrawal of the maximum amount of money, and leaving Nick in an area of the world with the highest number of murders per capita.</p>
-										<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five <a href="page.php?number=A2&from=1492#continue">Continue on Page A2 &raquo;</a></p>
+										<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five <a href="page.php?number=A2&from=283#A2">Continue on Page A2 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -120,6 +120,7 @@
 							<li class="set three_columns contained">
 								<ul>
 									<li class="module leader hyphenate">
+										<a name="g1"></a>
 										<h2>Weekend Retreats: An Expensive Dinner with Americans</h2>
 										<cite>by Nicholas Hall on January 24th, 2010</cite>
 										<p><span class="dateline">Vamos al Centro</span> With a wonderful palette of rosy, pale, and red faces seared ever-so-slightly, this weekend retreat to an expensive hotel restaurant with a large group of American students proved a panorama of colors, like white, and a must-attend escape from the doldrums of cultural expansion and learning a new language.</p>

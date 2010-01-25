@@ -20,16 +20,16 @@
 					<li class="module leader continued hyphenate">
 						<h1><a href="index.php">Continued from '<?php echo $title; ?>'</a></h1>
 <?php
-	$words_printing_total = 0;
+	$words_printing = 0;
 	foreach($paragraphs as $paragraph) {
-		if($words_read_printing > 0) {
+		if($words_read > 0) {
 			$words = explode(' ', $paragraph);
 			$words_printing = count($words);
 			$words_read -= $words_printing;
 			if($words_printing < $words_read) {
 				echo "\t\t\t\t\t\t<p class='read'>" . $paragraph . "</p>\n";
-			} elseif($words_remaining > 0) {
-				echo "\t\t\t\t\t\t<p><a name='continue'></a><span class='read'>" . substr($paragraph, 0, $characters_remaining) . "</span>" . substr($paragraph, $characters_remaining) . "</p>\n";
+			} elseif($words_read > 0) {
+				echo "\t\t\t\t\t\t<p><a name='$number'></a><span class='read'>" . implode(' ', array_slice($words, 0, $words_read)) . "</span> " . implode(' ', array_slice($words, $words_read)) . "</p>\n";
 			} else {
 				echo "\t\t\t\t\t\t<p>" . $paragraph . "</p>\n";
 			}
