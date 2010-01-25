@@ -169,7 +169,7 @@ var Hyphenator = (function () {
 	 * @private
 	 * @see Hyphenator-hyphenateElement
 	 */
-	dontHyphenate = {'script': true, 'code': true, 'pre': true, 'img': true, 'br': true, 'samp': true, 'kbd': true, 'var': true, 'abbr': true, 'acronym': true, 'sub': true, 'sup': true, 'button': true, 'option': true, 'label': true, 'textarea': true},
+	dontHyphenate = {'script': true, 'code': true, 'pre': true, 'img': true, 'br': true, 'samp': true, 'kbd': true, 'var': true, 'abbr': true, 'acronym': true, 'sub': true, 'sup': true, 'button': true, 'option': true, 'label': true, 'textarea': true, /* Adding for Inck: */ 'h1': true, 'h2': true},
 
 	/**
 	 * @name Hyphenator-enableCache
