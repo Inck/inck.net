@@ -13,7 +13,7 @@
 	$filler_title = array_shift($filler_paragraphs);
 	$filler_date = array_shift($filler_paragraphs);
 	
-	include('includes/head.php');
+	include('inc/head.php');
 ?>
 			<li class="set six_columns contained">
 				<ul>
@@ -54,5 +54,5 @@
 				</ul>
 			</li>
 <?php
-	include('includes/foot.php');
+	include('inc/foot.php');
 ?>

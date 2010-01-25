@@ -1,6 +1,6 @@
 <?php
 	$title = "Mid-to-late Afternoon Edition";
-	include('includes/head.php');
+	include('inc/head.php');
 ?>
 			<li class="set twelve_columns contained">
 				<ul>
@@ -174,5 +174,5 @@
 				</ul>
 			</li>
 <?php
-	include('includes/foot.php');
+	include('inc/foot.php');
 ?>
