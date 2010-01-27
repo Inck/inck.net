@@ -1,8 +1,12 @@
 .leader h1, 
 .leader h2 { font-size:2.8em; line-height:1.12em; margin-top:.5em; padding-top:0; }
-.leader.continued { -moz-column-count:2; -webkit-column-count:2; }
-.leader.continued .read,
-.leader.continued .read a { color:#bbb; }
+.leader.continued { border-right:1px solid #bbb; padding-right:5px; }
+.three_columns .leader.continued { -moz-column-count:1; -webkit-column-count:1; }
+.nine_columns.continued .leader { -moz-column-count:3; -webkit-column-count:3; border-bottom:1px solid #bbb; }
+.nine_columns.continued { margin-left:5px; }
+.leader.read,
+.leader .read,
+.leader .read a { color:#bbb; }
 .leader cite { line-height:2.2em; }
 .leader p { font-size:1.4em; line-height:1.6em; margin-top:1.12em; text-align:justify; }
 .leader hr { border:0; text-align:center; margin:0; height:0; }

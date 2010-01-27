@@ -1,7 +1,0 @@
-.post { overflow:hidden;}
-.post h1 { margin-bottom:1em; font-size:1.6em; line-height:1.3em; font-weight:bold; }
-.post p { margin-bottom:1em; width:375px; font-size:1.2em; line-height:1.4em; }
-
-.post .component { width:190px; float:right; clear:right;}
-.post .component .h3, .post .component p, .post cite.component{ font-size:1.1em; margin:0;}
-.post .component.byline span { margin:0;}

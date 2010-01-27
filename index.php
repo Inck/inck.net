@@ -43,15 +43,14 @@
 				<ul>
 					<li class="set three_columns contained">
 						<ul>
-							<li class="module leader hyphenate">
-								<h1><a href="page.php?number=A2">First Week Survived</a></h1>
-								<cite>by Nicholas Hall on January 21st, 2010</cite>
-								<p><span class="dateline">Airports</span> Nick survived his first week of travel today, as one week passed without his metaphorical or literal demise. </p>
-								<p>The possibility of his actual death is widely considered to have been nonexistent by authoritative strains of thought in his mind, however any number of other types of grievous emotional, psychological, or monetary harm could have presented themselves.</p>
-								<p>Connections in Aruba and Caracas both presented these risks by way of parallel though different local forms theft.</p>
-								<p>In Aruba the possibility of fiscal catastrophe loomed large as Nick attempted to traverse an area riddled with ungoverned groups that support their communities entirely through the questionable extraction of money from white people.</p>
-								<p>Being a white person, Nick was found highly susceptible to this threat.</p>
-								<p>However, with the exception of lodgings,</p>
+							<li id="top_right_one" class="module leader hyphenate">
+								<h1><a href="page.php?number=N1">Real Things Happen</a></h1>
+								<cite>by Nicholas Hall on January 27th, 2010</cite>
+								<p><span class="dateline">Mérida</span> Real things happened yesterday and Monday in Mérida, as students took to the streets to protest the shutdown of RCTV, one the last remaining broadcast networks in Venezuela which had been openly critical of the Chávez government.</p>
+								<p>On Monday students were seen throwing rocks and moving in groups, armed with molotov cocktails fashioned out of regional beer bottles. Many had t-shirts tied around their faces. They blocked traffic in a series of streets in the downtown area, using chairs and tires that were then set on fire. </p>
+								<p>Police in riot gear massed throughout the downtown area over the course of the afternoon.</p>
+								<p>Later in the evening the downtown area had become impassable, as much due to a domino traffic effect as to specific blockades. Busses were not running into the the downtown area from the outlying neighborhoods, and taxis were largely unable to pass the lower streets.</p>
+								<p>Most people walked home, and the streets were relatively safe in all but the southern</p>
 							</li>
 						</ul>
 					</li>
@@ -62,17 +61,18 @@
 							</li>
 							<li class="set three_columns contained">
 								<ul>
-									<li class="module leader hyphenate">
-										<p>which according to local custom must command a cost that can only be justified as the price of admission to the adjacent beaches, money was spent exclusively on taxis and small bottles of beer.</p>
-										<p>A greater threat was considered to exist in Caracas, however, in the form of aggressive offers to exchange money at incorrect exchange rates by illicit taxi drivers. </p>
+									<li id="top_right_two" class="module leader hyphenate">
+										<p>quadrant of the city's center.</p>
+										<p>In the evening, reports circulated in the city about a young man who had died of a gunshot wound during clashes between pro- and anti-Chavez groups, after this event, and due to escalating conflict later in the night, the city center was seen as impassable.</p>
+										<p>In the morning it was reported that another young man had been shot and killed during the night.</p>
 									</li>
 								</ul>
 							</li>
 							<li class="set three_columns">
 								<ul>
-									<li class="module leader hyphenate">
-										<p>Also the threat was seen in such taxi drivers driving Nick to an ATM, demanding the withdrawal of the maximum amount of money, and leaving Nick in an area of the world with the highest number of murders per capita.</p>
-										<p>These potential issues were primarily resolved through the reservation of a room at a hotel within five <a href="page.php?number=A2&from=283#A2">Continue on Page A2 &raquo;</a></p>
+									<li id="top_right_three" class="module leader hyphenate">
+										<p>Protests continued throughout Thursday, and all classes at the school attended by this reporter were canceled. Shouts and chanting could be heard in the streets from the downtown bureau, which is this reporter's homestay for the next two weeks.</p>
+										<p>Today life had largely returned to normal, and irrelevant topics were once again under consideration for further coverage.</p>
 									</li>
 								</ul>
 							</li>

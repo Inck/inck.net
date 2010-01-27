@@ -1,4 +1,4 @@
-<?php
+<?php	
 	if($number = $_GET['number']) {
 		$paragraphs = file("pages/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		$title = array_shift($paragraphs);
@@ -7,20 +7,14 @@
 		$number = "that does not exist.";
 		exit;
 	}
-	$words_read = $_GET['from'];
-
-	$filler_paragraphs = file("pages/j12.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-	$filler_title = array_shift($filler_paragraphs);
-	$filler_date = array_shift($filler_paragraphs);
-	
 	include('inc/head.php');
 ?>
-			<li class="set six_columns contained">
+			<li class="set three_columns contained">
 				<ul>
 					<li class="module leader continued hyphenate">
-						<h1><a href="index.php">Continued from '<?php echo $title; ?>'</a></h1>
+						<h1><a href="index.php"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
 <?php
-	$words_printing = 0;
+	$words_read = $_GET['from'];
 	foreach($paragraphs as $paragraph) {
 		if($words_read > 0) {
 			$words = explode(' ', $paragraph);
@@ -41,16 +35,47 @@
 					</li>
 				</ul>
 			</li>
-			<li class="set six_columns">
+			<li class="set nine_columns continued">
 				<ul>
-					<li class="module leader continued hyphenate">
-						<h1><?php echo $filler_title; ?></h1>
+					<li class="module leader read hyphenate">
+<?php
+	$filler_paragraphs = file("pages/a2.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	$filler_title = array_shift($filler_paragraphs);
+	$filler_date = array_shift($filler_paragraphs);
+?>
+						<h2>'<?php echo $filler_title; ?>'</h2>
 <?php
 	foreach($filler_paragraphs as $filler_paragraph) {
 		echo "\t\t\t\t\t\t<p>" . $filler_paragraph . "</p>\n";
 	}
 ?>
 					</li>
+					<li class="module leader read hyphenate">
+<?php
+	$filler_paragraphs = file("pages/p5.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	$filler_title = array_shift($filler_paragraphs);
+	$filler_date = array_shift($filler_paragraphs);
+?>
+						<h2>'<?php echo $filler_title; ?>'</h2>
+<?php
+	foreach($filler_paragraphs as $filler_paragraph) {
+		echo "\t\t\t\t\t\t<p>" . $filler_paragraph . "</p>\n";
+	}
+?>
+					</li>
+					<!-- <li class="module leader read hyphenate">
+<?php
+	$filler_paragraphs = file("pages/j12.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+	$filler_title = array_shift($filler_paragraphs);
+	$filler_date = array_shift($filler_paragraphs);
+?>
+						<h2>'<?php echo $filler_title; ?>'</h2>
+<?php
+	foreach($filler_paragraphs as $filler_paragraph) {
+		echo "\t\t\t\t\t\t<p>" . $filler_paragraph . "</p>\n";
+	}
+?>
+					</li> -->
 				</ul>
 			</li>
 <?php
