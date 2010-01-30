@@ -44,7 +44,7 @@
 					<li class="set three_columns contained">
 						<ul>
 							<li id="top_right_one" class="module leader hyphenate">
-								<h1><a href="page.php?number=N1">Real Things Happen</a></h1>
+								<h1><a href="page.php?number=n1">Real Things Happen</a></h1>
 								<cite>by Nicholas Hall on January 27th, 2010</cite>
 								<p><span class="dateline">Mérida</span> Real things happened yesterday and Monday in Mérida, as students took to the streets to protest the shutdown of RCTV, one the last remaining broadcast networks in Venezuela which had been openly critical of the Chávez government.</p>
 								<p>On Monday students were seen throwing rocks and moving in groups, armed with molotov cocktails fashioned out of regional beer bottles. Many had t-shirts tied around their faces. They blocked traffic in a series of streets in the downtown area, using chairs and tires that were then set on fire. </p>
@@ -57,7 +57,7 @@
 					<li class="set six_columns">
 						<ul>
 							<li class="module photograph">
-								<a href="http://www.flickr.com/photos/nicholashall/4279159669/" title="First, Stop by Nicholas Hall, on Flickr"><img src="http://farm5.static.flickr.com/4013/4279159669_ca82201bab_b.jpg" width="580" height="387" alt="First, Stop" /></a>
+								<a href="http://www.flickr.com/photos/nicholashall/4315071024/" title="Untitled by Nicholas Hall, on Flickr"><img src="http://farm5.static.flickr.com/4008/4315071024_0587b97d29_b.jpg" /></a>
 							</li>
 							<li class="set three_columns contained">
 								<ul>
@@ -121,7 +121,7 @@
 								<ul>
 									<li class="module leader hyphenate">
 										<a name="g1"></a>
-										<h2>Weekend Retreats: An Expensive Dinner with Americans</h2>
+										<h2><a href="page.php?number=g1">Weekend Retreats: An Expensive Dinner with Americans</a></h2>
 										<cite>by Nicholas Hall on January 24th, 2010</cite>
 										<p><span class="dateline">Vamos al Centro</span> With a wonderful palette of rosy, pale, and red faces seared ever-so-slightly, this weekend retreat to an expensive hotel restaurant with a large group of American students proved a panorama of colors, like white, and a must-attend escape from the doldrums of cultural expansion and learning a new language.</p>
 										<p>There's nothing like three hours of conversations in English to return you to a magical world of all conversations being had in English. And there's nothing like those conversations transpiring between college Juniors to bring back waves of blurry, disaffected memories that you can cherish as you drink heavily.</p>
@@ -140,7 +140,7 @@
 							<li class="set three_columns">
 								<ul>
 									<li class="module leader hyphenate">
-										<h2>Cell Phone No Longer Possessed</h2>
+										<h2><a href="page.php?number=x31">Cell Phone No Longer Possessed</a></h2>
 										<cite>by Nicholas Hall on January 16th, 2005</cite>
 										<p><span class="dateline">New York</span> The cellphone previously owned by Nick is no longer owned by Nick, instead being owned by Mo.</p>
 										<p>"So as erin prob told you, i lost my phone in a cab and he kindly offered to allow me to buy yours..." Mo was quoted as emailing to Nick.</p>
@@ -156,7 +156,7 @@
 			<li class="set three_columns">
 				<ul>
 					<li class="module leader hyphenate">
-						<h2>Venezuelan Nerds Found</h2>
+						<h2><a href="page.php?number=t4">Venezuelan Nerds Found</a></h2>
 						<cite>by Nicholas Hall on January 23rd, 2010</cite>
 						<p><span class="dateline">Mérida</span> Venezuelan nerds were found today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
 						<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
