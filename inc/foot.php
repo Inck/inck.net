@@ -8,7 +8,7 @@
 			</li>
 		</ul>
 		<div id="divSizer"></div><!-- Used by library. (http://13thparallel.com/archive/column-script/) -->
-		<!-- <script type="text/javascript"> endRun(); </script> -->
+		<script type="text/javascript"> endRun(); </script>
 		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
 		<script type="text/javascript"> _uacct = "UA-2336235-2"; urchinTracker(); </script>
 	</body>

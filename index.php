@@ -140,12 +140,12 @@
 							<li class="set three_columns">
 								<ul>
 									<li class="module leader hyphenate">
-										<h2><a href="page.php?number=x31">Cell Phone No Longer Possessed</a></h2>
-										<cite>by Nicholas Hall on January 16th, 2005</cite>
-										<p><span class="dateline">New York</span> The cellphone previously owned by Nick is no longer owned by Nick, instead being owned by Mo.</p>
-										<p>"So as erin prob told you, i lost my phone in a cab and he kindly offered to allow me to buy yours..." Mo was quoted as emailing to Nick.</p>
-										<p>Given that Nick hates telephones in general and cellphones specifically for relocating the point of telecommunication between people to the body rather than a prescribed location such as a house or office, with specific social expectations attached to their entrance, a new phone has not been purchased.</p>
-										<p>Calls placed to Nick requesting comment had not been returned at press time and never will be.</p>
+										<h2><a href="page.php?number=t4">Venezuelan Nerds Found</a></h2>
+										<cite>by Nicholas Hall on January 27th, 2010</cite>
+										<p><span class="dateline">Mérida</span> Venezuelan nerds were found today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
+										<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
+										<p>They were also found to be earnest, smart, and avidly practicing their yo-yo skills.</p>
+										<p>Websites were shared and programing languages discussed. There was agreement in the excellence of CodeIgniter, and in the eventual interestingness of learning Ruby on Rails. <a href="page.php?number=t4&from=91#continue">Continue on Page T4 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -156,20 +156,16 @@
 			<li class="set three_columns">
 				<ul>
 					<li class="module leader hyphenate">
-						<h2><a href="page.php?number=t4">Venezuelan Nerds Found</a></h2>
-						<cite>by Nicholas Hall on January 23rd, 2010</cite>
-						<p><span class="dateline">Mérida</span> Venezuelan nerds were found today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
-						<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
-						<p>They were also found to be earnest, smart, and avidly practicing their yo-yo skills.</p>
-						<p>Websites were shared and programing languages discussed. There was agreement in the excellence of CodeIgniter, and in the eventual interestingness of learning Ruby on Rails.</p>
-						<p>Conversations about Ruby on Rails tended to be short due to its name being difficult as fuck to say with a Spanish pronunciation.</p>
-						<p>Potential projects were breathlessly discussed and imagined, despite Nick's complete inability to use the subjunctive verb form, in which any such conversation would be correctly conducted.</p>
-						<p>One such project, creating a communal space for users to discuss and share information on the fact that both power and water go out several unscheduled times per day, was considered particularly interesting.</p>
-						<p>Interesting was both the content of the idea, a serious and worthwhile project if it were to encourage any changes, and the nature of the ensuing discussion.</p>
-						<p>The word 'contenido' was learned to be the word in Spanish for 'content' and was subsequently used excessively to describe the process of planning the functionality of the product under discussion.</p>
-						<p>The parallels with such conversations had in English were found to be amusing and slightly comforting.</p>
-						<p>After these conversations Nick retreated into his computer, an escape found to be much more normative among this group, and undertook some technical work.</p>
-						<p>As such this publication now offers its news for consumption through RSS technology.</p>
+						<h2><a href="page.php?number=t4">The Apartment Hunt: Mérida</a></h2>
+						<cite>by Nicholas Hall on January 29th, 2010</cite>
+						<p>Searching for an apartment is always a hunt, but especially here in hip and edgy Mérida, especially when your prime location is on the other side of a student riot.</p>
+						<p>Nicholas Hall began his search with a conversation at an unlikely event: a meet-and-greet between American students and Venezuelans who want to meet American students. The date was set for Monday morning, and then the search was on.</p>
+						<p>Nicholas was looking to move up from his current digs, where he's lived since he arrived in the city a week ago. A room in a large house in the northern quarter, the old place was always meant to be a starter home, and he was ready to move on by the end of the month.</p>
+						<p>The first location, a swank, geriatrically-decorated three-bedroom, two-bath in a heavily guarded community compound proved just a little too rich, and Nicholas thought he could bring the price down. Playing a little hardball never hurts when swimming with the sharks of real estate, and playing like you don't understand any of the words they're using to up-sell you on a ridiculous place can take you a long way, as our Hunter learned.</p>
+						<p>Moving on to a fresh first-floor apartment in an active student neighborhood, our hunter and his de facto realtor encountered something unexpected and exciting: The local student scene out and looking engaged, in violent political protest, wearing interesting masks, swirling molotov cocktails, passionately sharing views on social matters.</p>
+						<p>These signs of local culture left Nick almost sold, along with the miniscule rent and single bus to his school, and he signaled that he was ready to close a deal, in a couple days when he had confirmed with others that the miniscule rent was sufficiently miniscule.</p>
+						<p>After some research and market-comparisons, Nick was ready to move forward, and informed his self-defined realtor. The conversation then turned to payment transaction methods, and that's when things got really interesting.</p>
+						<p>Tune in to the next installment of the Hunt to find out the smart inside-game on how to pay for shit here.</p>
 					</li>
 				</ul>
 			</li>

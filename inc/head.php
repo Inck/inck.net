@@ -17,18 +17,20 @@
 		</script>
 		<![endif]-->
 		<script type="text/javascript" src="js/Hyphenator.js"></script>
-		<!-- <script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript" src="js/prototype.js"></script>
 		<script type="text/javascript">
 			function endRun() {
 				// Hyphenate articles.
 				Hyphenator.run();
 				
 				// Flow articles into columns.
-				var article1column1 = document.getElementById("top_right_one");
-				var article1column2 = document.getElementById("top_right_two");
-				var article1column3 = document.getElementById("top_right_three");
+				// var article1column1 = document.getElementById("top_right_one");
+				// var article1column2 = document.getElementById("top_right_two");
+				// var article1column3 = document.getElementById("top_right_three");
+				
+				// document.getElementById("main_article").height;
 			}
-		</script> -->
+		</script>
 	</head>
 	<body>
 		<ul class="grid">
