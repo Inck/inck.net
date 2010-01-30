@@ -156,7 +156,7 @@
 			<li class="set three_columns">
 				<ul>
 					<li class="module leader hyphenate">
-						<h2><a href="page.php?number=t4">The Apartment Hunt: Mérida</a></h2>
+						<h2><a href="page.php?number=r5">The Apartment Hunt: Mérida</a></h2>
 						<cite>by Nicholas Hall on January 29th, 2010</cite>
 						<p>Searching for an apartment is always a hunt, but especially here in hip and edgy Mérida, especially when your prime location is on the other side of a student riot.</p>
 						<p>Nicholas Hall began his search with a conversation at an unlikely event: a meet-and-greet between American students and Venezuelans who want to meet American students. The date was set for Monday morning, and then the search was on.</p>
