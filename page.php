@@ -13,7 +13,7 @@
 			<li class="set three_columns contained">
 				<ul>
 					<li id="main_article" class="module leader continued hyphenate">
-						<h1><a href="index.php"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
+						<h1><a href="/"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
 <?php
 	foreach($paragraphs as $paragraph) {
 		if($words_read > 0) {
@@ -38,7 +38,7 @@
 			<li class="set nine_columns continued">
 				<ul>
 <?php
-	$old_articles = array('a2', 'p5', 'j12');
+	$old_articles = array('a2', 'p5'); //, 'j12'
 	foreach($old_articles as $old_article) {
 ?>
 					<li class="module leader read hyphenate">
