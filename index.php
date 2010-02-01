@@ -121,19 +121,22 @@
 								<ul>
 									<li class="module leader hyphenate">
 										<a name="g1"></a>
-										<h2><a href="page.php?number=g1">Weekend Retreats: An Expensive Dinner with Americans</a></h2>
-										<cite>by Nicholas Hall on January 24th, 2010</cite>
-										<p><span class="dateline">Vamos al Centro</span> With a wonderful palette of rosy, pale, and red faces seared ever-so-slightly, this weekend retreat to an expensive hotel restaurant with a large group of American students proved a panorama of colors, like white, and a must-attend escape from the doldrums of cultural expansion and learning a new language.</p>
-										<p>There's nothing like three hours of conversations in English to return you to a magical world of all conversations being had in English. And there's nothing like those conversations transpiring between college Juniors to bring back waves of blurry, disaffected memories that you can cherish as you drink heavily.</p>
+										<h2><a href="page.php?number=h7">Conversation About Whorehouses Barely Understood</a></h2>
+										<cite>by Nicholas Hall on January 30th, 2010</cite>
+										<p><span class="dateline">Mérida</span> A conversations about whorehouses was barely understood on Saturday, in the kitchen of the house where Nick resides, between Ramon, a man who occasionally stays in the house, and two other men, a local friend named Nicolás, and another who is apparently a lawyer.</p>
+										<p>The lawyer and Nicolás both grew up in Mérida, and Ramon grew up in Caracas, making his perspective on the existence of the whorehouse under discussion less valid than those of the other men.</p>
+										<p>The whorehouse was barely understood to have at times been a movie theatre as well, or perhaps to have been nominally a movie</p>
 									</li>
 								</ul>
 							</li>
 							<li class="set three_columns">
 								<ul>
 									<li class="module leader hyphenate">
-										<p>The wonderful scenery will conjure images of why you first undertook this adventure. Through a broad, locked glass door you will see quaint food carts and groups of men smoking in the dark. Children will knock at the door to sell roses, and drug addicts mints, and you will take the opportunity to look away from them.</p>
-										<p>A menu written in an illegible cursive will be your gateway to a selection of choice foods. Local steaks arranged preciously, and things that your dinner companions had no idea they were getting.</p>
-										<p>The Weekend Retreater entreats you; take that long weekend, go somewhere you've never been. Then watch as the world surrounds you, without you having to so much as lift a finger, with people from places you've been many times. Savor it. Feel the comfort, and be sure to take a moment to breathe in and feel at your most superior.</p>
+										<p>theatre while in fact operating as a whorehouse.</p>
+										<p>The words 'puta' and 'putaria' were interpreted to signify that the conversation being had concerned whorehouses. </p>
+										<p>Additionally the words 'mierda' and 'coño' were in heavy use. Their purpose was understood primarily to be essentially that of punctuation and emphasis.</p>
+										<p>The conversation was believed to have concerned at times the specific year in which the supposed movie theatre had operated in this capacity. The years 1975, 1974, and 1970 were debated has having potentially been the year of the building's provision of said services.</p>
+										<p>The night began with the innocent eating of dinner, during which 'Cuba Libres' were offered, thereby commencing the conversation in question. <a href="page.php?number=h7&from=214#h7">Continue on Page H7 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -141,11 +144,11 @@
 								<ul>
 									<li class="module leader hyphenate">
 										<h2><a href="page.php?number=t4">Venezuelan Nerds Found</a></h2>
-										<cite>by Nicholas Hall on January 27th, 2010</cite>
+										<cite>by Nicholas Hall on January 23rd, 2010</cite>
 										<p><span class="dateline">Mérida</span> Venezuelan nerds were found today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
 										<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
 										<p>They were also found to be earnest, smart, and avidly practicing their yo-yo skills.</p>
-										<p>Websites were shared and programing languages discussed. There was agreement in the excellence of CodeIgniter, and in the eventual interestingness of learning Ruby on Rails. <a href="page.php?number=t4&from=91#continue">Continue on Page T4 &raquo;</a></p>
+										<p>Websites were shared and programing languages discussed. There was agreement in the excellence of CodeIgniter, and in the eventual interestingness of learning Ruby on Rails. <a href="page.php?number=t4&from=91#t4">Continue on Page T4 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
