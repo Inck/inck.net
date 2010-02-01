@@ -44,7 +44,7 @@
 					<li class="set three_columns contained">
 						<ul>
 							<li id="top_right_one" class="module leader hyphenate">
-								<h1><a href="page.php?number=n1">Real Things Happen</a></h1>
+								<h1><a href="page.php?number=n1" name="n1">Real Things Happen</a></h1>
 								<cite>by Nicholas Hall on January 27th, 2010</cite>
 								<p><span class="dateline">Mérida</span> Real things happened yesterday and Monday in Mérida, as students took to the streets to protest the shutdown of RCTV, one the last remaining broadcast networks in Venezuela which had been openly critical of the Chávez government.</p>
 								<p>On Monday students were seen throwing rocks and moving in groups, armed with molotov cocktails fashioned out of regional beer bottles. Many had t-shirts tied around their faces. They blocked traffic in a series of streets in the downtown area, using chairs and tires that were then set on fire. </p>
@@ -120,8 +120,7 @@
 							<li class="set three_columns contained">
 								<ul>
 									<li class="module leader hyphenate">
-										<a name="g1"></a>
-										<h2><a href="page.php?number=h7">Conversation About Whorehouses Barely Understood</a></h2>
+										<h2><a href="page.php?number=h7" name="h7">Conversation About Whorehouses Barely Understood</a></h2>
 										<cite>by Nicholas Hall on January 30th, 2010</cite>
 										<p><span class="dateline">Mérida</span> A conversations about whorehouses was barely understood on Saturday, in the kitchen of the house where Nick resides, between Ramon, a man who occasionally stays in the house, and two other men, a local friend named Nicolás, and another who is apparently a lawyer.</p>
 										<p>The lawyer and Nicolás both grew up in Mérida, and Ramon grew up in Caracas, making his perspective on the existence of the whorehouse under discussion less valid than those of the other men.</p>
@@ -143,7 +142,7 @@
 							<li class="set three_columns">
 								<ul>
 									<li class="module leader hyphenate">
-										<h2><a href="page.php?number=t4">Venezuelan Nerds Found</a></h2>
+										<h2><a href="page.php?number=t4" name="t4">Venezuelan Nerds Found</a></h2>
 										<cite>by Nicholas Hall on January 23rd, 2010</cite>
 										<p><span class="dateline">Mérida</span> Venezuelan nerds were found today, in La Facultad de Ingeniería, a building of the Universidad de Los Andes in La Hechizera, a neighborhood set into the mountains above Mérida.</p>
 										<p>Wearing glasses, slouching, and installing Ubuntu, these nerds were found to be nerds very similar to those common in the United States.</p>
@@ -159,7 +158,7 @@
 			<li class="set three_columns">
 				<ul>
 					<li class="module leader hyphenate">
-						<h2><a href="page.php?number=r5">The Apartment Hunt: Mérida</a></h2>
+						<h2><a href="page.php?number=r5" name="r5">The Apartment Hunt: Mérida</a></h2>
 						<cite>by Nicholas Hall on January 29th, 2010</cite>
 						<p>Searching for an apartment is always a hunt, but especially here in hip and edgy Mérida, especially when your prime location is on the other side of a student riot.</p>
 						<p>Nicholas Hall began his search with a conversation at an unlikely event: a meet-and-greet between American students and Venezuelans who want to meet American students. The date was set for Monday morning, and then the search was on.</p>
