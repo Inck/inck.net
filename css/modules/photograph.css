@@ -6,7 +6,7 @@
 .nine_columns .photograph img { width:880px; }
 .eight_columns .photograph img { width:780px; }
 .seven_columns .photograph img { width:680px; }
-.six_columns .photograph img { width:580px; }
+.six_columns .photograph img { width:580px; height:387px; }
 .five_columns .photograph img { width:480px; }
 .four_columns .photograph img { width:380px; }
 .three_columns .photograph img { width:280px; }
