@@ -46,7 +46,7 @@
 							<li id="top_right_one" class="module leader hyphenate">
 								<h1><a href="page.php?number=c5" name="c5">Cultural Experience Had</a></h1>
 								<cite>by Nicholas Hall on February 8th, 2010</cite>
-								<p><span class="dateline">Mérida</span> Nick had a cultural experience Saturday, according to the hangover he had yesterday morning and the generalized sense of joy.</p>
+								<p><span class="dateline">Mérida</span> Nick had a cultural experience Saturday, according to the hangover he had Sunday morning and the generalized sense of joy.</p>
 								<p>An event whose name translates roughly into "The Crowning of the Queen of the Fairs" was the specific event seen to have catalyzed this experience, but the experience was more broad and primarily tangential to the event.</p>
 								<p>The Crowning was held in the Plaza de Toros, normally used for bullfights, but on this the first night of the Fairs, used for a pop-music concert and beauty pageant, the winner of which was Crowned said Queen of said Fairs.</p>
 								<p>Salsa music, meringue music, and forms of popular music largely understood as issuing from salsa and meringue music, were played.</p>
