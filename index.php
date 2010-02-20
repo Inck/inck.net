@@ -44,7 +44,7 @@
 					<li class="set three_columns contained">
 						<ul>
 							<li id="top_right_one" class="module leader hyphenate">
-								<h1><a href="page.php?number=c5" name="c5">Cultural Experience Had</a></h1>
+								<h2><a href="page.php?number=c5" name="c5">Cultural Experience Had</a></h2>
 								<cite>by Nicholas Hall on February 8th, 2010</cite>
 								<p><span class="dateline">Mérida</span> Nick had a cultural experience Saturday, according to the hangover he had Sunday morning and the generalized sense of joy.</p>
 								<p>An event whose name translates roughly into "The Crowning of the Queen of the Fairs" was the specific event seen to have catalyzed this experience, but the experience was more broad and primarily tangential to the event.</p>
@@ -159,16 +159,15 @@
 			<li class="set three_columns">
 				<ul>
 					<li class="module leader hyphenate">
-						<h2><a href="page.php?number=r5" name="r5">The Apartment Hunt: Mérida</a></h2>
-						<cite>by Nicholas Hall on January 29th, 2010</cite>
-						<p>Searching for an apartment is always a hunt, but especially here in hip and edgy Mérida, especially when your prime location is on the other side of a student riot.</p>
-						<p>Nicholas Hall began his search with a conversation at an unlikely event: a meet-and-greet between American students and Venezuelans who want to meet American students. The date was set for Monday morning, and then the search was on.</p>
-						<p>Nicholas was looking to move up from his current digs, where he's lived since he arrived in the city a week ago. A room in a large house in the northern quarter, the old place was always meant to be a starter home, and he was ready to move on by the end of the month.</p>
-						<p>The first location, a swank, geriatrically-decorated three-bedroom, two-bath in a heavily guarded community compound proved just a little too rich, and Nicholas thought he could bring the price down. Playing a little hardball never hurts when swimming with the sharks of real estate, and playing like you don't understand any of the words they're using to up-sell you on a ridiculous place can take you a long way, as our Hunter learned.</p>
-						<p>Moving on to a fresh first-floor apartment in an active student neighborhood, our hunter and his de facto realtor encountered something unexpected and exciting: The local student scene out and looking engaged, in violent political protest, wearing interesting masks, swirling molotov cocktails, passionately sharing views on social matters.</p>
-						<p>These signs of local culture left Nick almost sold, along with the miniscule rent and single bus to his school, and he signaled that he was ready to close a deal, in a couple days when he had confirmed with others that the miniscule rent was sufficiently miniscule.</p>
-						<p>After some research and market-comparisons, Nick was ready to move forward, and informed his self-defined realtor. The conversation then turned to payment transaction methods, and that's when things got really interesting.</p>
-						<p>Tune in to the next installment of the Hunt to find out the smart inside-game on how to pay for shit here.</p>
+						<h2><a href="page.php?number=r16" name="r16">The Apartment Hunt: The Big Deal: Money Matters: Traveler's Journal: Things</a></h2>
+						<cite>by Nicholas Hall on February 12th, 2010</cite>
+						<p>In this installment in The Hunt, we look at the Deal of the Week, and learn some lessons from the Money Man to record in our Traveler's Journal.</p>
+						<p>Last we heard from our Hunter-Dealer-Man-Traveler, he had been in the thick of negotiations for a new property-adventure-home. After some hairy experiences and excursions and confabs he had decided on the place of his dreams/budget.</p>
+						<p>When we left him off, he was working through the tangle of paying someone a few hundred dollars, and struggling with new complexities like talking, writing emails, and receiving any kind of response. All of these things can pose new challenges to someone new to the world of financio-real-adventure-talks.</p>
+						<p>In response to the volatile worlds of these various mythologized market segments that we present as digestible power narratives, Nick had to make some tough decisions and have some tough conversations.</p>
+						<p>First he had to write another email in Spanish to the lady with the apartment and await a response, and then ask the lady with his current apartment if he could stay on, and how much that would cost. After lengthy ten-minute negotiations they agreed on a ridiculously equitable price and then started drinking rum listening to everyone else discuss politics.</p>
+						<p>Then Nick had to break off talks with the other lady, which first meant a long discovery process of how to even get in touch with her. That ultimately came to fruition when she walked into his school one day. After a tense series of exchanges over how to say things in Spanish, the lady figured out what he was saying and was mildly disappointed.</p>
+						<p>Lessons Learned: In today's market you have to be aggressive, and you can't be afraid to push the limits of the words you know how to say. Forces may buffet from every direction, but most important is that you set a location and a price and stick to it, unless something changes and you don't really want to any more.</p>
 <?php
 	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$number.txt"))) - 1;
 	if($number_of_letters) {
