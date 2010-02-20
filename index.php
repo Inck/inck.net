@@ -18,7 +18,7 @@
 						<ul>
 							<li class="module header_logo">
 								<h3><span class="kern_i"><img src="img/i.gif" /></span><span class="kern_n">n</span><span class="kern_c">c</span><span class="kern_k">k</span></h3>
-								<cite>Volume One, Issue Three &mdash; Mid-to-Late Afternoon Edition &mdash; Last Updated: <strong>Early Morning</strong></cite>
+								<cite>Volume One, Issue Three &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <strong>Early Morning</strong></cite>
 							</li>
 						</ul>
 					</li>

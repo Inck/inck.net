@@ -11,3 +11,4 @@
 .leader .dateline:after { content:" - "; }
 .nine_columns .flow.leader { -moz-column-count:3; -webkit-column-count:3; -moz-column-gap:20px; -webkit-column-gap:20px; border-top:1px solid #bbb; margin-top:5px; padding-top:10px; }
 .nine_columns .flow.leader.first { border-top:none; }
+.nine_columns .flow.leader h2 { margin-top:0; }
