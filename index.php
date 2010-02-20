@@ -169,14 +169,14 @@
 						<p>Then Nick had to break off talks with the other lady, which first meant a long discovery process of how to even get in touch with her. That ultimately came to fruition when she walked into his school one day. After a tense series of exchanges over how to say things in Spanish, the lady figured out what he was saying and was mildly disappointed.</p>
 						<p>Lessons Learned: In today's market you have to be aggressive, and you can't be afraid to push the limits of the words you know how to say. Forces may buffet from every direction, but most important is that you set a location and a price and stick to it, unless something changes and you don't really want to any more.</p>
 <?php
-	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$number.txt"))) - 1;
+	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/r16.txt"))) - 1;
 	if($number_of_letters) {
 ?>
-						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r5#top">Read them</a> and <a href="page.php?number=r5&write=true#top">write one</a>.</p>
+						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r16#top">Read them</a> and <a href="page.php?number=r16&write=true#top">write one</a>.</p>
 <?php
 	} else {
 ?>
-						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r5&write=true#top">Write one</a>.</p>
+						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r16&write=true#top">Write one</a>.</p>
 <?php
 	}
 ?>
