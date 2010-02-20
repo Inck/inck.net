@@ -155,7 +155,6 @@
 
 		function letters_date_sort($a, $b) { return $a[1] - $b[1]; }
 		uasort($letters, 'letters_date_sort');
-		$letters = array_reverse($letters, true);
 
 		$i = 0;
 		foreach($letters as $letter) {
