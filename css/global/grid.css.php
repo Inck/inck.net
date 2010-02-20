@@ -4,7 +4,7 @@
 // Grid options.
 $unit = "px";
 $site = 1200;
-$margin = 10;
+$margin = 20;
 $columns = 12;
 
 // Grid magic.
@@ -38,11 +38,17 @@ foreach($words as $number => $word) {
 }
 ?>
 
-.grid { width:<?php echo $site . $unit; ?>; margin:0 auto; }
+.grid { width:<?php echo $site . $unit; ?>; padding-left:<?php echo $margin . $unit; ?>; margin:0 auto; }
 
 .contained { margin-left:0; }
 
-/* Show the grid */
+/* Grid-level decorations. */
+.separated_at_right ul { border-right:1px solid #bbb; padding-right:10px; }
+.separated_at_right { margin-right:10px; }
+.separated_at_left { margin-left:0; }
+.three_columns .separated_at_right { width:290px;}
+
+/* Show a picture of the grid. */
 .show.grid {
 	background-image:url('img/grid.png');
 	background-repeat:repeat-y;

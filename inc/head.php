@@ -1,3 +1,7 @@
+<?php
+	error_reporting(0);
+	$words = array("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
@@ -13,7 +17,7 @@
 		<title>Inck ~ <?php if($characters_read) { echo "Continued from "; } echo $title; ?></title>
 		<!--[if IE]>
 		<script type="text/javascript">
-			alert("Hey there old timer! You are using Internet Explorer, which is going to break this website in horrible ways. Try Safari, Chrome or Firefox. You will like the Internet more.");
+			alert("Hey there old timer! This website doesn't work very well in Internet Explorer, or Windows for that matter. Try Safari, Chrome or Firefox. I don't figure you'll switch to a Macs on my account, but you know, you really aught to for your own sake.");
 		</script>
 		<![endif]-->
 		<script type="text/javascript" src="js/Hyphenator.js"></script>
@@ -33,4 +37,5 @@
 		</script>
 	</head>
 	<body>
+		<a name="top"></a>
 		<ul class="grid">

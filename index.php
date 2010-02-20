@@ -34,12 +34,12 @@
 					</li>
 				</ul>
 			</li>
-			<li class="set twelve_columns">
+			<li class="set twelve_columns contained">
 				<ul>
 					<li class="module header_divider"></li>
 				</ul>
 			</li>
-			<li class="set nine_columns">
+			<li class="set nine_columns contained">
 				<ul>
 					<li class="set three_columns contained">
 						<ul>
@@ -73,7 +73,7 @@
 									<li id="top_right_three" class="module leader hyphenate">
 										<p>pageant contestants as the young man lay motionless.</p>
 										<p>The young man was then carried on a stretcher towards an exit, through the center of the plaza.</p>
-										<p>Reaching the center of the plaza the young man sprang up and careened dizzily towards the crowd with his arms raised to signal his victory over head trauma. <a href="page.php?number=C5&from=283#c5">Continue on Page C5 &raquo;</a></p>
+										<p>Reaching the center of the plaza the young man sprang up and careened dizzily towards the crowd with his arms raised to signal his victory over head trauma. <a href="page.php?number=C5&from=283#c5">Continued, with Letters to the Editor, on Page C5 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -136,7 +136,7 @@
 										<p>The words 'puta' and 'putaria' were interpreted to signify that the conversation being had concerned whorehouses. </p>
 										<p>Additionally the words 'mierda' and 'coño' were in heavy use. Their purpose was understood primarily to be essentially that of punctuation and emphasis.</p>
 										<p>The conversation was believed to have concerned at times the specific year in which the supposed movie theatre had operated in this capacity. The years 1975, 1974, and 1970 were debated has having potentially been the year of the building's provision of said services.</p>
-										<p>The night began with the innocent eating of dinner, during which 'Cuba Libres' were offered, thereby commencing the conversation in question. <a href="page.php?number=h7&from=214#h7">Continue on Page H7 &raquo;</a></p>
+										<p>The night began with the innocent eating of dinner, during which 'Cuba Libres' were offered, thereby commencing the conversation in question. <a href="page.php?number=h7&from=214#h7">Continued, with Letters to the Editor, on Page H7 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -148,7 +148,7 @@
 										<p><span class="dateline">Mérida</span> Real things happened yesterday and Monday in Mérida, as students took to the streets to protest the shutdown of RCTV, one the last remaining broadcast networks in Venezuela which had been openly critical of the Chávez government.</p>
 										<p>On Monday students were seen throwing rocks and moving in groups, armed with molotov cocktails fashioned out of regional beer bottles. Many had t-shirts tied around their faces. They blocked traffic in a series of streets in the downtown area, using chairs and tires that were then set on fire. </p>
 										<p>Police in riot gear massed throughout the downtown area over the course of the afternoon.</p>
-										<p>Later in the <a href="page.php?number=n1&from=106#n1">Continue on Page N1 &raquo;</a></p>
+										<p>Later in the <a href="page.php?number=n1&from=106#n1">Continued, with Letters to the Editor, on Page N1 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -169,6 +169,18 @@
 						<p>These signs of local culture left Nick almost sold, along with the miniscule rent and single bus to his school, and he signaled that he was ready to close a deal, in a couple days when he had confirmed with others that the miniscule rent was sufficiently miniscule.</p>
 						<p>After some research and market-comparisons, Nick was ready to move forward, and informed his self-defined realtor. The conversation then turned to payment transaction methods, and that's when things got really interesting.</p>
 						<p>Tune in to the next installment of the Hunt to find out the smart inside-game on how to pay for shit here.</p>
+<?php
+	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$number.txt"))) - 1;
+	if($number_of_letters) {
+?>
+						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r5#top">Read them</a> and <a href="page.php?number=r5&write=true#top">write one</a>.</p>
+<?php
+	} else {
+?>
+						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r5&write=true#top">Write one</a>.</p>
+<?php
+	}
+?>
 					</li>
 				</ul>
 			</li>

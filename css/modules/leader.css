@@ -1,9 +1,5 @@
 .leader h1, 
 .leader h2 { font-size:2.8em; line-height:1.12em; margin-top:.5em; padding-top:0; }
-.leader.continued { border-right:1px solid #bbb; padding-right:5px; }
-.three_columns .leader.continued { -moz-column-count:1; -webkit-column-count:1; }
-.nine_columns.continued .leader { -moz-column-count:3; -webkit-column-count:3; border-bottom:1px solid #bbb; }
-.nine_columns.continued { margin-left:5px; }
 .leader.read,
 .leader .read,
 .leader .read a { color:#bbb; }
@@ -13,3 +9,5 @@
 .leader hr:after { content:"--"; }
 .leader .dateline { font-size:.85em; text-transform:uppercase; }
 .leader .dateline:after { content:" - "; }
+.nine_columns .flow.leader { -moz-column-count:3; -webkit-column-count:3; -moz-column-gap:20px; -webkit-column-gap:20px; border-top:1px solid #bbb; margin-top:5px; padding-top:10px; }
+.nine_columns .flow.leader.first { border-top:none; }

@@ -1,0 +1,18 @@
+.postcard_post { margin-top:1.4em; position:relative; }
+.postcard_post label { display:block; width:5em; float:right; border:dotted white 2px; }
+.postcard_post label:hover { border-color:#c0c0c0 #6c6c6c #6c6c6c #c0c0c0; }
+.postcard_post label:hover input,
+.postcard_post input.hover { background:white url(../../img/i-stamp.gif) no-repeat center; }
+.postcard_post input { font-family:'Gill Sans', 'Helvetica', sans-serif; color:#bbb; background-color:white; height:6em; width:5em; }
+.postcard_post p { font-family:'Andale Mono', monospace; line-height:.9em; font-size:.8em; text-transform:uppercase; text-align:center; width:25em; padding:2em 2em 0 2em; background-color:#fef691; position:absolute; top:8em; right:6em; -webkit-transform:rotate(7deg); -moz-transform:rotate(7deg); }
+.postcard_post span { display:block; text-align:right; margin:1em 0 .5em; }
+
+/* Experiment drawing a postal void stamp with rounded corners. */
+/*.postcard_post p { float:left; width:6em; height:6em; -moz-border-radius: 3em; -webkit-border-radius: 3em; border:solid #bbb 2px; }
+.postcard_post li { float:left; width:5em; height:4em; -moz-border-radius:3em; -webkit-border-radius:3em; position:relative; }
+.postcard_post li:nth-child(odd) { border-top:solid #bbb 2px; top:1.5em; }
+.postcard_post li:nth-child(even) { border-bottom:solid #bbb 2px; bottom:1.5em; }
+.postcard_post li:nth-child(1) { left:8.3em; }
+.postcard_post li:nth-child(2) { left:6.7em; }
+.postcard_post li:nth-child(3) { left:5.1em; }
+.postcard_post li:nth-child(4) { left:3.5em; }*/
