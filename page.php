@@ -34,6 +34,7 @@
 				<ul>
 					<li id="main_article" class="module leader continued hyphenate">
 						<h1><a href="/"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
+						<cite>by Nicholas Hall on <em>February 12th, 2010</em></cite>
 <?php
 	foreach($paragraphs as $paragraph) {
 		if($words_read > 0) {
@@ -197,6 +198,7 @@
 		$filler_date = array_shift($filler_paragraphs);
 ?>
 						<h2>'<?php echo $filler_title; ?>'</h2>
+						<cite>by Nicholas Hall on <?php echo $filler_date; ?></cite>
 <?php
 		foreach($filler_paragraphs as $filler_paragraph) {
 			echo "\t\t\t\t\t\t<p>" . $filler_paragraph . "</p>\n";

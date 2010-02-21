@@ -37,6 +37,9 @@
 			<li class="set twelve_columns contained">
 				<ul>
 					<li class="module header_divider"></li>
+					<li class="module assassination">
+						<h1><a href="page.php?number=c5" name="c5">Cultural Experience Had</a></h1>
+					</li>
 				</ul>
 			</li>
 			<li class="set nine_columns contained">
@@ -45,7 +48,7 @@
 						<ul>
 							<li id="top_right_one" class="module leader hyphenate">
 								<h2><a href="page.php?number=c5" name="c5">Cultural Experience Had</a></h2>
-								<cite>by Nicholas Hall on February 8th, 2010</cite>
+								<cite>by Nicholas Hall on <em>February 8th, 2010</em></cite>
 								<p><span class="dateline">Mérida</span> Nick had a cultural experience Saturday, according to the hangover he had Sunday morning and the generalized sense of joy.</p>
 								<p>An event whose name translates roughly into "The Crowning of the Queen of the Fairs" was the specific event seen to have catalyzed this experience, but the experience was more broad and primarily tangential to the event.</p>
 								<p>The Crowning was held in the Plaza de Toros, normally used for bullfights, but on this the first night of the Fairs, used for a pop-music concert and beauty pageant, the winner of which was Crowned said Queen of said Fairs.</p>
@@ -122,7 +125,7 @@
 								<ul>
 									<li class="module leader hyphenate">
 										<h2><a href="page.php?number=h7" name="h7">Conversation About Whorehouses Barely Understood</a></h2>
-										<cite>by Nicholas Hall on January 30th, 2010</cite>
+										<cite>by Nicholas Hall on <em>January 30th, 2010</em></cite>
 										<p><span class="dateline">Mérida</span> A conversations about whorehouses was barely understood on Saturday, in the kitchen of the house where Nick resides, between Ramon, a man who occasionally stays in the house, and two other men, a local friend named Nicolás, and another who is apparently a lawyer.</p>
 										<p>The lawyer and Nicolás both grew up in Mérida, and Ramon grew up in Caracas, making his perspective on the existence of the whorehouse under discussion less valid than those of the other men.</p>
 										<p>The whorehouse was barely understood to have at times been a movie theatre as well, or perhaps to have been nominally a movie</p>
@@ -144,7 +147,7 @@
 								<ul>
 									<li class="module leader hyphenate">
 										<h2><a href="page.php?number=n1" name="n1">Real Things Happen</a></h2>
-										<cite>by Nicholas Hall on January 27th, 2010</cite>
+										<cite>by Nicholas Hall on <em>January 27th, 2010</em></cite>
 										<p><span class="dateline">Mérida</span> Real things happened yesterday and Monday in Mérida, as students took to the streets to protest the shutdown of RCTV, one the last remaining broadcast networks in Venezuela which had been openly critical of the Chávez government.</p>
 										<p>On Monday students were seen throwing rocks and moving in groups, armed with molotov cocktails fashioned out of regional beer bottles. Many had t-shirts tied around their faces. They blocked traffic in a series of streets in the downtown area, using chairs and tires that were then set on fire. </p>
 										<p>Police in riot gear massed throughout the downtown area over the course of the afternoon.</p>
@@ -160,7 +163,7 @@
 				<ul>
 					<li class="module leader hyphenate">
 						<h2><a href="page.php?number=r16" name="r16">The Apartment Hunt: The Big Deal: Money Matters: Traveler's Journal: Things</a></h2>
-						<cite>by Nicholas Hall on February 12th, 2010</cite>
+						<cite>by Nicholas Hall on <em>February 12th, 2010</em></cite>
 						<p>In this installment in The Hunt, we look at the Deal of the Week, and learn some lessons from the Money Man to record in our Traveler's Journal.</p>
 						<p>Last we heard from our Hunter-Dealer-Man-Traveler, he had been in the thick of negotiations for a new property-adventure-home. After some hairy experiences and excursions and confabs he had decided on the place of his dreams/budget.</p>
 						<p>When we left him off, he was working through the tangle of paying someone a few hundred dollars, and struggling with new complexities like talking, writing emails, and receiving any kind of response. All of these things can pose new challenges to someone new to the world of financio-real-adventure-talks.</p>
