@@ -20,8 +20,8 @@
 			alert("Hey there old timer! This website doesn't work very well in Internet Explorer, or Windows for that matter. Try Safari, Chrome or Firefox. I don't figure you'll switch to a Macs on my account, but you know, you really aught to for your own sake.");
 		</script>
 		<![endif]-->
-		<script type="text/javascript" src="js/Hyphenator.js"></script>
-		<script type="text/javascript" src="js/prototype.js"></script>
+		<script type="text/javascript" src="lib/hyphenator/Hyphenator.js"></script>
+		<!--<script type="text/javascript" src="lib/prototype.js"></script>-->
 		<script type="text/javascript">
 			function endRun() {
 				// Hyphenate articles.
