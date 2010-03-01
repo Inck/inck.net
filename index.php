@@ -18,12 +18,17 @@
 						<ul>
 							<li class="module header_logo">
 								<h3><span class="kern_i"><img src="img/i.gif" /></span><span class="kern_n">n</span><span class="kern_c">c</span><span class="kern_k">k</span></h3>
-								<cite>Volume One, Issue Three &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <strong>Early Morning</strong></cite>
+								<cite>Volume One, Issue Three &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <em>Early Morning</em></cite>
 							</li>
 						</ul>
 					</li>
 					<li class="set three_columns">
 						<ul>
+							<li class="module page_turner">
+								<!-- <a class="chiclet" href="http://feeds.feedburner.com/inck" rel="alternate" type="application/rss+xml"><img src="img/feed.png" /></a> -->
+								<h3><a href="page.php?number=c7&write=true">Letters to the Editor</a></h3>
+								<div class="page_corner"><div class="page_fold"></div></div>
+							</li>
 							<li class="module header_extra">
 								<div>
 									<h2>The Weather</h2>

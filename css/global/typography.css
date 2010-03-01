@@ -4,4 +4,4 @@ h1:hover a,
 h2:hover a,
 a:hover { text-decoration:underline; cursor:pointer; }
 a:visited, a:hover, a:link { color:black; }
-em { font-style:italic; }
+em { color:#00a; }
