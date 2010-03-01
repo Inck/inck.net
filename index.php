@@ -66,7 +66,7 @@
 					<li class="set six_columns">
 						<ul>
 							<li class="module photograph">
-								<a href="http://www.flickr.com/photos/nicholashall/4377208562/" title="Untitled by Nicholas Hall, on Flickr"><img src="http://farm3.static.flickr.com/2704/4377208562_ca91a6f991_b.jpg" alt="" /></a>
+								<a href="http://www.flickr.com/photos/nicholashall/4393709930/" title="EDIFICIO VALERO by Nicholas Hall, on Flickr"><img src="http://farm3.static.flickr.com/2757/4393709930_aa1eda6e9e_b.jpg" alt="EDIFICIO VALERO" /></a>
 							</li>
 							<li class="set three_columns contained">
 								<ul>
