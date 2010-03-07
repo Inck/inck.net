@@ -1,9 +1,8 @@
-.postcard_post { margin-top:1.4em; position:relative; }
-.postcard_post label { display:block; width:5em; float:right; border:dotted white 2px; }
-.postcard_post label:hover { border-color:#c0c0c0 #6c6c6c #6c6c6c #c0c0c0; }
-.postcard_post label:hover input,
-.postcard_post input.hover { background:white url(../../img/i-stamp.gif) no-repeat center; }
-.postcard_post input { font-family:'Gill Sans', 'Helvetica', sans-serif; color:#bbb; background-color:white; height:6em; width:5em; }
+.postcard_post { margin:2.5em; position:relative; }
+.postcard_post label { display:block; width:5em; float:right; border:dotted white 1px; }
+.postcard_post label:hover { border-color:#bbb; }
+.postcard_post input.hover { font-family:'Prince Valiant'; font-size:5em; }
+.postcard_post input { font-family:'Gill Sans', 'Helvetica', sans-serif; color:#bbb; background-color:white; height:60px; width:50px; line-height:1em; border:solid #bbb 1px; }
 .postcard_post p { font-family:'Andale Mono', monospace; line-height:.9em; font-size:.8em; text-transform:uppercase; text-align:center; width:25em; padding:2em 2em 0 2em; background-color:#fef691; position:absolute; top:8em; right:6em; -webkit-transform:rotate(7deg); -moz-transform:rotate(7deg); }
 .postcard_post span { display:block; text-align:right; margin:1em 0 .5em; }
 

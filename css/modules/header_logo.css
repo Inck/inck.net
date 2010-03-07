@@ -1,8 +1,0 @@
-.header_logo { margin:0 auto; text-align:center; }
-.header_logo h3 { font-family:'Hoefler Text', Georgia, serif; font-size:10em; line-height:.6em; color:black; }
-.header_logo h3 .kern_i img { left:5px; }
-.header_logo h3 .kern_n { letter-spacing:-.06em; }
-.header_logo h3 .kern_c { letter-spacing:-.05em; }
-.header_logo h3 .kern_k { }
-.header_logo img { position:relative; top:11px; z-index:-1; margin:0; }
-.header_logo cite { font-size:1.2em; display:block; margin:.7em 0 1.6em; }

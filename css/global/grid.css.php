@@ -43,10 +43,10 @@ foreach($words as $number => $word) {
 .contained { margin-left:0; }
 
 /* Grid-level decorations. */
-.separated_at_right ul { border-right:1px solid #bbb; padding-right:10px; }
-.separated_at_right { margin-right:10px; }
-.separated_at_left { margin-left:0; }
-.three_columns .separated_at_right { width:290px;}
+.rule_at_right ul { padding-right:10px; border-right:1px solid #bbb; }
+.rule_at_left { margin-left:10px; }
+.three_columns.rule_at_right { width:300px; }
+.nine_columns.rule_at_left { width:880px; }
 
 /* Show a picture of the grid. */
 .show.grid {

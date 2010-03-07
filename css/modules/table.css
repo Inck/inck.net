@@ -1,6 +1,6 @@
-.table { margin:2.1em 0; }
+.table { margin:1.2em 0 1.3em; }
 .table h3 { font-size:1.5em; line-height:1.7em; text-align:right; }
-.table table { font-family:'Helvetica','Arial',sans-serif; font-size:1.3em; border:solid #ededed 1px; margin-bottom:.5em; }
+.table table { font-family:'Helvetica','Arial',sans-serif; font-size:1.3em; border:solid #ededed 1px; }
 .table td { border:solid #ededed 1px; }
 .six_columns .table td { width:190px; }
 .nine_columns .table td { width:290px; }

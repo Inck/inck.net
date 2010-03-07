@@ -8,7 +8,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<link rel="icon" href="favicon.gif">
+		<link rel="icon" href="favicon.gif" />
 		<link rel="stylesheet" type="text/css" href="css/library" />
 		<link rel="stylesheet" type="text/css" href="css/global" />
 		<link rel="stylesheet" type="text/css" href="css/modules" />
@@ -20,7 +20,13 @@
 			alert("Hey there old timer! This website doesn't work very well in Internet Explorer, or Windows for that matter. Try Safari, Chrome or Firefox. I don't figure you'll switch to a Macs on my account, but you know, you really aught to for your own sake.");
 		</script>
 		<![endif]-->
+<?php
+	if($_GET['hyphen'] == 'ate') {
+?>
 		<script type="text/javascript" src="lib/hyphenator/Hyphenator.js"></script>
+<?php
+	}
+?>
 		<!--<script type="text/javascript" src="lib/prototype.js"></script>-->
 		<script type="text/javascript">
 			function endRun() {
@@ -37,5 +43,5 @@
 		</script>
 	</head>
 	<body>
-		<a name="top"></a>
+		<div><a name="top"></a></div>
 		<ul class="grid">

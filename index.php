@@ -1,12 +1,15 @@
 <?php
-	$title = "Mid-to-late Afternoon Edition";
+	$title = "Mid-to-Late Afternoon Edition";
 	include('inc/head.php');
 ?>
 			<li class="set twelve_columns contained">
 				<ul>
 					<li class="set three_columns contained">
 						<ul>
-							<li class="module header_extra">
+							<li class="module syndicate_ear">
+								<a href="http://feeds.feedburner.com/inck" title="RSS"><img src="img/feed.png" alt="RSS Chicklet" /></a>
+							</li>
+							<li class="module ear">
 								<div>
 									<strong>25&cent;</strong>
 									<p>(Mail to 669 Manhattan Avenue, Apartmnet 2, Brooklyn)</p>
@@ -16,20 +19,19 @@
 					</li>
 					<li class="set six_columns">
 						<ul>
-							<li class="module header_logo">
-								<h3><span class="kern_i"><img src="img/i.gif" /></span><span class="kern_n">n</span><span class="kern_c">c</span><span class="kern_k">k</span></h3>
+							<li class="module flag">
+								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
 								<cite>Volume One, Issue Three &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <em>Early Morning</em></cite>
 							</li>
 						</ul>
 					</li>
 					<li class="set three_columns">
 						<ul>
-							<li class="module page_turner">
-								<!-- <a class="chiclet" href="http://feeds.feedburner.com/inck" rel="alternate" type="application/rss+xml"><img src="img/feed.png" /></a> -->
-								<h3><a href="page.php?number=c7&write=true">Letters to the Editor</a></h3>
+							<li class="module dog_ear">
+								<h3><a href="page.php?number=c7&amp;write=true">Letters to the Editor</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
-							<li class="module header_extra">
+							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
 									<p>Warm, Bright and Overcast. Slow Winds Out of the Southeast.</p>
@@ -42,7 +44,7 @@
 			<li class="set twelve_columns contained">
 				<ul>
 					<li class="module header_divider"></li>
-					<li class="module assassination">
+					<li class="module banner">
 						<h1><a href="page.php?number=c7" name="c7">Bullfight Attended, Analyzed</a></h1>
 					</li>
 				</ul>
@@ -65,7 +67,7 @@
 					</li>
 					<li class="set six_columns">
 						<ul>
-							<li class="module photograph">
+							<li class="module cut">
 								<a href="http://www.flickr.com/photos/nicholashall/4393709930/" title="EDIFICIO VALERO by Nicholas Hall, on Flickr"><img src="http://farm3.static.flickr.com/2757/4393709930_aa1eda6e9e_b.jpg" alt="EDIFICIO VALERO" /></a>
 							</li>
 							<li class="set three_columns contained">
@@ -87,11 +89,11 @@
 											$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/c7.txt"))) - 1;
 											if($number_of_letters) {
 										?>
-																<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=c7#top">Read them</a> and <a href="page.php?number=c7&write=true#top">write one</a>.</p>
+																<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=c7#top">Read them</a> and <a href="page.php?number=c7&amp;write=true#top">write one</a>.</p>
 										<?php
 											} else {
 										?>
-																<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=c7&write=true#top">Write one</a>.</p>
+																<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=c7&amp;write=true#top">Write one</a>.</p>
 										<?php
 											}
 										?>
@@ -157,7 +159,7 @@
 										<p>The words 'puta' and 'putaria' were interpreted to signify that the conversation being had concerned whorehouses. </p>
 										<p>Additionally the words 'mierda' and 'coño' were in heavy use. Their purpose was understood primarily to be essentially that of punctuation and emphasis.</p>
 										<p>The conversation was believed to have concerned at times the specific year in which the supposed movie theatre had operated in this capacity. The years 1975, 1974, and 1970 were debated has having potentially been the year of the building's provision of said services.</p>
-										<p>The night began with the innocent eating of dinner, during which 'Cuba Libres' were offered, thereby commencing the conversation in question. <a href="page.php?number=h7&from=214#h7">Continued, with Letters to the Editor, on Page H7 &raquo;</a></p>
+										<p>The night began with the innocent eating of dinner, during which 'Cuba Libres' were offered, thereby commencing the conversation in question. <a href="page.php?number=h7&amp;from=214#h7" class="jumpline">Continued, with Letters to the Editor, on Page H7 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -169,7 +171,7 @@
 										<p><span class="dateline">Mérida</span> Real things happened yesterday and Monday in Mérida, as students took to the streets to protest the shutdown of RCTV, one the last remaining broadcast networks in Venezuela which had been openly critical of the Chávez government.</p>
 										<p>On Monday students were seen throwing rocks and moving in groups, armed with molotov cocktails fashioned out of regional beer bottles. Many had t-shirts tied around their faces. They blocked traffic in a series of streets in the downtown area, using chairs and tires that were then set on fire. </p>
 										<p>Police in riot gear massed throughout the downtown area over the course of the afternoon.</p>
-										<p>Later in the <a href="page.php?number=n1&from=106#n1">Continued, with Letters to the Editor, on Page N1 &raquo;</a></p>
+										<p>Later in the <a href="page.php?number=n1&amp;from=106#n1" class="jumpline">Continued, with Letters to the Editor, on Page N1 &raquo;</a></p>
 									</li>
 								</ul>
 							</li>
@@ -193,11 +195,11 @@
 	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/r16.txt"))) - 1;
 	if($number_of_letters) {
 ?>
-						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r16#top">Read them</a> and <a href="page.php?number=r16&write=true#top">write one</a>.</p>
+						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r16#top">Read them</a> and <a href="page.php?number=r16&amp;write=true#top">write one</a>.</p>
 <?php
 	} else {
 ?>
-						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r16&write=true#top">Write one</a>.</p>
+						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r16&amp;write=true#top">Write one</a>.</p>
 <?php
 	}
 ?>
