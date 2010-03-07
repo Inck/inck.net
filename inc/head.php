@@ -21,7 +21,8 @@
 		</script>
 		<![endif]-->
 <?php
-	if($_GET['hyphen'] == 'ate') {
+print_r($_GET);
+	if(isset($_GET['hyphenate'])) {
 ?>
 		<script type="text/javascript" src="lib/hyphenator/Hyphenator.js"></script>
 <?php
