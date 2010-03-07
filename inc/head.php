@@ -21,7 +21,7 @@
 		</script>
 		<![endif]-->
 <?php
-	if(isset($_GET['hyphenate']) or isset($_GET['page'])) {
+	if(isset($_GET['hyphenate']) or isset($_GET['number'])) {
 ?>
 		<script type="text/javascript" src="lib/hyphenator/Hyphenator.js"></script>
 <?php
