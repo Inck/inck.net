@@ -28,7 +28,7 @@
 					<li class="set three_columns">
 						<ul>
 							<li class="module dog_ear">
-								<h3><a href="page.php?number=c7&amp;write=true">Letters to the Editor</a></h3>
+								<h3><a href="page.php?number=c7">Letters to the Editor</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="module ear">
@@ -89,11 +89,11 @@
 											$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/c7.txt"))) - 1;
 											if($number_of_letters) {
 										?>
-																<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=c7#top">Read them</a> and <a href="page.php?number=c7&amp;write=true#top">write one</a>.</p>
+																<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=c7#top">Read them</a> and <a href="page.php?number=c7#top">write one</a>.</p>
 										<?php
 											} else {
 										?>
-																<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=c7&amp;write=true#top">Write one</a>.</p>
+																<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=c7#top">Write one</a>.</p>
 										<?php
 											}
 										?>
@@ -195,11 +195,11 @@
 	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/r16.txt"))) - 1;
 	if($number_of_letters) {
 ?>
-						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r16#top">Read them</a> and <a href="page.php?number=r16&amp;write=true#top">write one</a>.</p>
+						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=r16#top">Read them</a> and <a href="page.php?number=r16#top">write one</a>.</p>
 <?php
 	} else {
 ?>
-						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r16&amp;write=true#top">Write one</a>.</p>
+						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=r16#top">Write one</a>.</p>
 <?php
 	}
 ?>

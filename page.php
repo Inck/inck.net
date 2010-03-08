@@ -54,11 +54,11 @@
 	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$number.txt"))) - 1;
 	if($number_of_letters) {
 ?>
-						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Read them</a> and <a href="?number=<?php echo $number; ?>&amp;write=true#top">write one</a>.</p>
+						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Read them</a> and <a href="?number=<?php echo $number; ?>#top">write one</a>.</p>
 <?php
 	} else {
 ?>
-						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>&amp;write=true#top">Write one</a>.</p>
+						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Write one</a>.</p>
 <?php
 	}
 ?>

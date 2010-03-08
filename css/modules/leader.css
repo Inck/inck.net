@@ -4,7 +4,7 @@
 .leader .read,
 .leader .read a { color:#bbb; }
 .leader cite { line-height:2.1em; }
-.leader p { font-size:1.4em; line-height:1.5em; margin-top:1.5em; text-align:justify; }
+.leader p { font-size:1.4em; line-height:1.5em; margin-top:1.52em; text-align:justify; }
 .leader hr { border:0; text-align:center; margin:0; height:0; }
 .leader hr:after { content:"--"; }
 .leader .dateline { font-size:.85em; text-transform:uppercase; }
