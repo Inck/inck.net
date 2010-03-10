@@ -17,7 +17,14 @@
 		<title>Inck ~ <?php if($characters_read) { echo "Continued from "; } echo $title; ?></title>
 		<!--[if IE]>
 		<script type="text/javascript">
-			alert("Hey there old timer! This website doesn't work very well in Internet Explorer, or Windows for that matter. Try Safari, Chrome or Firefox. I don't figure you'll switch to a Macs on my account, but you know, you really aught to for your own sake.");
+			function setCookie(c_name,value,expiredays) { var exdate=new Date(); exdate.setDate(exdate.getDate()+expiredays); document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString()); }
+			function getCookie(c_name) { if (document.cookie.length>0) { c_start=document.cookie.indexOf(c_name + "="); if (c_start!=-1) { c_start=c_start + c_name.length+1; c_end=document.cookie.indexOf(";",c_start); if (c_end==-1) c_end=document.cookie.length; return unescape(document.cookie.substring(c_start,c_end)); } } return ""; }
+		
+			scolded = getCookie('scolded');
+			if (scolded == null || scolded == "") {
+				alert("Hey there old timer! You're using Internet Explorer, which doesn't display this website right. Try Safari, Chrome or Firefox. I don't figure you'll switch to a Macs on my account, but you know, you really ought to.");
+				setCookie('scolded', true, 365);
+			}
 		</script>
 		<![endif]-->
 <?php
