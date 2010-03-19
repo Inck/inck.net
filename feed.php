@@ -1,5 +1,5 @@
 <?php
-	header("Content-Type: application/rss+xml");
+	if($_GET['viewer'] != 'site') { header("Content-Type: application/rss+xml"); }
 	$directory = opendir('pages');
 	error_reporting(0);
 ?>
