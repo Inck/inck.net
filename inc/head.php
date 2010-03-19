@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/global" />
 		<link rel="stylesheet" type="text/css" href="css/modules" />
 		<link rel="stylesheet" type="text/css" href="css/components" />
-		<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck" title="RSS" />
+		<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
 		<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
 		<!--[if IE]>
 		<script type="text/javascript" src="js/scold.js"></script>
