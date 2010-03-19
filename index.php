@@ -4,7 +4,7 @@
 	
 	// Get article list from feed script.
 	ob_start();
-	    include('feed.php');
+	    include('feed.php?viewer=site');
 	    $feed = ob_get_contents();
     ob_end_clean();
 	$articles = new SimpleXMLElement($feed);
