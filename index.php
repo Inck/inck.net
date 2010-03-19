@@ -15,7 +15,7 @@
 					<li class="set three_columns contained">
 						<ul>
 							<li class="module syndicate_ear">
-								<a href="http://feeds.feedburner.com/inck" title="RSS"><img src="img/feed.png" alt="RSS Chicklet" /></a>
+								<a href="http://feeds.feedburner.com/inck/" title="RSS"><img src="img/feed.png" alt="RSS Chicklet" /></a>
 							</li>
 							<li class="module ear">
 								<div>
