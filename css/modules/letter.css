@@ -1,0 +1,4 @@
+.letter { margin-bottom:0; }
+.letter p { text-align:left; }
+.letter cite { margin-top:.2em; }
+.letter cite:before { content:"--"; }

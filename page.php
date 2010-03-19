@@ -3,12 +3,14 @@
 		$paragraphs = file("pages/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		$title = array_shift($paragraphs);
 		$date = array_shift($paragraphs);
-		$lede = explode('.', $paragraphs[0]); $lede = $lede[0] . '.';
+		$lede = explode(' -- ', $paragraphs[0]);
+		$dateline = $lede[0]; $paragraphs[0] = $lede[1];
 		$words_read = $_GET['from'];
 
 		// Comment Submission
-		$default_letter = "Based on my years of experience in a field that makes me an expert on the subject which Mr. Hall was attempting to discuss, I must say that...";
-		$default_name = "Concerned Citizen";
+		$prompt_paragraph = "Having just read Mr. Hall's article, '$title', I must offer this most apropos observation.";
+		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+		$default_name = "Mr. Your Name";
 		
 		if($_POST['letter_submitted'] == 'true') {
 			if($_POST['is_computer'] == 'beep') { $user_message = "Sender Not a Person"; }
@@ -40,7 +42,7 @@
 			$words = explode(' ', $paragraph);
 			$words_printing = count($words);
 			if($words_printing <= $words_read) {
-				echo "\t\t\t\t\t\t<p class='read'>" . $paragraph . "</p>\n";
+				echo "\t\t\t\t\t\t<p class='read'>"; if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
 			} elseif($words_read > 0) {
 				echo "\t\t\t\t\t\t<p><a name='$number'></a><span class='read'>" . implode(' ', array_slice($words, 0, $words_read)) . "</span> " . implode(' ', array_slice($words, $words_read)) . "</p>\n";
 			} else {
@@ -54,7 +56,7 @@
 	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$number.txt"))) - 1;
 	if($number_of_letters) {
 ?>
-						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Read them</a> and <a href="?number=<?php echo $number; ?>#top">write one</a>.</p>
+						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Write one</a>.</p>
 <?php
 	} else {
 ?>
@@ -70,9 +72,9 @@
 				<ul>
 					<li class="set three_columns contained">
 						<ul>
-							<li class="module leader postcard read hyphenate">
+							<li class="module leader letter postcard read">
 								<h2>Dear Sir:</h2>
-								<p>In his <?php echo $date; ?> article, "<?php echo $title; ?>," Nicholas Hall writes, "<?php echo $lede; ?>"</p>
+								<p><?php echo $prompt_paragraph; ?></p>
 								<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="read"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='read' }" tabindex="1" rows="10" cols="100"><?php if($_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
 								-- <input type="text" id="name" name="name" <?php if(!$_POST or $_POST['name'] == $default_name) { echo 'class="read"'; } ?> value="<?php if($_POST['name']) { echo stripslashes($_POST['name'])	; } else { echo $default_name; } ?>" onfocus="if(this.value=='<?php echo $default_name; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_name; ?>'; this.className='read' }" tabindex="2" />
 							</li>
@@ -111,18 +113,18 @@
 							<li class="module leader letter_header read">
 								<h2>Your Letter:</h2>
 							</li>
-							<li class="module leader">
-								<p class="read">In his <?php echo $date; ?> article, "<?php echo $title; ?>," Nicholas Hall writes, "<?php echo $lede; ?>"</p>
+							<li class="module leader letter">
+								<p><?php echo $prompt_paragraph; ?></p>
 <?php
-			$letters_together = file_get_contents("letters/$number.txt");
+			$letters_together = file_get_contents("letters/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 			$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
 			$letter = array_pop($letters);
-			$lines = explode("\n", $letter);
+			$lines = explode("\n\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
 			foreach($lines as $line) { echo "\t\t\t\t\t\t\t\t\t\t\t\t<p>$line</p>"; }
 ?>
-								<p>--<cite><?php echo $name . " at " . date('g:i a', $time); ?></cite></p>
+								<cite><?php echo $name . " at <em>" . date('g:i a', $time); ?></em></cite>
 							</li>
 						</ul>
 					</li>
@@ -143,7 +145,7 @@
 
 		$i = 0;
 		foreach($letters as $letter) {
-			$lines = explode("\n", $letter);
+			$lines = explode("\n\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
 			
@@ -151,11 +153,11 @@
 ?>
 			<li class="set nine_columns rule_at_left">
 				<ul>
-					<li class="set three_columns contained hyphenate">
+					<li class="set three_columns contained">
 <?php
 			} else {
 ?>
-					<li class="set three_columns hyphenate">
+					<li class="set three_columns">
 <?php
 			}
 ?>
@@ -163,12 +165,12 @@
 							<li class="module leader letter_header read">
 								<h2>Dear Sir:</h2>
 							</li>
-							<li class="module leader">
-								<p class="read">In his <?php echo $date; ?> article, "<?php echo $title; ?>," Nicholas Hall writes, "<?php echo $lede; ?>"</p>
+							<li class="module leader letter">
+								<p class="read"><?php echo $prompt_paragraph; ?></p>
 <?php
 			foreach($lines as $line) { echo "\t\t\t\t\t\t\t\t<p>$line</p>\n"; }
 ?>
-								<p>--<cite><?php echo $name; if(date('zY') != date('zY', $time)) { echo " on " . date('F jS, Y', $time); } else { echo " at " . date('g:i a', $time); } ?></cite></p>
+								<cite><?php echo $name; if(date('zY') != date('zY', $time)) { echo " on <em>" . date('F jS, Y', $time); } else { echo " at <em>" . date('g:i a', $time); } ?></em></cite>
 							</li>
 						</ul>
 					</li>
@@ -181,10 +183,6 @@
 			}
 			$i++;
 		}
-?>
-				</ul>
-			</li>
-<?php
 	}
 /* // Filler articles.
 ?>

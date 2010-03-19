@@ -6,3 +6,4 @@
 .flag h3 .letter_k { }
 .flag img { z-index:-1; margin:0; }
 .flag cite { font-size:1.2em; display:block; margin:.7em 0 1.4em; }
+.flag form, input { display:inline; border-width:0; }

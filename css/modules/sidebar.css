@@ -1,0 +1,12 @@
+.sidebar { margin:1.2em 0 1.3em; }
+.sidebar h3 { font-size:1.5em; line-height:1.7em; text-align:right; }
+.sidebar table { font-family:'Helvetica','Arial',sans-serif; font-size:1.3em; background-color:#eee; color:#555; border:solid #aaa 1px; }
+.sidebar td { border:solid #aaa; border-width:1px 0 0 1px; }
+.six_columns .sidebar td { width:190px; }
+.nine_columns .sidebar td { width:290px; }
+.sidebar th { min-width:2em; }
+.sidebar th,
+.sidebar td { padding:.5em; }
+.sidebar dt { float:left; }
+.sidebar dd { float:right; }
+.sidebar dt:after { content:': '; }

@@ -14,40 +14,20 @@
 		<link rel="stylesheet" type="text/css" href="css/modules" />
 		<link rel="stylesheet" type="text/css" href="css/components" />
 		<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck" title="RSS" />	
-		<title>Inck ~ <?php if($characters_read) { echo "Continued from "; } echo $title; ?></title>
+		<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
 		<!--[if IE]>
-		<script type="text/javascript">
-			function setCookie(c_name,value,expiredays) { var exdate=new Date(); exdate.setDate(exdate.getDate()+expiredays); document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString()); }
-			function getCookie(c_name) { if (document.cookie.length>0) { c_start=document.cookie.indexOf(c_name + "="); if (c_start!=-1) { c_start=c_start + c_name.length+1; c_end=document.cookie.indexOf(";",c_start); if (c_end==-1) c_end=document.cookie.length; return unescape(document.cookie.substring(c_start,c_end)); } } return ""; }
-		
-			scolded = getCookie('scolded');
-			if (scolded == null || scolded == "") {
-				alert("Hey there old timer! You're using Internet Explorer, which doesn't display this website right. Try Safari, Chrome or Firefox. I don't figure you'll switch to a Macs on my account, but you know, you really ought to.");
-				setCookie('scolded', true, 365);
-			}
-		</script>
+		<script type="text/javascript" src="js/scold.js"></script>
 		<![endif]-->
 <?php
-	if(isset($_GET['hyphenate']) or isset($_GET['number'])) {
+	if(isset($_GET['hyphenate'])) {
 ?>
 		<script type="text/javascript" src="lib/hyphenator/Hyphenator.js"></script>
+		<script type="text/javascript"> Hyphenator.run(); </script>
 <?php
 	}
 ?>
-		<!--<script type="text/javascript" src="lib/prototype.js"></script>-->
-		<script type="text/javascript">
-			function endRun() {
-				// Hyphenate articles.
-				Hyphenator.run();
-				
-				// Flow articles into columns.
-				// var article1column1 = document.getElementById("top_right_one");
-				// var article1column2 = document.getElementById("top_right_two");
-				// var article1column3 = document.getElementById("top_right_three");
-				
-				// document.getElementById("main_article").height;
-			}
-		</script>
+		<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="js/flow.js"></script>
 	</head>
 	<body>
 		<div><a name="top"></a></div>
