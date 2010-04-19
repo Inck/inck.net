@@ -30,7 +30,7 @@
 	
 	include('inc/head.php');
 ?>
-			<li class="set three_columns rule_at_right contained">
+			<li class="well three_columns rule_at_right contained">
 				<ul>
 					<li id="main_article" class="module leader continued hyphenate">
 						<h1><a href="./"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
@@ -67,12 +67,12 @@
 					</li>
 				</ul>
 			</li>
-			<li class="set nine_columns rule_at_left">
+			<li class="well nine_columns rule_at_left">
 				<form action="" method="post">
 				<ul>
-					<li class="set three_columns contained">
+					<li class="well three_columns contained">
 						<ul>
-							<li class="module leader letter postcard read">
+							<li class="block leader letter postcard read">
 								<h2>Dear Sir:</h2>
 								<p><?php echo $prompt_paragraph; ?></p>
 								<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="read"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='read' }" tabindex="1" rows="10" cols="100"><?php if($_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
@@ -80,9 +80,9 @@
 							</li>
 						</ul>
 					</li>
-					<li class="set three_columns">
+					<li class="well three_columns">
 						<ul>
-							<li class="module postcard_post">
+							<li class="block postcard_post">
 <?php
 	if($user_message) {
 ?>
@@ -94,13 +94,13 @@
 									<input type="submit" value="<?php echo "Apply\nPostage"; ?>" onmousedown="this.className='hover';this.value='I';" tabindex="3" />
 								</label>
 							</li>
-							<li class="module postcard_address">
+							<li class="block postcard_address">
 								<address>You may type in the space to the left.</address>
 								<address>Please use proper capitalization.</address>
 								<address>Are you a computer? <label><input type="radio" name="is_computer" value="no"<?php if($_POST['is_computer'] == "no") { ?> checked="checked"<?php } ?> /> No.</label> <label><input type="radio" name="is_computer" value="beep"<?php if($_POST['is_computer'] != "no") { ?> checked="checked"<?php } ?>  /> Beep.</label></address>
 								<input type="hidden" id="letter_submitted" name="letter_submitted" value="true" />
 							</li>
-							<li class="module postcard_corner">
+							<li class="block postcard_corner">
 								<div></div>
 							</li>
 						</ul>
@@ -108,12 +108,12 @@
 <?php
 	if($letter_published) {
 ?>
-					<li class="set three_columns">
+					<li class="well three_columns">
 						<ul>
-							<li class="module leader letter_header read">
+							<li class="block leader letter_header read">
 								<h2>Your Letter:</h2>
 							</li>
-							<li class="module leader letter">
+							<li class="block leader letter">
 								<p><?php echo $prompt_paragraph; ?></p>
 <?php
 			$letters_together = file_get_contents("letters/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -151,21 +151,21 @@
 			
 			if(!$i or is_int($i/3)) {
 ?>
-			<li class="set nine_columns rule_at_left">
+			<li class="well nine_columns rule_at_left">
 				<ul>
-					<li class="set three_columns contained">
+					<li class="well three_columns contained">
 <?php
 			} else {
 ?>
-					<li class="set three_columns">
+					<li class="well three_columns">
 <?php
 			}
 ?>
 						<ul>
-							<li class="module leader letter_header read">
+							<li class="block leader letter_header read">
 								<h2>Dear Sir:</h2>
 							</li>
-							<li class="module leader letter">
+							<li class="block leader letter">
 								<p class="read"><?php echo $prompt_paragraph; ?></p>
 <?php
 			foreach($lines as $line) { echo "\t\t\t\t\t\t\t\t<p>$line</p>\n"; }
@@ -186,14 +186,14 @@
 	}
 /* // Filler articles.
 ?>
-			<li class="set nine_columns rule_at_left continued">
+			<li class="well nine_columns rule_at_left continued">
 				<ul>
 <?php
 	$old_articles = array('a2', 'p5'); // , 'j12'
 	$i = 1;
 	foreach($old_articles as $old_article) {
 ?>
-					<li class="module leader read hyphenate flow<?php if($i == 1 and !$showing_letter_section) echo ' first'; ?>">
+					<li class="block leader read hyphenate flow<?php if($i == 1 and !$showing_letter_section) echo ' first'; ?>">
 <?php
 		$filler_paragraphs = file("pages/$old_article.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 		$filler_title = array_shift($filler_paragraphs);

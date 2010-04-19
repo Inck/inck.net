@@ -1,4 +1,4 @@
-.dog_ear { position:relative; }
+.dog_ear { position:absolute; top:0; right:0; }
 .dog_ear h3 { font-size:1.5em; text-align:right; width:4.35em; padding:10px 5px; z-index:1; }
 .dog_ear h3,
 .dog_ear .page_fold,
