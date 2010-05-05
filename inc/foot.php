@@ -1,4 +1,4 @@
-			<li class="set twelve_columns contained">
+			<li class="well twelve_columns contained">
 				<ul>
 					<li class="footer">
 						<small class="copyright">&copy;2010 by Nicholas Hall. All rights are reserved.</small>
