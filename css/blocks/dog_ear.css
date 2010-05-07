@@ -1,4 +1,4 @@
-.dog_ear { position:relative; top:-4.4em; right:0; }
+.dog_ear { position:relative; right:0; }
 .dog_ear h3 { font-size:1.5em; text-align:right; width:4.35em; padding:10px 5px; z-index:1; }
 .dog_ear h3,
 .dog_ear .page_fold,
@@ -10,13 +10,9 @@
 }
 
 .dog_ear .page_fold {
-	right:-25px; top:60px;
-	width:169px; height:0;
+	right:-20px; top:57px;
+	width:160px; height:0;
 	border:solid #eee; border-width:5px 0 0;
-	-webkit-box-shadow:0 -5px 50px rgba(0,0,0,0.5); -moz-box-shadow:0 -5px 20px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0 -6px 16px rgba(0,0,0,0.5); -moz-box-shadow:0 -5px 20px rgba(0,0,0,0.5);
 	-webkit-transform:rotate(45deg); -moz-transform:rotate(45deg);
-}
-
-@-moz-document url-prefix() {
-	.dog_ear .page_fold { right:-26px; top:56px; border-width:4px 0 0; }
 }

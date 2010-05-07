@@ -32,7 +32,7 @@
 ?>
 			<li class="well three_columns rule_at_right contained">
 				<ul>
-					<li id="main_article" class="module leader continued hyphenate">
+					<li id="main_article" class="block leader continued hyphenate">
 						<h1><a href="./"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
 						<cite>by Nicholas Hall on <em>February 12th, 2010</em></cite>
 <?php

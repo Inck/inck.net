@@ -52,7 +52,7 @@
 			</li>
 			<li class="well twelve_columns contained">
 				<ul>
-					<li class="block header_divider"></li>
+					<li class="block rule"></li>
 				</ul>
 			</li>
 			<li class="well nine_columns contained">
@@ -68,7 +68,7 @@
 					</li>
 					<li class="well three_columns contained">
 						<ul>
-							<li id="article1_column1_extra20" class="module leader first hyphenate">
+							<li id="article1_column1_extra20" class="block leader first hyphenate">
 <?php
 	$indent = 8;
 	$jump = $a1[2];
@@ -85,12 +85,12 @@
 							</li>
 							<li class="well three_columns contained">
 								<ul>
-									<li id="article1_column2" class="module leader hyphenate"></li>
+									<li id="article1_column2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="well three_columns">
 								<ul>
-									<li id="article1_column3" class="module leader hyphenate"></li>
+									<li id="article1_column3" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 						</ul>
@@ -136,7 +136,7 @@
 							</li>
 							<li class="well three_columns contained">
 								<ul>
-									<li id="article3_column1" class="module leader hyphenate">
+									<li id="article3_column1" class="block leader hyphenate">
 <?php
 	$indent = 10;
 	$jump = $a1[4];
@@ -148,12 +148,12 @@
 							</li>
 							<li class="well three_columns">
 								<ul>
-									<li id="article3_column2" class="module leader hyphenate"></li>
+									<li id="article3_column2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="well three_columns">
 								<ul>
-									<li id="article4_column1" class="module leader hyphenate">
+									<li id="article4_column1" class="block leader hyphenate">
 <?php
 	$indent = 10;
 	$jump = $a1[5];
@@ -169,7 +169,7 @@
 			</li>
 			<li class="well three_columns">
 				<ul>
-					<li id="article2_column1" class="module leader hyphenate">
+					<li id="article2_column1" class="block leader hyphenate">
 <?php
 	$indent = 6;
 	$jump = $a1[3];
