@@ -1,4 +1,4 @@
-.sidebar { margin:2em 0 1em; }
+.sidebar { margin:2em 0 .5em; }
 .sidebar h3 { font-size:1.5em; line-height:1.7em; text-align:right; }
 .sidebar table { font-family:'Helvetica','Arial',sans-serif; font-size:1.3em; background-color:#eee; color:#555; border:solid #aaa 1px; }
 .sidebar td { border:solid #aaa; border-width:1px 0 0 1px; }

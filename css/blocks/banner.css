@@ -1,2 +1,2 @@
 .banner { margin-bottom:0; }
-.banner h1 { font-size:5.2em; line-height:1em; letter-spacing:-1px; margin-top:0.4em; }
+.banner h1 { font-size:5.2em; line-height:1em; letter-spacing:-1px;/* text-align:center;*/ margin-top:0.4em; }

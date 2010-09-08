@@ -1,5 +1,5 @@
 <?php
-	error_reporting(0);
+	error_reporting(E_ALL);
 	if($_POST['filed']) {
 		if($_POST['password'] == '*ts01mdh') {
 			if($_POST['replaced']) {
@@ -19,9 +19,9 @@
 			}
 			$new_a1 = $_POST['banner'] . "\n" . $_POST['cut'] . "\n" . $_POST['first_article'] . "\n" . $_POST['second_article'] . "\n" . $_POST['third_article'] . "\n" . $_POST['fourth_article'];
 			file_put_contents($new_a1);
-	        move_uploaded_file($_FILES["pictures"]["name"][$key], "pages/$page.txt");
+	        echo move_uploaded_file($_FILES["pictures"]["name"][$key], "pages/$page.txt");
 		} else {
-			echo "Fuck off.";
+			echo "You did not provide the correct password. Please try again, or fuck off.";
 		}
 	} else {
 		$a1 = file('pages/a1');
@@ -35,7 +35,7 @@
 		if($_POST['password'] == '*ts01mdh') {
 			
 		} else {
-			echo "Fuck off.";
+			echo "You did not provide the correct password. Please try again, or fuck off.";
 		}
 	} else {
 		$a1 = file('pages/a1', FILE_IGNORE_NEW_LINES);
