@@ -27,7 +27,7 @@
 					<li class="well six_columns">
 						<ul>
 							<li class="block flag">
-								<h3><a href=""><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></a></h3>
+								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
 								<cite>Volume Two, Issue One -- Late-to-Mid Morning Edition -- Updated: <em>Early Evening</em></cite>
 								<!-- <cite>Volume One, Issue <form><input type="text" id="issue" name="issue" value="Three" size="4" /></form> &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <em>Early Morning</em></cite> -->
 							</li>
