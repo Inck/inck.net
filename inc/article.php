@@ -1,9 +1,14 @@
+<?php for($i=$indent;$i;$i--) echo "\t"; ?><article>
 <?php
 	$paragraphs = file("pages/$article.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 	$title = array_shift($paragraphs);
 	$date = array_shift($paragraphs);
 	$lede = explode(' -- ', $paragraphs[0]);
-	$dateline = $lede[0]; $paragraphs[0] = $lede[1];
+	$indent++; // Accommodate indent of article tag.
+	if($lede[1]) { // If there was a dateline.
+		$dateline = $lede[0];
+		$paragraphs[0] = $lede[1];
+	}
 ?>
 <?php for($i=$indent;$i;$i--) echo "\t"; ?><h2><a href="page.php?number=<?php echo $article; ?>"><?php echo $title; ?></a></h2>
 <?php for($i=$indent;$i;$i--) echo "\t"; ?><cite>by Nicholas Hall on <em><?php echo $date; ?></em></cite>
@@ -21,7 +26,7 @@
 	
 	foreach($paragraphs as $paragraph) {
 ?>
-<?php for($i=$indent;$i;$i--) echo "\t"; ?><p><?php if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph; ?><?php if($jump and $current == $last) { echo "&hellip; <a href=\"page.php?number=$article&amp;from=$jump#$article\" class=\"jumpline\">Continued, with Letters to the Editor, on Page $article &raquo;</a>"; } else { $current++; } ?></p>
+<?php for($i=$indent;$i;$i--) echo "\t"; ?><p><?php if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph; ?><?php if($jump and $current == $last) { echo "… <a href=\"page.php?number=$article&amp;from=$jump#$article\" class=\"jumpline\">Continued, with Letters to the Editor, on Page $article »</a>"; } else { $current++; } ?></p>
 <?php
 	}
 	
@@ -38,3 +43,4 @@
 		}
 	}
 ?>
+<?php $indent--;for($i=$indent;$i;$i--) echo "\t"; ?></article>

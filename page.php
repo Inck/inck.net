@@ -4,7 +4,10 @@
 		$title = array_shift($paragraphs);
 		$date = array_shift($paragraphs);
 		$lede = explode(' -- ', $paragraphs[0]);
-		$dateline = $lede[0]; $paragraphs[0] = $lede[1];
+		if($lede[1]) { // If there was a dateline.
+			$dateline = $lede[0];
+			$paragraphs[0] = $lede[1];
+		}
 		$words_read = $_GET['from'];
 
 		// Comment Submission

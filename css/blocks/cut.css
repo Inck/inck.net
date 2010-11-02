@@ -1,11 +1,12 @@
-.cut { margin-top:1.7em; margin-bottom:.4em; }
+.cut { margin-top:2.1em; margin-bottom:1.2em; overflow:hidden; }
 .twelve_columns .cut img { width:1180px; }
 .eleven_columns .cut img { width:1080px; }
 .ten_columns .cut img { width:980px; }
 .nine_columns .cut img { width:880px; }
 .eight_columns .cut img { width:780px; }
 .seven_columns .cut img { width:680px; }
-.six_columns .cut img { width:580px; height:387px; }
+.six_columns .cut img { width:580px; } 
+.six_columns .cut { height:387px; }
 .five_columns .cut img { width:480px; }
 .four_columns .cut img { width:380px; }
 .three_columns .cut img { width:280px; }

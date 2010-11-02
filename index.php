@@ -19,8 +19,7 @@
 							</li>
 							<li class="block ear">
 								<div>
-									<strong>25&cent;</strong>
-									<p>(Mail to 669 Manhattan Avenue, Apartmnet 2, Brooklyn)</p>
+									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8HQL3CPDL6R34">75¢</a></strong>
 								</div>
 							</li>
 						</ul>
@@ -28,8 +27,8 @@
 					<li class="well six_columns">
 						<ul>
 							<li class="block flag">
-								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
-								<cite>Volume One, Issue Three -- Mid-to-Late Afternoon Edition -- Updated: <em>Early Morning</em></cite>
+								<h3><a href=""><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></a></h3>
+								<cite>Volume Two, Issue One -- Late-to-Mid Morning Edition -- Updated: <em>Early Evening</em></cite>
 								<!-- <cite>Volume One, Issue <form><input type="text" id="issue" name="issue" value="Three" size="4" /></form> &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <em>Early Morning</em></cite> -->
 							</li>
 						</ul>
@@ -43,7 +42,7 @@
 							<li class="block ear">
 								<div>
 									<h2>The Weather</h2>
-									<p>Warm, Bright and Overcast. Slow Winds Out of the Southeast.</p>
+									<p>Cold, Bright and Clear. Strong Winds Out of the North.</p>
 								</div>
 							</li>
 						</ul>
@@ -64,7 +63,7 @@
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
 					<li class="block banner">
-						<h1><a href="page.php?number=<?php echo $article; ?>" name="<?php echo $article; ?>"><?php echo $banner; ?></a></h1>
+						<h1><a href="page.php?number=<?php echo $article; ?>" id="<?php echo $article; ?>"><?php echo $banner; ?></a></h1>
 					</li>
 					<li class="well three_columns contained">
 						<ul>
@@ -98,39 +97,28 @@
 					<li class="well nine_columns contained">
 						<ul>
 							<li class="block sidebar">
-								<h3>The Conjugation of the Preterite Form</h3>
+								<h3>Common English Metrical Feet</h3>
 								<table>
 									<tr>
 										<th></th>
-										<th>Yo</th>
-										<th>Tú</th>
-										<th>El, Ella o Usted</th>
-										<th>Nosotros</th>
-										<th>Ellos o Ustedes</th>
+										<th>Iamb</th>
+										<th>Trochee</th>
+										<th>Spondee</th>
+										<th>Dactyl</th>
 									</tr>
 									<tr>
-										<th>-ar</th>
-										<td>-é</td>
-										<td>-aste</td>
-										<td>-ó</td>
-										<td>-amos</td>
-										<td>-aron</td>
+										<th>Scansion</th>
+										<td>˘ /</td>
+										<td>/ ˘</td>
+										<td>/ ˘ ˘</td>
+										<td>˘ ˘ /</td>
 									</tr>
 									<tr>
-										<th>-er</th>
-										<td>-í</td>
-										<td>-iste</td>
-										<td>-ió</td>
-										<td>-imos</td>
-										<td>-ieron</td>
-									</tr>
-									<tr>
-										<th>-ir</th>
-										<td>-í</td>
-										<td>-iste</td>
-										<td>-ió</td>
-										<td>-imos</td>
-										<td>-ieron</td>
+										<th>Example</th>
+										<td>destroy</td>
+										<td>always</td>
+										<td>everything</td>
+										<td>entertains</td>
 									</tr>
 								</table>
 							</li>
