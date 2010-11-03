@@ -61,10 +61,14 @@
 	$cut = $a1[1];
 	$banner = $a1[0];
 	$article = substr($articles->channel->item[0]->guid, 32);
+	if($banner):
 ?>
 					<li class="block banner">
 						<h1><a href="page.php?number=<?php echo $article; ?>" id="<?php echo $article; ?>"><?php echo $banner; ?></a></h1>
 					</li>
+<?php
+	endif;
+?>
 					<li class="well three_columns contained">
 						<ul>
 							<li id="article1_column1_extra20" class="block leader first hyphenate">
