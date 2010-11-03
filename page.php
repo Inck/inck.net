@@ -37,7 +37,7 @@
 				<ul>
 					<li id="main_article" class="block leader continued hyphenate">
 						<h1><a href="./"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
-						<cite>by Nicholas Hall on <em>February 12th, 2010</em></cite>
+						<cite>by Nicholas Hall on <em><?php echo $date; ?></em></cite>
 <?php
 	foreach($paragraphs as $paragraph) {
 		if($words_read > 0) {
