@@ -1,4 +1,4 @@
-.cut { margin-top:2.1em; margin-bottom:1.2em; overflow:hidden; }
+.cut { margin-top:2.1em; padding-top:0.7em; overflow:hidden; }
 .twelve_columns .cut img { width:1180px; }
 .eleven_columns .cut img { width:1080px; }
 .ten_columns .cut img { width:980px; }
