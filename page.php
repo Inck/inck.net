@@ -178,7 +178,7 @@
 						</ul>
 					</li>
 <?php
-			if(is_int(($i+1)/3)) {
+			if(!$i or is_int(($i+1)/3)) {
 ?>
 				</ul>
 			</li>
