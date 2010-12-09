@@ -36,7 +36,7 @@
 					<li class="well three_columns">
 						<ul>
 							<li class="block dog_ear">
-								<h3><a href="page.php?number=c7">Letters to the Editor</a></h3>
+								<h3><a href="page.php?number=b5">Letters to the Editor</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
