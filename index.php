@@ -9,6 +9,7 @@
 	    $feed = ob_get_contents();
     ob_end_clean();
 	$articles = new SimpleXMLElement($feed);
+	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
 			<li class="well twelve_columns contained">
 				<ul>
@@ -28,7 +29,7 @@
 						<ul>
 							<li class="block flag">
 								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
-								<cite>Volume Two, Issue One -- Late-to-Mid Morning Edition -- Updated: <em>Early Evening</em></cite>
+								<cite>Volume Two, Issue One -- <?php echo $title; ?> -- Updated: <em>Early Evening</em></cite>
 								<!-- <cite>Volume One, Issue <form><input type="text" id="issue" name="issue" value="Three" size="4" /></form> &mdash; Mid-to-Late Afternoon Edition &mdash; Updated: <em>Early Morning</em></cite> -->
 							</li>
 						</ul>
@@ -36,7 +37,7 @@
 					<li class="well three_columns">
 						<ul>
 							<li class="block dog_ear">
-								<h3><a href="page.php?number=b5">Letters to the Editor</a></h3>
+								<h3><a href="page.php?number=<?php echo $article; ?>">Letters to the Editor</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
@@ -60,7 +61,6 @@
 	$a1 = explode("\n", file_get_contents("pages/a1"));
 	$cut = $a1[1];
 	$banner = $a1[0];
-	$article = substr($articles->channel->item[0]->guid, 32);
 	if($banner):
 ?>
 					<li class="block banner">

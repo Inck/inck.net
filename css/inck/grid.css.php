@@ -9,13 +9,19 @@ $columns = 12;
 
 // Grid magic.
 $column = $site / $columns;
-$words = array("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve");
+$words = array("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve");
 
 // Grid css.
-$wordsCopy = $words;
-echo "." . array_shift($wordsCopy) . "_column";
-foreach($wordsCopy as $number => $word) {
-	echo ",\n." . $word . "_columns";
+foreach($words as $number => $word) {
+	$is_plural = $number - 1;
+	if($is_plural) {
+		echo "." . $word . "_columns";
+	} else {
+		echo "." . $word . "_column";
+	}
+	
+	$is_not_last = $words[$number + 1];
+	if($is_not_last) echo ",\n";
 }
 
 ?> {
@@ -26,14 +32,14 @@ foreach($wordsCopy as $number => $word) {
 <?php
 
 foreach($words as $number => $word) {
-	$is_plural = $number;
+	$is_plural = $number - 1;
 	if($is_plural) {
 		echo "." . $word . "_columns";		
 	} else {
 		echo "." . $word . "_column";
 	}
 ?>
- { width:<?php echo (($number + 1) * $column) - $margin . $unit; ?>; }
+ { width:<?php echo $number * $column - $margin . $unit; ?>; }
 <?php
 }
 ?>
