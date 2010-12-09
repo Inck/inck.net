@@ -1,5 +1,5 @@
 <?php
-	$title = "Mid-to-Late Afternoon Edition";
+	$title = "Late-to-Mid Morning Edition";
 	include('inc/head.php');
 	
 	// Get article list from feed script.
