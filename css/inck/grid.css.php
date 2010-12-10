@@ -2,10 +2,11 @@
 // header("Content-Type: text/css");
 
 // Grid options.
+$columns = 12;
+
 $unit = "px";
 $site = 1200;
 $margin = 20;
-$columns = 12;
 
 // Grid magic.
 $column = $site / $columns;
