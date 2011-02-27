@@ -11,7 +11,7 @@
 		$words_read = $_GET['from'];
 
 		// Comment Submission
-		$prompt_paragraph = "Having just read Mr. Hall's article, '$title', I must offer this most apropos observation.";
+		$prompt_paragraph = "Having just read '$title', I must offer this most apropos observation.";
 		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 		$default_name = "Mr. Your Name";
 		
@@ -187,36 +187,5 @@
 			$i++;
 		}
 	}
-/* // Filler articles.
-?>
-			<li class="well nine_columns rule_at_left continued">
-				<ul>
-<?php
-	$old_articles = array('a2', 'p5'); // , 'j12'
-	$i = 1;
-	foreach($old_articles as $old_article) {
-?>
-					<li class="block leader read hyphenate flow<?php if($i == 1 and !$showing_letter_section) echo ' first'; ?>">
-<?php
-		$filler_paragraphs = file("pages/$old_article.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-		$filler_title = array_shift($filler_paragraphs);
-		$filler_date = array_shift($filler_paragraphs);
-?>
-						<h2>'<?php echo $filler_title; ?>'</h2>
-						<cite>by Nicholas Hall on <?php echo $filler_date; ?></cite>
-<?php
-		foreach($filler_paragraphs as $filler_paragraph) {
-			echo "\t\t\t\t\t\t<p>" . $filler_paragraph . "</p>\n";
-		}
-?>
-					</li>
-<?php
-		$i++;
-	}
-?>
-				</ul>
-			</li>
-<?php
-*/
 	include('inc/foot.php');
 ?>

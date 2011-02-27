@@ -1,5 +1,5 @@
 <?php
-	if(!$internal) { header("Content-Type: application/rss+xml"); }
+	header("Content-Type: application/rss+xml");
 	$directory = opendir('pages');
 	error_reporting(0);
 ?>
@@ -12,7 +12,7 @@
 		<copyright>Copyright 2010 Nicholas Hall</copyright>
 <?php
 	while($filename = readdir($directory)) {
-		if($filename[0] != ".") {
+		if($filename[0] != "." and $filename != "a1") {
 			$lines = file('pages/' . $filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 			
 			// Array of articles with date as key, to sort before printing.
@@ -30,8 +30,8 @@
 ?>
 		<item>
 			<title><?php echo $article[0]; ?></title>
-			<link>http://inck.net/<?php if($i) echo "page.php?number=" . $page; // Link top story to a1. ?>#<?php echo $page; ?></link>
-			<guid isPermaLink="true">http://inck.net/page.php?number=<?php echo $page ?></guid>
+			<link>http://inck.net/page.php?number=<?php echo $page; ?></link>
+			<guid isPermaLink="true">http://inck.net/page.php?number=<?php echo $page; ?></guid>
 			<description><?php echo $article[2]; ?></description>
 			<pubDate><?php echo date(DATE_RSS, strtotime($article[1]." 3:25pm")); ?></pubDate>
 		</item>

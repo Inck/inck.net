@@ -2,12 +2,8 @@
 	$title = "Late-to-Mid Morning Edition";
 	include('inc/head.php');
 	
-	// Get article list from feed script.
-	ob_start();
-		$internal = true;
-	    include('feed.php');
-	    $feed = ob_get_contents();
-    ob_end_clean();
+	// Get article list from feed.
+	$feed = `php feed.php`;
 	$articles = new SimpleXMLElement($feed);
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>

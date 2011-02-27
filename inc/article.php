@@ -1,15 +1,15 @@
-<?php for($i=$indent;$i;$i--) echo "\t"; ?><article>
 <?php
 	$paragraphs = file("pages/$article.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 	$title = array_shift($paragraphs);
 	$date = array_shift($paragraphs);
 	$lede = explode(' -- ', $paragraphs[0]);
-	$indent++; // Accommodate indent of article tag.
 	if($lede[1]) { // If there was a dateline.
 		$dateline = $lede[0];
 		$paragraphs[0] = $lede[1];
 	}
 ?>
+<?php for($i=$indent;$i;$i--) echo "\t"; ?><article>
+<?php $indent++; // Accommodate indent of article tag. ?>
 <?php for($i=$indent;$i;$i--) echo "\t"; ?><h2><a href="page.php?number=<?php echo $article; ?>"><?php echo $title; ?></a></h2>
 <?php for($i=$indent;$i;$i--) echo "\t"; ?><cite>by Nicholas Hall on <em><?php echo $date; ?></em></cite>
 <?php
@@ -34,13 +34,14 @@
 		$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$article.txt"))) - 1;
 		if($number_of_letters) {
 ?>
-<?php for($i=$indent;$i;$i--) echo "\t"; ?><p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="page.php?number=<?php echo $article; ?>#top">Read them.</a></p>
+<?php for($i=$indent;$i;$i--) echo "\t"; ?><p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this.) <a href="page.php?number=<?php echo $article; ?>#top">Read them.</a></p>
 <?php
 		} else {
 ?>
-<?php for($i=$indent;$i;$i--) echo "\t"; ?><p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="page.php?number=<?php echo $article; ?>#top">Write one</a>.</p>
+<?php for($i=$indent;$i;$i--) echo "\t"; ?><p class="letters">(There are currently no Letters to the Editor in response to this.) <a href="page.php?number=<?php echo $article; ?>#top">Write one</a>.</p>
 <?php
 		}
 	}
 ?>
-<?php $indent--;for($i=$indent;$i;$i--) echo "\t"; ?></article>
+<?php $indent--; // Accommodate indent of article tag. ?>
+<?php for($i=$indent;$i;$i--) echo "\t"; ?></article>
