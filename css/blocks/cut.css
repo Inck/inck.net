@@ -5,7 +5,7 @@
 .nine_columns .cut img { width:880px; }
 .eight_columns .cut img { width:780px; }
 .seven_columns .cut img { width:680px; }
-.six_columns .cut img { width:580px; } 
+.six_columns .cut img { width:580px; height:387px; } 
 .six_columns .cut { height:387px; }
 .five_columns .cut img { width:480px; }
 .four_columns .cut img { width:380px; }

@@ -1,17 +1,19 @@
 <?php
 	if($number = $_GET['number']) {
-		$paragraphs = file("pages/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-		$title = array_shift($paragraphs);
-		$date = array_shift($paragraphs);
-		$lede = explode(' -- ', $paragraphs[0]);
+		$lines = file("pages/$number.txt", FILE_TEXT);
+		$title = trim(array_shift($lines));
+		$date = trim(array_shift($lines));
+		$lede = explode(' -- ', $lines[0]);
 		if($lede[1]) { // If there was a dateline.
-			$dateline = $lede[0];
-			$paragraphs[0] = $lede[1];
+			$dateline = trim($lede[0]);
+			$lines[0] = $lede[1];
 		}
+		$text = implode('', $lines);
+		$paragraphs = explode("\n\n", $text);
 		$words_read = $_GET['from'];
 
 		// Comment Submission
-		$prompt_paragraph = "Having just read '$title', I must offer this most apropos observation.";
+		$prompt_paragraph = "Having read '$title', I have the following comment.";
 		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 		$default_name = "Mr. Your Name";
 		
@@ -39,32 +41,35 @@
 						<h1><a href="./"><?php if($words_read) echo "Continued from "; echo "'" . $title . "'"; ?></a></h1>
 						<cite>by Nicholas Hall on <em><?php echo $date; ?></em></cite>
 <?php
+	$indent =
+"						";
 	foreach($paragraphs as $paragraph) {
+		$paragraph = trim($paragraph);
 		if($words_read > 0) {
 			$words_read -= $words_printing;
 			$words = explode(' ', $paragraph);
 			$words_printing = count($words);
 			if($words_printing <= $words_read) {
-				echo "\t\t\t\t\t\t<p class='read'>"; if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
+				echo $indent . "<p class='read'>"; if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
 			} elseif($words_read > 0) {
-				echo "\t\t\t\t\t\t<p><a name='$number'></a><span class='read'>" . implode(' ', array_slice($words, 0, $words_read)) . "</span> " . implode(' ', array_slice($words, $words_read)) . "</p>\n";
+				echo $indent . "<p><a name='$number'></a><span class='read'>" . implode(' ', array_slice($words, 0, $words_read)) . "</span> " . implode(' ', array_slice($words, $words_read)) . "</p>\n";
 			} else {
-				echo "\t\t\t\t\t\t<p>" . $paragraph . "</p>\n";
+				echo $indent . "<p>" . $paragraph . "</p>\n";
 			}
 		} else {
-			echo "\t\t\t\t\t\t<p>" . $paragraph . "</p>\n";
+			// If there are linebreaks.
+			if(preg_match("|\n|", $paragraph)) {
+				$lines = explode("\n", $paragraph);
+				echo $indent . "<p>" . array_shift($lines);
+				foreach($lines as $line) {
+					echo "<br />\n";
+					echo $indent . $line;
+				}
+ 				echo "</p>\n";
+			} else {
+				echo $indent . "<p>" . $paragraph . "</p>\n";
+			}
 		}
-	}
-	
-	$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$number.txt"))) - 1;
-	if($number_of_letters) {
-?>
-						<p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Write one</a>.</p>
-<?php
-	} else {
-?>
-						<p class="letters">(There are currently no Letters to the Editor in response to this article.) <a href="?number=<?php echo $number; ?>#top">Write one</a>.</p>
-<?php
 	}
 ?>
 					</li>
@@ -119,13 +124,13 @@
 							<li class="block leader letter">
 								<p><?php echo $prompt_paragraph; ?></p>
 <?php
-			$letters_together = file_get_contents("letters/$number.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+			$letters_together = file_get_contents("letters/$number.txt");
 			$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
 			$letter = array_pop($letters);
 			$lines = explode("\n\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
-			foreach($lines as $line) { echo "\t\t\t\t\t\t\t\t\t\t\t\t<p>$line</p>"; }
+			foreach($lines as $line) { echo "<p>$line</p>"; }
 ?>
 								<cite><?php echo $name . " at <em>" . date('g:i a', $time); ?></em></cite>
 							</li>
@@ -145,25 +150,16 @@
 
 		function letters_date_sort($a, $b) { return $a[1] - $b[1]; }
 		uasort($letters, 'letters_date_sort');
-
-		$i = 0;
+?>
+			<li class="well wrap nine_columns rule_at_left">
+				<ul>
+<?php
 		foreach($letters as $letter) {
-			$lines = explode("\n\n", $letter);
+			$lines = explode("\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
-			
-			if(!$i or is_int($i/3)) {
 ?>
-			<li class="well nine_columns rule_at_left">
-				<ul>
-					<li class="well three_columns contained">
-<?php
-			} else {
-?>
-					<li class="well three_columns">
-<?php
-			}
-?>
+					<li class="block letter_box">
 						<ul>
 							<li class="block leader letter_header read">
 								<h2>Dear Sir:</h2>
@@ -171,21 +167,25 @@
 							<li class="block leader letter">
 								<p class="read"><?php echo $prompt_paragraph; ?></p>
 <?php
-			foreach($lines as $line) { echo "\t\t\t\t\t\t\t\t<p>$line</p>\n"; }
+			foreach($lines as $line) {
+				$line = trim($line);
+				if($line) {
+?>
+								<p><?php echo $line; ?></p>
+<?php
+				}
+			}
 ?>
 								<cite><?php echo $name; if(date('zY') != date('zY', $time)) { echo " on <em>" . date('F jS, Y', $time); } else { echo " at <em>" . date('g:i a', $time); } ?></em></cite>
 							</li>
 						</ul>
 					</li>
 <?php
-			if(!$i or is_int(($i+1)/3)) {
+			}
 ?>
 				</ul>
 			</li>
 <?php
-			}
-			$i++;
-		}
 	}
 	include('inc/foot.php');
 ?>

@@ -45,8 +45,10 @@ foreach($words as $number => $word) {
 }
 ?>
 
-.grid { width:<?php echo $site . $unit; ?>; padding-left:<?php echo $margin . $unit; ?>; margin:0 auto; }
+#issues #page { -webkit-box-shadow:-6px -6px 4px #ccc; border-left:solid #eee 2px; position:relative; left:35px; }
 
+#page { width:<?php echo $site + $margin . $unit; ?>; margin:0 <?php echo $margin . $unit; ?>; }
+#grid { width:<?php echo $site . $unit; ?>; padding-left:<?php echo $margin . $unit; ?>; }
 .contained { margin-left:0; }
 
 /* Grid-level decorations. */
@@ -56,7 +58,7 @@ foreach($words as $number => $word) {
 .nine_columns.rule_at_left { width:880px; }
 
 /* Show a picture of the grid. */
-.show.grid {
+.show#grid {
 	background-image:url('img/grid.png');
 	background-repeat:repeat-y;
 }

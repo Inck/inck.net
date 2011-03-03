@@ -4,29 +4,29 @@
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<meta charset="UTF-8"/>
-		<link rel="icon" href="img/favicon.gif" />
-		<link rel="stylesheet" type="text/css" href="css/lib" />
-		<link rel="stylesheet" type="text/css" href="css/inck" />
-		<link rel="stylesheet" type="text/css" href="css/clips" />
-		<link rel="stylesheet" type="text/css" href="css/blocks" />
-		<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
-		<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
-		<!--[if IE]>
-		<script type="text/javascript" src="js/scold.js"></script>
-		<![endif]-->
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="icon" href="img/favicon.gif" />
+	<link rel="stylesheet" type="text/css" href="css/lib" />
+	<link rel="stylesheet" type="text/css" href="css/inck" />
+	<link rel="stylesheet" type="text/css" href="css/clips" />
+	<link rel="stylesheet" type="text/css" href="css/blocks" />
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
+	<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
+	<!--[if IE]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 <?php
-	if(isset($_GET['hyphenate'])) {
+if(isset($_GET['hyphenate'])) {
 ?>
-		<script type="text/javascript" src="js/lib/hyphenator/Hyphenator.js"></script>
-		<script type="text/javascript"> Hyphenator.run(); </script>
+	<script type="text/javascript" src="js/lib/hyphenator/Hyphenator.js"></script>
+	<script type="text/javascript"> Hyphenator.run(); </script>
 <?php
-	}
+}
 ?>
-		<script type="text/javascript" src="js/lib/jquery-1.3.2.min.js"></script>
-		<script type="text/javascript" src="js/flow.js"></script>
-	</head>
-	<body>
-		<div><a id="top"></a></div>
-		<ul class="grid">
+	<script type="text/javascript" src="js/lib/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/flow.js"></script>
+	<script type="text/javascript" src="js/issues.js"></script>
+</head>
+<body>
+	<div id="page">
+		<a id="top"></a>
+		<ul id="grid">

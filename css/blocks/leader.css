@@ -1,6 +1,6 @@
 .leader h1, 
 .leader h2 { font-size:3.3em; letter-spacing:-1px; line-height:1.3em; margin-top:0.65em; padding-top:0; }
-/*.leader.first h2 { margin-top:.375em; } This broke the alignment with two-line banner. Why was it here? */ 
+.leader.first .letters { margin-top:145px; }
 .leader.read,
 .leader .read,
 .leader .read a { color:#bbb; }

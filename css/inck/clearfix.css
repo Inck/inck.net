@@ -1,5 +1,5 @@
 /* Clearfix all blocks and the grid itself. */
-.grid:after, .block:after {
+#grid:after, .block:after {
 	content: ".";
 	display: block;
 	clear: both;
@@ -8,14 +8,14 @@
 	height: 0;
 }
  
-.grid, .block {
+#grid, .block {
 	display: inline-block;
 }
  
-html[xmlns] .grid, html[xmlns] .block {
+html[xmlns] #grid, html[xmlns] .block {
 	display: block;
 }
  
-* html .grid, * html .block {
+* html #grid, * html .block {
 	height: 1%;
 }
