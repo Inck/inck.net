@@ -1,70 +1,65 @@
-// Shitty manual reflowing as first step to awesome abstract reflowing with id data.
-$(function() {
-	// Flow main article second column.
-	var contents = $("#article1_column1_extra20").html();
-	var extra = 21 * 20; // Pretends to use the offset value in the ID.
-	for(column_break = $("#article1_column1_extra20").html().length; // / 2; // This division is just a guess to speed it up.
-	 	($("#article1_column1_extra20").height() - extra) > $("#article1_column2").height() / 2; // Subtract offset, also put double text in second column, to flow next into third column.
-		column_break-- )
-	{
-		var moving_character = contents.charAt(column_break);
-		if(moving_character == ' ') {
-			var first_section = contents.substr(0, column_break) + "</p>";
-			var second_section = "<p>" + contents.substr(column_break);
-			$("#article1_column1_extra20").html(first_section);
-			$("#article1_column2").html(second_section);
-// console.log("col2", "_", moving_character, $("#article1_column1_extra20").height() - extra, $("#article1_column2").height() / 2);
-		} else if(moving_character == '<') {
-			var first_section = contents.substr(0, column_break);
-			var second_section = contents.substr(column_break);
-			$("#article1_column1_extra20").html(first_section);
-			$("#article1_column2").html(second_section);
-// console.log("col2", ">", moving_character, $("#article1_column1_extra20").height() - extra, $("#article1_column2").height() / 2);
-		}
-	}
-
-	// Flow main article third column.
-	var contents = $("#article1_column2").html();
-	for(column_break = $("#article1_column2").html().length / 2; // This division is just a guess to speed it up.
-	 	($("#article1_column2").height()) > $("#article1_column3").height();
-		column_break-- )
-	{
-		var moving_character = contents.charAt(column_break);
-		if(moving_character == ' ') {
-			var first_section = contents.substr(0, column_break) + "</p>";
-			var second_section = "<p>" + contents.substr(column_break);
-			$("#article1_column2").html(first_section);
-			$("#article1_column3").html(second_section);
-// console.log("col3", "_", moving_character, $("#article1_column2").height(), $("#article1_column3").height());
-		} else if(moving_character == '<') {
-			var first_section = contents.substr(0, column_break);
-			var second_section = contents.substr(column_break);
-			$("#article1_column2").html(first_section);
-			$("#article1_column3").html(second_section);
-// console.log("col2", ">", moving_character, $("#article1_column2").height(), $("#article1_column3").height());
-		}
-	}
+// Awesome abstract reflowing with data attributes.
+$(function(){
+	var columns_count = 0;
+	var articles = new Array;
+	var columns = new Array;
+	var contents = new Array;
 	
-	// Flow lower two column.
-	var contents = $("#article3_column1").html();
-	for(column_break = $("#article3_column1").html().length / 2; // This division is just a guess to speed it up.
-	 	$("#article3_column1").height() > $("#article3_column2").height();
-		column_break-- )
-	{
-		var moving_character = contents.charAt(column_break);
-		if(moving_character == ' ') {
-			var first_section = contents.substr(0, column_break) + "</p>";
-			var second_section = "<p>" + contents.substr(column_break);
-			$("#article3_column1").html(first_section);
-			$("#article3_column2").html(second_section);
-// console.log("col1", "_", moving_character, $("#article1_column1_extra20").height() - extra, $("#article1_column2").height() / 2);
-		} else if(moving_character == '<') {
-			var first_section = contents.substr(0, column_break);
-			var second_section = contents.substr(column_break);
-			$("#article3_column1").html(first_section);
-			$("#article3_column2").html(second_section);
-// console.log("col2", ">", moving_character, $("#article1_column1_extra20").height() - extra, $("#article1_column2").height() / 2);
+	// Compile articles and their columns.
+	$(".leader").each(function(){
+		if(article_number = $(this).attr("data-flow-article")) {
+			if($(this).attr("data-flow-column") == 1) {
+				columns_count = 0;
+				columns = new Array;
+				contents[article_number-1] = $(this).html();
+			}
+			columns[columns_count] = $(this);
+			articles[article_number-1] = columns;
+			columns_count++;
 		}
+	});
+
+	// Flow articles into their columns.
+	$.each(articles, function(article_index, columns){
+		var column_heights = new Array;
+		var flexible_columns = new Array;
+		var fixed_columns_total_height = 0;
 		
-	}
+		// Check for fixed heights on any of the target columns.
+		$.each(columns, function(index, column){
+			if(column.css("max-height") == "none") {
+				flexible_columns.push(index);
+			} else {
+				fixed_columns_total_height += column_heights[index] = column.height();
+				column.css("max-height", "none");
+			}
+		});
+		
+		// Average the remaining height over the reminaing, flexible columns.
+		flexible_columns_height = (columns[0].height() - fixed_columns_total_height) / flexible_columns.length;
+		$.each(flexible_columns, function(flexible_column_index, flexible_column) {
+			column_heights[flexible_column] = flexible_columns_height;
+		});
+
+		// Todo: Predict character distribution from pixel distribution, ensuring value is never under, and use as starting point.
+		// For each column in order, move text into next column until it's short enough.
+		var content = contents[article_index];
+		$.each(columns, function(index, column){
+			for(column_break = $(column).html().length;
+			 	$(column).height() > column_heights[index];
+				column_break--)
+			{
+				var moving_character = content.charAt(column_break);
+				if(moving_character == ' ') {
+					var this_section = content.substring(0, column_break) + "</p>";
+					var next_section = "<p>" + content.substring(column_break);
+					$(column).html(this_section);
+					if($(columns[index+1]).html() != document) {
+						$(columns[index+1]).html(next_section);
+					}
+				}
+			}
+			content = next_section;
+		});
+	});
 });

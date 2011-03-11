@@ -3,10 +3,10 @@
 		$lines = file("pages/$number.txt", FILE_TEXT);
 		$title = trim(array_shift($lines));
 		$date = trim(array_shift($lines));
-		$lede = explode(' -- ', $lines[0]);
+		$lede = explode(' -- ', $lines[1]);
 		if($lede[1]) { // If there was a dateline.
 			$dateline = trim($lede[0]);
-			$lines[0] = $lede[1];
+			$lines[1] = $lede[1];
 		}
 		$text = implode('', $lines);
 		$paragraphs = explode("\n\n", $text);
@@ -67,7 +67,7 @@
 				}
  				echo "</p>\n";
 			} else {
-				echo $indent . "<p>" . $paragraph . "</p>\n";
+				echo $indent . "<p>"; if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
 			}
 		}
 	}

@@ -2,10 +2,10 @@
 	$lines = file("pages/$article.txt", FILE_TEXT);
 	$title = trim(array_shift($lines));
 	$date = trim(array_shift($lines));
-	$lede = explode(' -- ', $lines[0]);
+	$lede = explode(' -- ', $lines[1]);
 	if($lede[1]) { // If there was a dateline.
 		$dateline = trim($lede[0]);
-		$lines[0] = $lede[1];
+		$lines[1] = $lede[1];
 	}
 	$text = implode('', $lines);
 	$paragraphs = explode("\n\n", $text);

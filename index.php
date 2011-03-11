@@ -66,7 +66,7 @@
 ?>
 					<li class="well three_columns contained">
 						<ul>
-							<li id="article1_column1_extra20" class="block leader first hyphenate">
+							<li data-flow-article="1" data-flow-column="1" class="block leader first front hyphenate">
 <?php
 	$indent =
 "								";
@@ -84,12 +84,12 @@
 							</li>
 							<li class="well three_columns contained">
 								<ul>
-									<li id="article1_column2" class="block leader hyphenate"></li>
+									<li data-flow-article="1" data-flow-column="2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="well three_columns">
 								<ul>
-									<li id="article1_column3" class="block leader hyphenate"></li>
+									<li data-flow-article="1" data-flow-column="3" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 						</ul>
@@ -124,7 +124,7 @@
 							</li>
 							<li class="well three_columns contained">
 								<ul>
-									<li id="article3_column1" class="block leader hyphenate">
+									<li data-flow-article="2" data-flow-column="1" class="block leader hyphenate">
 <?php
 	$indent =
 "										";
@@ -137,12 +137,12 @@
 							</li>
 							<li class="well three_columns">
 								<ul>
-									<li id="article3_column2" class="block leader hyphenate"></li>
+									<li data-flow-article="2" data-flow-column="2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="well three_columns">
 								<ul>
-									<li id="article4_column1" class="block leader hyphenate">
+									<li class="block leader hyphenate">
 <?php
 	$indent =
 "										";
@@ -159,7 +159,7 @@
 			</li>
 			<li class="well three_columns">
 				<ul>
-					<li id="article2_column1" class="block leader hyphenate">
+					<li class="block leader hyphenate">
 <?php
 	$indent =
 "						";

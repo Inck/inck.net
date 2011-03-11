@@ -45,7 +45,7 @@ foreach($words as $number => $word) {
 }
 ?>
 
-#issues #page { -webkit-box-shadow:-6px -6px 4px #ccc; border-left:solid #eee 2px; position:relative; left:35px; }
+#issues #page { -webkit-box-shadow:-6px -6px 4px #ccc; border:solid #eee; border-width:0 2px; }
 
 #page { width:<?php echo $site + $margin . $unit; ?>; margin:0 <?php echo $margin . $unit; ?>; }
 #grid { width:<?php echo $site . $unit; ?>; padding-left:<?php echo $margin . $unit; ?>; }
