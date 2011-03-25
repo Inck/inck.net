@@ -2,7 +2,7 @@
 	$title = "Letters to the Editor";
 	include('inc/head.php');
 ?>
-			<li class="column one_unit contained">
+			<li class="column one_unit">
 				<ul>
 					<li class="block flag secondary">
 						<h3><a href="./"><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></a></h3>
@@ -35,7 +35,7 @@
 	
 	foreach($filenames as $filename) {
 ?>
-			<li class="column three_units contained">
+			<li class="column three_units">
 				<ul>
 <?php
 		$article = file_get_contents('pages/' . $filename); $lines = explode("\n", $article);
