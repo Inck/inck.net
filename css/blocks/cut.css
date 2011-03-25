@@ -1,14 +1,14 @@
 .cut { margin-top:2.1em; padding-top:0.7em; overflow:hidden; }
-.twelve_columns .cut img { width:1180px; }
-.eleven_columns .cut img { width:1080px; }
-.ten_columns .cut img { width:980px; }
-.nine_columns .cut img { width:880px; }
-.eight_columns .cut img { width:780px; }
-.seven_columns .cut img { width:680px; }
-.six_columns .cut img { width:580px; height:387px; } 
-.six_columns .cut { height:387px; }
-.five_columns .cut img { width:480px; }
-.four_columns .cut img { width:380px; }
-.three_columns .cut img { width:280px; }
-.two_columns .cut img { width:180px; }
-.one_column .cut img { width:80px; }
+.twelve_units .cut img { width:1180px; }
+.eleven_units .cut img { width:1080px; }
+.ten_units .cut img { width:980px; }
+.nine_units .cut img { width:880px; }
+.eight_units .cut img { width:780px; }
+.seven_units .cut img { width:680px; }
+.six_units .cut img { width:580px; height:387px; } 
+.six_units .cut { height:387px; }
+.five_units .cut img { width:480px; }
+.four_units .cut img { width:380px; }
+.three_units .cut img { width:280px; }
+.two_units .cut img { width:180px; }
+.one_unit .cut img { width:80px; }

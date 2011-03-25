@@ -1,5 +1,5 @@
 @font-face { font-family: Prince Valiant; src: url('../../img/PrinceValiant.ttf'); } 
-body { font-family:'Hoefler Text', Georgia, serif; font-size:62.5%; color:#666; }
+body { font-family:'Hoefler Text', serif; font-size:62.5%; color:#666; }
 a { text-decoration:none; }
 h1:hover a,
 h2:hover a,

@@ -1,6 +1,7 @@
 /* Todo: Set type on body tracking. */
 .postcard { margin-bottom:2em; }
-.postcard h2 { font-size:3.3em; letter-spacing:-1px; line-height:1.3em; margin:0.65em 0 .75em; padding-top:0; }
+.postcard h2 { font-size:3.3em; letter-spacing:-1px; line-height:1.3em; margin:0.65em 0 1.3em; padding-top:0; }
 .postcard textarea,
-.postcard input { width:90%; font-size:1.4em; line-height:1.5em; border-width:0; color:#666; margin-top:1.3em; }
-.postcard textarea { width:100%; height:13.6em; resize:vertical; }
+.postcard input { width:90%; font-size:1.4em; line-height:1.5em; border-width:0; color:#666; }
+.postcard textarea { width:100%; height:16.5em; resize:vertical; }
+.postcard label { font-size:1.4em; line-height:1.5em; margin-top:1.3em; }

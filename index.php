@@ -7,13 +7,10 @@
 	$articles = new SimpleXMLElement($feed);
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
-			<li class="well twelve_columns contained">
+			<li class="column twelve_units contained">
 				<ul>
-					<li class="well three_columns contained">
+					<li class="column three_units contained">
 						<ul>
-							<li class="block syndicate_ear">
-								<a href="http://feeds.feedburner.com/inck/" title="RSS"><img src="img/feed.png" alt="RSS Chicklet" /></a>
-							</li>
 							<li class="block ear">
 								<div>
 									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">75¢</a></strong>
@@ -21,18 +18,17 @@
 							</li>
 						</ul>
 					</li>
-					<li class="well six_columns">
+					<li class="column six_units">
 						<ul>
 							<li class="block flag">
 								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
-								<cite>Volume Two, Issue One -- <?php echo $title; ?> -- Updated: <em>Early Evening</em></cite>
 							</li>
 						</ul>
 					</li>
-					<li class="well three_columns">
+					<li class="column three_units">
 						<ul>
 							<li class="block dog_ear right">
-								<h3><a href="page.php?number=<?php echo $article; ?>">Letters to the Editor</a></h3>
+								<h3><a href="letters.php"><em>New!</em> Letters to the Editor</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
@@ -45,12 +41,15 @@
 					</li>
 				</ul>
 			</li>
-			<li class="well twelve_columns contained">
+			<li class="column twelve_units contained">
 				<ul>
+					<li class="block edition">
+						<cite><?php echo $edition; ?> -- <?php echo $title; ?> -- Updated: <em>Early Evening</em></cite>
+					</li>
 					<li class="block rule"></li>
 				</ul>
 			</li>
-			<li class="well nine_columns contained">
+			<li class="column nine_units contained">
 				<ul>
 <?php
 	$a1 = explode("\n", file_get_contents("pages/a1"));
@@ -64,9 +63,9 @@
 <?php
 	}
 ?>
-					<li class="well three_columns contained">
+					<li class="column three_units contained">
 						<ul>
-							<li data-flow-article="1" data-flow-column="1" class="block leader first front hyphenate">
+							<li data-article="1" data-column="1" class="block leader first front hyphenate">
 <?php
 	$indent =
 "								";
@@ -77,24 +76,24 @@
 							</li>
 						</ul>
 					</li>
-					<li class="well six_columns">
+					<li class="column six_units">
 						<ul>
 							<li class="block cut">
 								<?php echo $cut; ?>
 							</li>
-							<li class="well three_columns contained">
+							<li class="column three_units contained">
 								<ul>
-									<li data-flow-article="1" data-flow-column="2" class="block leader hyphenate"></li>
+									<li data-article="1" data-column="2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
-							<li class="well three_columns">
+							<li class="column three_units">
 								<ul>
-									<li data-flow-article="1" data-flow-column="3" class="block leader hyphenate"></li>
+									<li data-article="1" data-column="3" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<li class="well nine_columns contained">
+					<li class="column nine_units contained">
 						<ul>
 							<li class="block sidebar">
 								<h3>Common English Metrical Feet</h3>
@@ -122,9 +121,9 @@
 									</tr>
 								</table>
 							</li>
-							<li class="well three_columns contained">
+							<li class="column three_units contained">
 								<ul>
-									<li data-flow-article="2" data-flow-column="1" class="block leader hyphenate">
+									<li data-article="2" data-column="1" class="block leader hyphenate">
 <?php
 	$indent =
 "										";
@@ -135,14 +134,14 @@
 									</li>
 								</ul>
 							</li>
-							<li class="well three_columns">
+							<li class="column three_units">
 								<ul>
-									<li data-flow-article="2" data-flow-column="2" class="block leader hyphenate"></li>
+									<li data-article="2" data-column="2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
-							<li class="well three_columns">
+							<li class="column three_units">
 								<ul>
-									<li class="block leader hyphenate">
+									<li data-article="3" data-column="1" class="block leader hyphenate">
 <?php
 	$indent =
 "										";
@@ -157,9 +156,9 @@
 					</li>
 				</ul>
 			</li>
-			<li class="well three_columns">
+			<li class="column three_units">
 				<ul>
-					<li class="block leader hyphenate">
+					<li data-article="4" data-column="1" class="block leader hyphenate">
 <?php
 	$indent =
 "						";

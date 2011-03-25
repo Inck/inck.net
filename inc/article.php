@@ -46,24 +46,22 @@
 		}
 
 		if($jump and $current == $last) {
-			echo "… <a href=\"page.php?number=$article&amp;from=$jump#$article\" class=\"jumpline\">Continued, with Letters to the Editor, on Page $article »</a>";
+			$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$article.txt"))) - 1;
+			echo "… <a href=\"page.php?number=$article&amp;from=$jump#$article\" class=\"jumpline\">continued";
+			echo ", with " . $words[$number_of_letters];
+			echo " Letter";
+			if($number_of_letters != 1) echo "s";
+			echo " to the Editor";
+			echo " »</a>";
 		} else {
 			$current++;
 		} ?></p>
 <?php
 	}
-	
-	if(!$jump) {
-		$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$article.txt"))) - 1;
-		if($number_of_letters) {
 ?>
-<?php echo $indent; ?><p class="letters">(There <?php echo ($number_of_letters - 1) ? "are" : "is"; ?> currently <?php echo $words[$number_of_letters]; ?> Letter<?php echo $number_of_letters - 1 ? "s" : ""; ?> to the Editor in response to this.) <a href="page.php?number=<?php echo $article; ?>#top">Read them.</a></p>
-<?php
-		} else {
-?>
-<?php echo $indent; ?><p class="letters">(There are currently no Letters to the Editor in response to this.) <a href="page.php?number=<?php echo $article; ?>#top">Write one</a>.</p>
-<?php
-		}
-	}
-?>
-<?php echo substr($indent, 1); ?></article>
+<?php $indent = substr($indent, 1); ?>
+<?php echo $indent; ?></article>
+<?php $indent = substr($indent, 1); ?>
+<?php echo $indent; ?></li>
+<?php echo $indent; ?><li class="block jump hyphenate">
+<?php $indent .= "\t"; ?>

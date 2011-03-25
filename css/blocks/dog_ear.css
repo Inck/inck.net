@@ -1,5 +1,8 @@
-.dog_ear.right { position:relative; right:0; }
-.dog_ear.right h3 { font-size:1.5em; text-align:right; width:4.35em; padding:10px 5px; z-index:1; }
+.dog_ear { position:relative; }
+.dog_ear h3 { font-family:'Gill Sans'; font-size:1.5em; line-height:1em; width:4em; padding:.5em 0; z-index:1; }
+
+.dog_ear.right { right:0; }
+.dog_ear.right h3 { text-align:right; }
 .dog_ear.right h3,
 .dog_ear.right .page_fold,
 .dog_ear.right .page_corner { position:absolute; right:0; }
@@ -16,11 +19,11 @@
 	-webkit-transform:rotate(45deg); -moz-transform:rotate(45deg);
 }
 
-.dog_ear.left { position:relative; left:0; }
-.dog_ear.left h3 { font-size:1.5em; text-align:left; width:4.35em; padding:10px 5px; z-index:1; }
+.dog_ear.left { left:0; }
+.dog_ear.left h3 { text-align:left; }
 .dog_ear.left h3,
 .dog_ear.left .page_fold,
-.dog_ear.left .page_corner { position:absolute; right:left; }
+.dog_ear.left .page_corner { position:absolute; left:0; }
 .dog_ear.left .page_corner {
 	background-color:white;
 	width:120px; height:120px;

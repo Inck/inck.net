@@ -1,4 +1,4 @@
-.letter { margin-bottom:0; }
-.letter p { text-align:left; }
-.letter cite { margin-top:.2em; }
-.letter cite:before { content:"--"; }
+.letter { margin-bottom:1em; }
+.letter p { text-align:left; padding-left:.5em; }
+.letter em { display:block; font-size:1.4em; margin-top:3em; border:solid #bbb; border-width:1px 0 0 1px; padding:.7em 0 0 .7em; }
+.letter cite { margin-top:0; font-size:1.4em; padding-left:.5em; }
