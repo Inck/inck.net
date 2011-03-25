@@ -35,7 +35,7 @@
 	
 	foreach($filenames as $filename) {
 ?>
-			<li class="column three_units contained">
+			<li class="column two_units contained">
 				<ul>
 <?php
 		$article = file_get_contents('pages/' . $filename); $lines = explode("\n", $article);
@@ -81,6 +81,7 @@
 ?>
 				</ul>
 			</li>
+			<li class="space one_unit"></li>
 <?php
 	}
 	include('inc/foot.php');
