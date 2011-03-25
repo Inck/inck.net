@@ -23,7 +23,6 @@
 					<li class="block rule"></li>
 				</ul>
 			</li>
-			<li class="space one_unit"></li>
 <?php
 	$directory = opendir('letters');
 	while($filename = readdir($directory)) {
