@@ -23,6 +23,7 @@
 					<li class="block rule"></li>
 				</ul>
 			</li>
+			<li class="space one_unit"></li>
 <?php
 	$directory = opendir('letters');
 	while($filename = readdir($directory)) {
@@ -31,11 +32,11 @@
 		}
 	}
 	
-	$filenames = array_reverse(array_slice($filenames, -4));
+	$filenames = array_reverse(array_slice($filenames, -3));
 	
 	foreach($filenames as $filename) {
 ?>
-			<li class="column two_units contained">
+			<li class="column three_units contained">
 				<ul>
 <?php
 		$article = file_get_contents('pages/' . $filename); $lines = explode("\n", $article);
