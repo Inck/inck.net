@@ -191,7 +191,7 @@
 						<a name="letters"></a>
 						<ul>
 <?php
-		foreach(array_slice($letters, 0, count($letters)/2) as $letter) {
+		foreach(array_slice($letters, 0, ceil(count($letters)/2)) as $letter) {
 			$lines = explode("\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
@@ -212,23 +212,26 @@
 			}
 ?>
 										<p class="read">Sincerely,</p>
-										<cite><a href="" rel="nofollow"><?php echo $name; ?></a></cite>
+										<cite><?php echo $name; ?></cite>
 									</li>
 								</ul>
 							</li>
 <?php
-			}
+		}
 ?>
 						</ul>
 					</li>
 					<li class="space two_units contained"></li>
+<?php
+		if((count($letters) - 1) and array_slice($letters, count($letters)/2)) {
+?>
 					<li class="column two_units">
 						<ul>
 <?php
-		foreach(array_slice($letters, count($letters)/2) as $letter) {
-			$lines = explode("\n", $letter);
-			$time = array_shift($lines);
-			$name = array_pop($lines);
+			foreach(array_slice($letters, count($letters)/2) as $letter) {
+				$lines = explode("\n", $letter);
+				$time = array_shift($lines);
+				$name = array_pop($lines);
 ?>
 							<li class="block letter_box">
 								<ul>
@@ -236,17 +239,17 @@
 										<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
 										<p class="read">Dear Sir:</p>
 <?php
-			foreach($lines as $line) {
-				$line = trim($line);
-				if($line) {
+				foreach($lines as $line) {
+					$line = trim($line);
+					if($line) {
 ?>
 										<p><?php echo $line; ?></p>
 <?php
+					}
 				}
-			}
 ?>
 										<p class="read">Sincerely,</p>
-										<cite><a href="" rel="nofollow"><?php echo $name; ?></a></cite>
+										<cite><?php echo $name; ?></cite>
 									</li>
 								</ul>
 							</li>
@@ -255,6 +258,13 @@
 ?>
 						</ul>
 					</li>
+<?php
+		} else {
+?>
+					<li class="space two_units"></li>
+<?php
+		}
+?>
 				</ul>
 			</li>
 <?php

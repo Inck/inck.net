@@ -4,5 +4,5 @@
 .flag h3 .letter_n { letter-spacing:-.05em; }
 .flag h3 .letter_c { letter-spacing:-.04em; }
 .flag h3 .letter_k { }
-.flag.secondary { margin:1.7em 0 1em; }
+.flag.secondary { text-align:left; margin:1.7em 0 1em; }
 .flag.secondary h3 { display:inline; font-size:2.5em; font-weight:bold; line-height:1em; }
