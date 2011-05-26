@@ -28,13 +28,13 @@
 					<li class="column three_units">
 						<ul>
 							<li class="block dog_ear right">
-								<h3><a href="letters.php"><em>New!</em> Letters to the Editor</a></h3>
+								<h3><a href="letters.php"><em>Newish!</em> Letters to the Editor</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
 								<div>
 									<h2>The Weather</h2>
-									<p>Cold, Bright and Clear. Strong Winds Out of the North.</p>
+									<p>Occasional Rain, Warming. Distant Winds Out of the West.</p>
 								</div>
 							</li>
 						</ul>
@@ -44,7 +44,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="block edition">
-						<cite><?php echo $edition; ?> -- <?php echo $title; ?> -- Updated: <em>Early Evening</em></cite>
+						<cite><?php echo $edition; ?> -- <?php echo $title; ?> -- Updated: <em>Mid Day</em></cite>
 					</li>
 					<li class="block rule"></li>
 				</ul>
@@ -136,7 +136,8 @@
 							</li>
 							<li class="column three_units">
 								<ul>
-									<li data-article="2" data-column="2" class="block leader hyphenate"></li>
+									<li class="block leader hyphenate"></li>
+									<!-- <li data-article="2" data-column="2" class="block leader hyphenate"></li> -->
 								</ul>
 							</li>
 							<li class="column three_units">

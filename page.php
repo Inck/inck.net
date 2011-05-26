@@ -34,7 +34,7 @@
 	
 	include('inc/head.php');
 ?>
-			<li class="column one_unit contained">
+			<li class="column one_unit">
 				<ul>
 					<li class="block flag secondary">
 						<h3><a href="./"><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></a></h3>
@@ -168,7 +168,7 @@
 									<li class="block postcard_address">
 										<address>Write in the space to the left, and sign</address>
 										<address>below it. Apply postage to send.</address>
-										<address>Are you a computer? <label><input type="radio" name="is_computer" value="no"<?php if($_POST['is_computer'] == "no") { ?> checked="checked"<?php } ?> /> No.</label> <label><input type="radio" name="is_computer" value="beep"<?php if($_POST['is_computer'] != "no") { ?> checked="checked"<?php } ?>  /> Beep.</label></address>
+										<address>Are you a person? <label><input type="radio" name="is_computer" value="no"<?php if($_POST['is_computer'] == "no") { ?> checked="checked"<?php } ?> /> Yes.</label> <label><input type="radio" name="is_computer" value="beep"<?php if($_POST['is_computer'] != "no") { ?> checked="checked"<?php } ?>  /> Beep.</label></address>
 										<input type="hidden" id="letter_submitted" name="letter_submitted" value="true" />
 									</li>
 									<li class="block postcard_corner">
@@ -179,6 +179,8 @@
 						</ul>
 						</form>
 					</li>
+				</ul>
+			</li>
 <?php
 	if(is_file("letters/$number.txt")) {
 		$showing_letter_section = true;
@@ -186,6 +188,8 @@
 		$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
 		$letters = array_reverse($letters);
 ?>
+			<li class="column nine_units">
+				<ul>
 					<li class="space two_units contained"></li>
 					<li class="column two_units">
 						<a name="letters"></a>

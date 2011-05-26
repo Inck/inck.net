@@ -1,4 +1,5 @@
 <?php
+	// ToDo: Truncation is happening a few words long. 187 instead of 185, 255 instead of 250, 265 instead of 260. Fix this bullshit.
 	$lines = file("pages/$article.txt", FILE_TEXT);
 	$title = trim(array_shift($lines));
 	$date = trim(array_shift($lines));
@@ -63,5 +64,5 @@
 <?php echo $indent; ?></article>
 <?php $indent = substr($indent, 1); ?>
 <?php echo $indent; ?></li>
-<?php echo $indent; ?><li class="block jump hyphenate">
+<!-- <?php echo $indent; ?><li class="block jump hyphenate"> ? -->
 <?php $indent .= "\t"; ?>

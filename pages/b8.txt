@@ -1,0 +1,50 @@
+Apps are Bullshit
+May 26th, 2011
+
+When I say 'apps' I mean to two different things, both of them bullshit, but in two different ways.
+
+One, they are a technology, a bullshit technology in that it has not generally been employed to make a product better, cheaper or more useful.
+
+Two, they are a marketing ploy, bullshit only in the sense that all marketing is, being an immaterial game of value signification played to help people part with their money. This kind of bullshit is good, and essential to the continuation of our industry.
+
+To explain my first point, I'll have to explain the technology. If you already know the technology, <a href="page.php?number=b8&from=297#b8">skip the next four paragraphs</a>. (Also please skip any plans to quibble over their simplifications, elisions and other necessary inaccuracies.)
+
+Currently, the technology of most apps is 'native', as opposed to 'web'. This is a very expensive distinction in programming, and I have watched companies waste from tens of thousands to millions of dollars on native app development, often to be left with a product that serves their business objectives worse than would have a web app.
+
+The technical distinction is this: Native apps are full computer programs. Computer programs use the fundamental functions of computers to do whatever they do. They can therefore do any one thing as well as any other, from calculate missile trajectories to animate Angry Bird trajectories, from sequence genes to sell you jeans. But with flexibility comes complexity, especially in computer programming.
+
+Web apps are just web sites. They can be wrapped up in a special single-purpose web browser that hides the address bar and various buttons. Without that stuff, the website becomes its own and only interface. The developer can put buttons, menus, whatever, in the 'web site', making it whatever kind of interface is best. It can look exactly the same as a native app. 
+
+The difference then is that most of the work behind the app is taken care of by the special web browser. Browsers are incredibly capable applications themselves, allowing web developers to easily arrange and make interactive text, images, menus, buttons, forms, and other common interaction elements. They have been designed and improved over the last decade by teams at Apple, Google and Microsoft, among others, all working together through an international standards body.
+
+If you think about it, most of what we do on our phones and tablets is just looking at and interacting with text and images that have been laid out in some way. Reading the news, using a social network, searching for a restaurant, reading email and checking the weather are all tasks that come down to little more than reading and tapping/clicking on text and images in some special arrangement.
+
+If you write a native app, then you write the part of the computer program that makes stuff display and react on the screen all over again, instead of using the browser, a system already built for that purpose and improved over a decade by a massive community of developers, including teams at the three largest software companies in the world.
+
+And to top it off, when you write a native app, you have to re-write it for every platform: iOS, Android, webOS, Windows Phone 7, and any other OSes that jump into the fray will require at least some refactoring to work from one platform to another, if not a complete rewrite. Web applications will always just work, everywhere.
+
+The one argument for native apps is that they can be faster. If you write a program to do a specific thing from the ground up, theoretically it can do that thing faster than a program that's written to do lots of different things. But the emphasis is on 'theoretically'. In practice it doesn't matter much. Web browsers, because of the huge amount of work devoted to them, are still better at most interactions than what a developer could write from scratch in the few months they'll have to build an app for a client.
+
+There are exceptions: 3D games, high-quality animations, complex productivity apps, and other high-value apps can justify the additional costs of native development. Like anything, it comes down to a case-by-case decision about the best tool for the job, but the vast majority of apps being built natively today could be built with web technologies for much less money and in much less time, leaving much more for testing, improvement, and innovation.
+
+The worst culprit has been the print media industry, whose products almost intrinsically work on web technology. With the exception of some very glossy publications, every print publication that has built a native app instead of using their existing web resources has wasted money that they don't have.
+
+Which brings me to the other kind of bullshit that apps are besides technology bullshit. Apps aren't even a technology. They are design conventions, a marketing strategy, business model, and distribution system for software and content. They are simply a new type of product. What matters is that they are a type of product people will pay for.
+
+The Internet was created by academics, and so has the feel of a library, if not just one enormous book. It consists of names, numbers, indexes and catalogs. Everything on it is <i>accessed</i>, as opposed to <i>acquired</i>. Access, especially to information, is something we expect for free. Acquisition, even of information, is something we accept paying for.
+
+And the difference between access and acquisition is just positioning; it's bullshit, but it's important bullshit. If you take a website, give it a physical design metaphor and a big icon, have people 'download' rather than 'view' it, and make it persist in some continual 'space' that belongs to them, then suddenly you've gone from viewing a document, to having a thing. (I'm not saying all that's easy, just that it has nothing to do with the code.)
+
+So if the code is irrelevant, why not use the code that takes half the time and money? You can spend what's left over on the thought, testing, and design that actually makes a product good.
+
+So what needs to happen? Simple: Apple needs to release a toolkit for building apps with web technology, and allow those apps to be sold through the App Store. Users won't know the difference, developers will gain months of wasted time, and companies would save millions of dollars.
+
+And it will happen. Mark my words, Apple will do something like this. They will find a way to bring the efficiencies of web development into the fold of their app product strategy, so that they can profit from it.
+
+There is a cynical theory I could see refuting this prediction: Apple has gained a lot from the post-pc rebirth of native applications development in the mobile space. They are constitutionally a native software shop, and have never been able to crack the web. Furthermore, their lifeblood has long been their ecosystem of native developers. You could argue that it's in their best interest to maintain the arbitrary grip native development now has on mobile platforms.
+
+But in the long term technical efficiencies always win out, because the ease of entry into the digital market has always meant that groups who want to use a predominant inefficiency to their advantage can do so with relatively little risk. Even if Apple tried to control the market through their Store, Google's app store won't be stuck in first gear forever, and will see web technologies as a way to get an edge. Apple won't let that happen, and they've avoided such fates before.
+
+Furthermore, call me an Apple acolyte--I am--but I believe they will do the right thing, not so as to avoid 'Doing Evil', which is stupid, or even just because it's good business, though it is, but because they understand the difference between products and technologies. That's the defining factor in their ascendance, the notion Steve Jobs has been concluding his keynotes with, that technology alone is not enough, that you need the 'liberal arts' or 'humanities' as well.
+
+Jobs is a grand salesman, so he's sugarcoating a little there. The truth is that technology isn't just insufficient. It's irrelevant. People use products, not technologies. We should stop confusing the two.

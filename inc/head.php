@@ -1,7 +1,7 @@
 <?php
 	error_reporting(0);
 	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
-	$edition = "Volume Two, Issue Two";
+	$edition = "Volume Two, Issue Three";
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -16,7 +16,7 @@
 	<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
 	<!--[if IE]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 <?php
-if(isset($_GET['hyphenate'])) {
+if(isset($_GET['hyphenate']) or isset($_GET['number'])) {
 ?>
 	<script type="text/javascript" src="js/lib/hyphenator/Hyphenator.js"></script>
 	<script type="text/javascript"> Hyphenator.run(); </script>

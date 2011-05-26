@@ -43,7 +43,7 @@ foreach($words as $number => $word) {
 
 #issues #page { -webkit-box-shadow:-.6em -.6em .4em #ccc; border:solid #eee; border-width:0 .2em; }
 
-#page { width:<?php echo ($site + $margin) / 10 . 'em'; ?>; margin:0 <?php echo $margin / 10 . 'em'; ?>; }
+#page { width:<?php echo ($site + $margin) / 10 . 'em'; ?>; margin:0 auto/*<?php echo $margin / 10 . 'em'; ?>*/; }
 #grid { width:<?php echo $site / 10 . 'em'; ?>; padding-left:<?php echo $margin / 10 . 'em'; ?>; }
 .contained { margin-left:0; }
 

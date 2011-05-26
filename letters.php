@@ -1,4 +1,5 @@
 <?php
+	// ToDo: Limit to a1 articles.
 	$title = "Letters to the Editor";
 	include('inc/head.php');
 ?>
