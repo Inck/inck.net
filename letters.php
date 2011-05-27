@@ -70,7 +70,7 @@
 				}
 ?>
 								<p class="read">Sincerely,</p>
-								<cite><a href="" rel="nofollow"><?php echo $name; ?></a></cite>
+								<cite><?php echo $name; ?></cite>
 							</li>
 						</ul>
 					</li>
