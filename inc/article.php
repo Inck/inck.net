@@ -63,6 +63,6 @@
 <?php $indent = substr($indent, 1); ?>
 <?php echo $indent; ?></article>
 <?php $indent = substr($indent, 1); ?>
-<?php echo $indent; ?></li>
-<!-- <?php echo $indent; ?><li class="block jump hyphenate"> ? -->
+<?php echo $indent; ?><!-- </li> --> <!-- ? -->
+<!-- <?php echo $indent; ?><li class="block jump hyphenate"> -->
 <?php $indent .= "\t"; ?>
