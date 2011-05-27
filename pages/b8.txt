@@ -7,7 +7,7 @@ One, they are a technology, a bullshit technology in that it has not generally b
 
 Two, they are a marketing ploy, bullshit only in the sense that all marketing is, being an immaterial game of value signification played to help people part with their money. This kind of bullshit is good, and essential to the continuation of our industry.
 
-To explain my first point, I'll have to explain the technology. If you already know the technology, <a href="page.php?number=b8&from=297#b8">skip the next four paragraphs</a>. (Also please skip any plans to quibble over their simplifications, elisions and other necessary inaccuracies.)
+To explain my first point, I'll have to explain the technology. If you already know the technology, <a href="page.php?number=b8&from=309#b8">skip the next four paragraphs</a>. (Also please skip any plans to quibble over their simplifications, elisions and other necessary inaccuracies.)
 
 Currently, the technology of most apps is 'native', as opposed to 'web'. This is a very expensive distinction in programming, and I have watched companies waste from tens of thousands to millions of dollars on native app development, often to be left with a product that serves their business objectives worse than would have a web app.
 
