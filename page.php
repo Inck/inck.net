@@ -107,12 +107,12 @@
 ?>
 			<li class="column two_units">
 				<ul>
-					<li class="block leader letter_header read">
+					<li class="block letter_header prompt">
 						<h2>Your Letter:</h2>
 					</li>
-					<li class="block leader letter">
+					<li class="block letter">
 						<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
-						<p class="read">Dear Sir:</p>
+						<p class="prompt">Dear Sir:</p>
 <?php
 		foreach($lines as $line) {
 			$line = trim($line);
@@ -123,7 +123,7 @@
 			}
 		}
 ?>
-						<p class="read">Sincerely,</p>
+						<p class="prompt">Sincerely,</p>
 						<cite><a href="" rel="nofollow"><?php echo $name; ?></a></cite>
 					</li>
 				</ul>
@@ -143,11 +143,11 @@
 						<ul>
 							<li class="column four_units contained">
 								<ul>
-									<li class="block leader letter postcard read">
+									<li class="block letter postcard prompt">
 										<h2>Dear Sir:</h2>
-										<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="read"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='read' }" tabindex="1" rows="10" cols="100"><?php if($_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
+										<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="prompt"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='prompt' }" tabindex="1" rows="10" cols="100"><?php if($_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
 										<label for="name">Sincerely,</label>
-										<input type="text" id="name" name="name" <?php if(!$_POST or $_POST['name'] == $default_name) { echo 'class="read"'; } ?> value="<?php if($_POST['name']) { echo stripslashes($_POST['name'])	; } else { echo $default_name; } ?>" onfocus="if(this.value=='<?php echo $default_name; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_name; ?>'; this.className='read' }" tabindex="2" />
+										<input type="text" id="name" name="name" <?php if(!$_POST or $_POST['name'] == $default_name) { echo 'class="prompt"'; } ?> value="<?php if($_POST['name']) { echo stripslashes($_POST['name'])	; } else { echo $default_name; } ?>" onfocus="if(this.value=='<?php echo $default_name; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_name; ?>'; this.className='prompt' }" tabindex="2" />
 									</li>
 								</ul>
 							</li>
@@ -202,9 +202,9 @@
 ?>
 							<li class="block letter_box">
 								<ul>
-									<li class="block leader letter">
+									<li class="block letter">
 										<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
-										<p class="read">Dear Sir:</p>
+										<p class="prompt">Dear Sir:</p>
 <?php
 			foreach($lines as $line) {
 				$line = trim($line);
@@ -215,7 +215,7 @@
 				}
 			}
 ?>
-										<p class="read">Sincerely,</p>
+										<p class="prompt">Sincerely,</p>
 										<cite><?php echo $name; ?></cite>
 									</li>
 								</ul>
@@ -239,9 +239,9 @@
 ?>
 							<li class="block letter_box">
 								<ul>
-									<li class="block leader letter">
+									<li class="block letter">
 										<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
-										<p class="read">Dear Sir:</p>
+										<p class="prompt">Dear Sir:</p>
 <?php
 				foreach($lines as $line) {
 					$line = trim($line);
@@ -252,7 +252,7 @@
 					}
 				}
 ?>
-										<p class="read">Sincerely,</p>
+										<p class="prompt">Sincerely,</p>
 										<cite><?php echo $name; ?></cite>
 									</li>
 								</ul>

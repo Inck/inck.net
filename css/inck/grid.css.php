@@ -45,7 +45,7 @@ foreach($words as $number => $word) {
 
 #page { width:<?php echo ($site + $margin) / 10 . 'em'; ?>; margin:0 auto/*<?php echo $margin / 10 . 'em'; ?>*/; }
 #grid { width:<?php echo $site / 10 . 'em'; ?>; padding-left:<?php echo $margin / 10 . 'em'; ?>; }
-.contained { margin-left:0; }
+.contained { margin-left:0; } /* ToDo: Change 'contained' to 'first' or 'first_child'. Move in all markup to succeed 'block'? */
 
 /* Grid-level decorations. */
 .rule_at_right ul { padding-right:1em; border-right:.1em solid #bbb; }

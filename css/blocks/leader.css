@@ -1,4 +1,4 @@
-/* Make .leader min-height not break the JS to add automatic spacing on short pieces. */
+/* ToDo: Make .leader min-height not break the JS to add automatic spacing on short pieces. */
 .leader h1, 
 .leader h2 { font-size:3.3em; letter-spacing:-1px; line-height:1.3em; margin-top:0.65em; padding-top:0; }
 .leader.first.front { max-height:630px; }

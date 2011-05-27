@@ -56,9 +56,9 @@
 ?>
 					<li class="block letter_box two_units">
 						<ul>
-							<li class="block leader letter">
+							<li class="block letter">
 								<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
-								<p class="read">Dear Sir:</p>
+								<p class="prompt">Dear Sir:</p>
 <?php
 				foreach($lines as $line) {
 					$line = trim($line);
@@ -69,7 +69,7 @@
 					}
 				}
 ?>
-								<p class="read">Sincerely,</p>
+								<p class="prompt">Sincerely,</p>
 								<cite><?php echo $name; ?></cite>
 							</li>
 						</ul>

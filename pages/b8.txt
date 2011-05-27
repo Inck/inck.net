@@ -29,7 +29,7 @@ There are exceptions: 3D games, high-quality animations, complex productivity ap
 
 The worst culprit has been the print media industry, whose products almost intrinsically work on web technology. With the exception of some very glossy publications, every print publication that has built a native app instead of using their existing web resources has wasted money that they don't have.
 
-Which brings me to the other kind of bullshit that apps are besides technology bullshit. Apps aren't even a technology. They are design conventions, a marketing strategy, business model, and distribution system for software and content. They are simply a new type of product. What matters is that they are a type of product people will pay for.
+Which brings me to the other kind of bullshit that apps are, besides technology bullshit. Apps aren't even a technology. They're a package. They're a box. True, they include a collection of interface design conventions, a marketing strategy, business model, and distribution system, but that's just what a quality digital box looks like. What matters is that they are a box that sells people its contents.
 
 The Internet was created by academics, and so has the feel of a library, if not just one enormous book. It consists of names, numbers, indexes and catalogs. Everything on it is <i>accessed</i>, as opposed to <i>acquired</i>. Access, especially to information, is something we expect for free. Acquisition, even of information, is something we accept paying for.
 
