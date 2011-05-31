@@ -11,3 +11,4 @@
 .leader hr:after { content:"--"; }
 .leader .dateline { font-size:.85em; text-transform:uppercase; }
 .leader .dateline:after { content:" -- "; }
+.leader.continued { min-height:50em; }
