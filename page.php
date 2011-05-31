@@ -139,7 +139,7 @@
 	// }
 ?>
 					<li class="column seven_units">
-						<form action="" method="post">
+						<form action="#letters" method="post">
 						<ul>
 							<li class="column four_units contained">
 								<ul>
