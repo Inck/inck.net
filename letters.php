@@ -2,7 +2,6 @@
 	$title = "Letters to the Editor";
 	include('inc/head.php');
 	
-	// ToDo: Limit to a1 articles.
 	// Get article list from feed.
 	$feed_xml = `php feed.php`;
 	$feed = new SimpleXMLElement($feed_xml);
@@ -49,6 +48,7 @@
 <?php
 		if($letters_together = file_get_contents('letters/' . $article_number . '.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES)) {
 			$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
+			$letters = array_reverse($letters);
 			foreach($letters as $letter) {
 				$lines = explode("\n", $letter);
 				$time = array_shift($lines);
