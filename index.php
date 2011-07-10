@@ -29,7 +29,7 @@
 					<li class="column three_units">
 						<ul>
 							<li class="block dog_ear right">
-								<h3><a href="#/instruction" id="suggestion"><em>Better!</em> Legibility after the Jump</a></h3>
+								<h3><a href="#/instruction" id="suggestion"><em>Slightly Better!</em> Legibility after the Jump</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
