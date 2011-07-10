@@ -14,18 +14,18 @@
 	<link rel="stylesheet" type="text/css" href="css/blocks" />
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
 	<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
-	<!--[if IE]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
+	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 <?php
 if(isset($_GET['hyphenate']) or isset($_GET['number'])) {
 ?>
-	<script type="text/javascript" src="js/lib/hyphenator/Hyphenator.js"></script>
-	<script type="text/javascript"> Hyphenator.run(); </script>
+	<script src="js/lib/hyphenator/Hyphenator.js"></script>
+	<script> Hyphenator.run(); </script>
 <?php
 }
 ?>
-	<script type="text/javascript" src="js/lib/jquery-1.3.2.min.js"></script>
-	<script type="text/javascript" src="js/flow.js"></script>
-	<script type="text/javascript" src="js/issues.js"></script>
+	<script src="js/lib/jquery-1.3.2.min.js"></script>
+	<script src="js/flow.js"></script>
+	<script src="js/show.js"></script>
 </head>
 <body>
 	<div id="page">

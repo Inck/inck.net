@@ -1,5 +1,5 @@
 <?php
-	$title = "Late-to-Mid Morning Edition";
+	$title = "Early Evening-In Edition";
 	include 'inc/head.php';
 	
 	// Get article list from feed.
@@ -8,6 +8,7 @@
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
 			<li class="column twelve_units contained">
+				<img src="img/instruction_to_jump.png" class="instruction" style="display:none; position:absolute; top:50px; left:225px; z-index:99;" />
 				<ul>
 					<li class="column three_units contained">
 						<ul>
@@ -28,7 +29,7 @@
 					<li class="column three_units">
 						<ul>
 							<li class="block dog_ear right">
-								<h3><a href="letters.php"><em>Newish!</em> Letters to the Editor</a></h3>
+								<h3><a href="#/instruction" id="suggestion"><em>Better!</em> Legibility after the Jump</a></h3>
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
@@ -44,7 +45,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="block edition">
-						<cite><?php echo $edition; ?> -- <?php echo $title; ?> -- Updated: <em>Mid Day</em></cite>
+						<cite><?php echo $edition; ?> -- <?php echo $title; ?> -- Updated: <em>Mid Month</em></cite>
 					</li>
 					<li class="block rule"></li>
 				</ul>
@@ -136,7 +137,7 @@
 							</li>
 							<li class="column three_units">
 								<ul>
-									<li class="block leader hyphenate"></li>
+									<li class="space leader hyphenate"></li>
 									<!-- <li data-article="2" data-column="2" class="block leader hyphenate"></li> -->
 								</ul>
 							</li>

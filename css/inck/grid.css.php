@@ -48,10 +48,7 @@ foreach($words as $number => $word) {
 .contained { margin-left:0; } /* ToDo: Change 'contained' to 'first' or 'first_child'. Move in all markup to succeed 'block'? */
 
 /* Grid-level decorations. */
-.rule_at_right ul { padding-right:1em; border-right:.1em solid #bbb; }
-.rule_at_left { margin-left:1em; }
-.three_units.rule_at_right { width:29em; }
-.nine_units.rule_at_left { width:88em; }
+.rule_at_right ul { padding-right:1.9em; border-right:.1em solid #bbb; }
 
 /* Show a picture of the grid. */
 .show#grid {

@@ -2,7 +2,7 @@
 				<ul>
 					<li class="footer">
 						<small class="copyright">©2011 by Nicholas Hall. All rights are reserved.</small>
-						<p>This website is designed for view in a <a href="http://www.apple.com/safari/">modern</a> <a href="http://www.google.com/chrome/">browser</a> on a Mac. <a href="http://validator.w3.org/check?uri=http://inck.net/">Validate as HTML5.</a></p>
+						<p>This website is designed for view in a <a href="http://www.apple.com/safari/">standard</a> <a href="http://www.google.com/chrome/">browser</a> on a Mac. <a href="http://validator.w3.org/check?uri=http://inck.net/">Validate as HTML5.</a></p>
 					</li>
 				</ul>
 			</li>

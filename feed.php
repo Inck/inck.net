@@ -12,7 +12,7 @@
 		<copyright>Copyright 2010 Nicholas Hall</copyright>
 <?php
 	while($filename = readdir($directory)) {
-		if($filename[0] != "." and $filename != "a1") {
+		if(substr($filename, -4) == ".txt") {
 			$lines = file('pages/' . $filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 			
 			// Array of articles with date as key, to sort before printing.

@@ -34,8 +34,8 @@
 			unset($dateline);
 		}
 
-		// If there are linebreaks.
-		if(preg_match("|\n|", $paragraph)) {
+		// If there are linebreaks and no HTML.
+		if(preg_match("|\n|", $paragraph) and !preg_match("|</|", $paragraph)) {
 			$lines = explode("\n", $paragraph);
 			echo array_shift($lines);
 			foreach($lines as $line) {
@@ -63,6 +63,5 @@
 <?php $indent = substr($indent, 1); ?>
 <?php echo $indent; ?></article>
 <?php $indent = substr($indent, 1); ?>
-<?php echo $indent; ?><!-- </li> --> <!-- ? -->
-<!-- <?php echo $indent; ?><li class="block jump hyphenate"> -->
+<?php echo $indent; ?>
 <?php $indent .= "\t"; ?>

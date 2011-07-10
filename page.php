@@ -1,4 +1,6 @@
 <?php
+	// header('HTTP/1.1 301 Moved Permanently');
+	// header('Location: http://inck.net/letters/');
 	if($number = $_GET['number']) {
 		$lines = file("pages/$number.txt", FILE_TEXT);
 		$title = trim(array_shift($lines));
@@ -42,7 +44,7 @@
 				</ul>
 			</li>
 			<li class="space nine_units"></li>
-			<li class="column two_units rule_at_left">
+			<li class="column two_units">
 				<ul>
 					<li class="block edition secondary">
 						<cite><?php echo $edition; ?></cite>
@@ -55,9 +57,9 @@
 					<li class="block rule"></li>
 				</ul>
 			</li>
-			<li class="column three_units contained">
+			<li class="column five_units contained rule_at_right">
 				<ul>
-					<li id="main_article" data-article="1" data-column="1" class="block leader continued hyphenate">
+					<li id="main_article" data-article="1" data-column="1" class="block leader legible continued">
 						<h1><?php if($words_read) echo "Continued from '"; echo $title; if($words_read) echo "'"; ?></h1>
 						<cite>by Nicholas Hall on <em><?php echo $date; ?></em></cite>
 <?php
@@ -77,8 +79,8 @@
 				echo $indent . "<p>" . $paragraph . "</p>\n";
 			}
 		} else {
-			// If there are linebreaks.
-			if(preg_match("|\n|", $paragraph)) {
+			// If there are linebreaks and no HTML.
+			if(preg_match("|\n|", $paragraph) and !preg_match("|</|", $paragraph)) {
 				$lines = explode("\n", $paragraph);
 				echo $indent . "<p>" . array_shift($lines);
 				foreach($lines as $line) {
@@ -132,9 +134,8 @@
 	} else {
 */
 ?>
-			<li class="column nine_units">
+			<li class="column seven_units">
 				<ul>
-					<li class="space two_units contained"></li>
 <?php
 	// }
 ?>
@@ -188,14 +189,13 @@
 		$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
 		$letters = array_reverse($letters);
 ?>
-			<li class="column nine_units">
+			<li class="column seven_units">
 				<ul>
-					<li class="space two_units contained"></li>
 					<li class="column two_units">
 						<a name="letters"></a>
 						<ul>
 <?php
-		foreach(array_slice($letters, 0, ceil(count($letters)/2)) as $letter) {
+		foreach(array_slice($letters, 0, ceil(count($letters) / 2)) as $letter) {
 			$lines = explode("\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
@@ -227,12 +227,12 @@
 					</li>
 					<li class="space two_units contained"></li>
 <?php
-		if((count($letters) - 1) and array_slice($letters, count($letters)/2)) {
+		if((count($letters) - 1) and array_slice($letters, count($letters) / 2)) {
 ?>
 					<li class="column two_units">
 						<ul>
 <?php
-			foreach(array_slice($letters, count($letters)/2) as $letter) {
+			foreach(array_slice($letters, count($letters) / 2) as $letter) {
 				$lines = explode("\n", $letter);
 				$time = array_shift($lines);
 				$name = array_pop($lines);

@@ -4,6 +4,11 @@ function getCookie(c_name) { if (document.cookie.length>0) { c_start=document.co
 
 scolded = getCookie('scolded');
 if (scolded == null || scolded == "") {
-	alert("Hey there old timer! You're using Internet Explorer and Windows, which don't display this website right. You can read it, but it won't be pretty.");
+	alert("Hey there old timer! You're using an old web browser, so some things won't look right here. I guess you like it this way.");
 	setCookie('scolded', true, 365);
 }
+
+/* IE-special rendering code. */
+var code = document.createTextNode('<center>');
+stuff = document.getElementById("page").innerHTML;
+document.getElementById("page").innerHTML = code+stuff;
