@@ -139,7 +139,7 @@
 <?php
 	// }
 ?>
-					<li class="column seven_units">
+					<li class="column seven_units contained">
 						<form action="#letters" method="post">
 						<ul>
 							<li class="column four_units contained">
