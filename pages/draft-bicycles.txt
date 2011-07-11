@@ -1,23 +1,6 @@
 Bicycles are Ethical
 draft
 
-In constraining the titles of these posts to a simple declaration, I seem to be constraining myself to creating declarative sentences with intentional ambiguity. In this case I mean two things:
-
-<ol>
-	<li>Bicycles are subject to an ethical standard.</li>
-	<li>Bicycles are ethically good.</li>
-</ol>
-
-The first is really my point, the second thing being obvious.
-
-I should quickly say what my definition of 'are' is in the first meaning. I mean not that bicycles are currently subject to an ethical standard in reality, but that they are so in truth, and that reality should be squared with that truth at some point.
-
-By 'reality' I suppose I mean 'law', and by 'truth' I suppose I mean 'logic'.
-
-Now that I've defined my definitions, I'll get to the point: We who ride bikes need some ethics. We should decide what the rules are that govern our behavior when we ride, because the rules that have been defined for us don't work. (Granted, I can only speak to the rules of the road in New York City, where I live. Let me know in <a href="page.php?number=b11">the letters</a> how they are elsewhere.)
-
-In New York I'm a car.
-
 I just got my first ticket from the recent NYPD campaign against bicycles. My offense was apparently "FAIL TO KEEP RIGHT TO PREVENT UNDUE INTERFERENCE WITH TRAFFIC," as you can see:
 
 <a href="http://www.flickr.com/photos/nicholashall/5916972671/" title="I Got a Fucking Ticket by Nicholas Hall, on Flickr"><img src="http://farm7.static.flickr.com/6029/5916972671_d7f29a3414_z.jpg" alt="I Got a Fucking Ticket"></a>
@@ -26,7 +9,7 @@ Here's what happened:
 
 I was riding to my apartment, a large walk-in closet in the Lower East Side, from work in Nolita. I rode up Centre St. and turned right onto Kenmare, which then became Delancey. I needed to turn left to get down to Stanton, which has a bike lane and goes straight to my place. So I went straight, down the left side, through a green light at Chrystie, and then turned onto the following street, Forsyth. 
 
-As I slowed and leaned around the island, though, I realized that the police siren blaring in my general vicinity, as one usually is on the street, was actually for my own benefit. I realized this when the cruiser cornered me in the space between the two three-lane channels of Delancey St and the window slid down.
+As I slowed and leaned around the island, though, I realized that the police siren blaring in my general vicinity, as one usually is on the street, was actually for my own benefit. I realized this when the cruiser cornered me in the space between the two three-lane channels of Delancey St, and its window slid down.
 
 "Let me see identification, sir," said the cop, sunglasses on. He got out as I handed him my state ID. "You were riding on the left side."
 
@@ -42,7 +25,7 @@ As I slowed and leaned around the island, though, I realized that the police sir
 
 He walked back over to his car and got in, saying, "Wait here."
 
-I waited, standing in the middle of Delancey. A greasy guy in a truck went by and looked at me and shook his finger, laughing. I couldn't tell if he was a scornful construction worker or a sarcastic hipster, but enjoyed it either way. A Mexican delivery guy asked if I was getting a ticket, but didn't stop long enough to hear the answer. I eventually got off my bike and carried it over to the island. After a while I looped it around behind me and leaned it forward to lean against it, gripping the brake.
+I waited, standing in the middle of Delancey. A guy in a truck went by and looked at me and shook his finger, laughing. I couldn't tell if he was a scornful construction worker or a sarcastic hipster. A Mexican delivery guy crossing the street asked if I was getting a ticket, but didn't stop long enough to hear the answer. I eventually got off my bike and carried it over to the island. After a while I looped it around behind me and leaned it forward to lean against it, gripping the brake.
 
 The officer reemerged from his idling Crown Vic and said, "Here you go," handing me my ID and a yellow piece of carbon paper.
 
@@ -68,4 +51,8 @@ He said very calmly, "it's on the summons." Then said again, a little less calm,
 
 "Have a nice day," I said unconvincingly as he closed the door on his car. He turned on his siren, slowing traffic on westbound Delancey, and pulled a U-turn back into traffic.
 
-It turns out that's not the law, not in NYC anyway. 1234(a) is a state law that is superseded by NYC traffic law.
+It turns out that's not the law, not in NYC anyway. Statute 1234(a) is a state law that, besides sounding made up, is superseded by NYC traffic law, which states that cyclists may ride on either side of a road over forty feet wide.
+
+Much has been written on the internet about the ongoing melodrama between bicycles and New York City, and I won't get into anything that's already covered admirably by <a href="http://www.streetsblog.org/">Streetsblog</a> and despicably by the Post. But I do want to talk about something less practical, and more important: ethics.
+
+We who ride bikes need some ethics. We should decide what the rules are that govern our behavior when we ride, because the rules that have been defined for us don't work. (Granted, I can only speak to the rules of the road in New York City, where I live. Let me know in <a href="page.php?number=b11">the letters</a> how they are elsewhere.)
