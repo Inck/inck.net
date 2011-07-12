@@ -189,7 +189,7 @@
 		$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
 		$letters = array_reverse($letters);
 ?>
-			<li class="column seven_units contained">
+			<li class="column seven_units">
 				<ul>
 					<li class="column two_units">
 						<a name="letters"></a>
@@ -225,14 +225,14 @@
 ?>
 						</ul>
 					</li>
-					<li class="space two_units"></li>
+					<li class="space two_units contained"></li>
 <?php
 		if((count($letters) - 1) and array_slice($letters, count($letters) / 2)) {
 ?>
 					<li class="column two_units">
 						<ul>
 <?php
-			foreach(array_slice($letters, ceil(count($letters) / 2)) as $letter) {
+			foreach(array_slice($letters, count($letters) / 2) as $letter) {
 				$lines = explode("\n", $letter);
 				$time = array_shift($lines);
 				$name = array_pop($lines);
