@@ -8,7 +8,7 @@
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
 			<li class="column twelve_units contained">
-				<img src="img/instruction_to_jump.png" class="instruction" style="display:none; position:absolute; top:50px; left:225px; z-index:99;" />
+				<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:50px; left:225px; z-index:99;" />
 				<ul>
 					<li class="column three_units contained">
 						<ul>
