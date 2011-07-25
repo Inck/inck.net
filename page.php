@@ -191,7 +191,7 @@
 ?>
 			<li class="column seven_units">
 				<ul>
-					<li class="column two_units">
+					<li class="column two_units contained">
 						<a name="letters"></a>
 						<ul>
 <?php
@@ -225,7 +225,7 @@
 ?>
 						</ul>
 					</li>
-					<li class="space two_units contained"></li>
+					<li class="space two_units"></li>
 <?php
 		if((count($letters) - 1) and array_slice($letters, count($letters) / 2)) {
 ?>
