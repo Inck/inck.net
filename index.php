@@ -51,7 +51,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="block edition">
-						<cite><a id="issue"><?php echo $edition; ?></a> -- <em><?php echo $title; ?></em> -- <a href="letters.php">Read Letters to the Editor</a></cite>
+						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em><?php echo $title; ?></em> -- <a href="letters.php">Read Letters to the Editor</a></cite>
 					</li>
 					<li class="block rule"></li>
 				</ul>
