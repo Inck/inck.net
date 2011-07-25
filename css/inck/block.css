@@ -1,9 +1,5 @@
+.block { margin-bottom: 5px; }
+
+.wrap .block { float:left; }
+
 .show .block { background-color:#eee !important; }
-
-.block {
-	margin-bottom: 5px;
-}
-
-.wrap .block {
-	float:left;
-}

@@ -1,5 +1,18 @@
 <?php
 header("Content-Type: text/css");
+?>
+/*
+	Inck is set in fourteen pixel Hoefler
+	Text if viewed on a Mac. The grid is 
+	twelve hundred pixels divided into 
+	twelve columns of eighty pixels each 
+	with twenty pixel gutters. The 
+	baseline grid is twenty-one pixels. 
+	The text is printed in #555, on acid-
+	free #fffffc.
+*/
+
+<?php
 $directory = opendir('.');
 while($filename = readdir($directory)) {
 	if(substr($filename, -4) == '.css' and substr($filename, 0, 1) != '.') {

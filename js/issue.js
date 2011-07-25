@@ -1,10 +1,12 @@
 $(function() {
-	$("#page").hover(
+	$("#issue").click(
 		function(){
-			$(this).removeClass('issues');
+			$('.issues').show();
 		}, 
 		function() {
-			$(this).addClass('issues');
+			$('.issues').show();
 		}
 	);
 });
+
+// #issues #page { -webkit-box-shadow:-.6em -.6em .4em #ccc; border:solid #eee; border-width:0 .2em; }

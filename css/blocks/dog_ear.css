@@ -1,13 +1,14 @@
 .dog_ear { position:relative; }
-.dog_ear h3 { font-family:'Gill Sans'; font-size:1.5em; line-height:1em; width:4em; padding:.5em 0; z-index:1; }
+.dog_ear section { font-family:'Gill Sans'; font-size:1.5em; line-height:1.1em; width:5.5em; padding:.5em 0; z-index:1; }
+.dog_ear label { cursor:pointer; }
 
 .dog_ear.right { right:0; }
-.dog_ear.right h3 { text-align:right; }
-.dog_ear.right h3,
+.dog_ear.right section { text-align:right; }
+.dog_ear.right section,
 .dog_ear.right .page_fold,
 .dog_ear.right .page_corner { position:absolute; right:0; }
 .dog_ear.right .page_corner {
-	background-color:white;
+ 	background-color:#fffffc;
 	width:120px; height:120px;
 	-webkit-box-shadow:-6px 5px 7px rgba(0,0,0,0.5); -moz-box-shadow:-6px 5px 7px rgba(0,0,0,0.5);
 }
@@ -26,7 +27,7 @@
 .dog_ear.left .page_fold,
 .dog_ear.left .page_corner { position:absolute; left:0; }
 .dog_ear.left .page_corner {
-	background-color:white;
+ 	background-color:#fffffc;
 	width:120px; height:120px;
 	-webkit-box-shadow:6px 5px 7px rgba(0,0,0,0.5); -moz-box-shadow:6px 5px 7px rgba(0,0,0,0.5);
 }

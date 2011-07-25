@@ -11,7 +11,7 @@ Websites were shared and programing languages discussed. There was agreement in 
 
 Conversations about Ruby on Rails tended to be short due to its name being difficult as fuck to say with a Spanish pronunciation.
 
-Potential projects were breathlessly discussed and imagined, despite Nick's complete inability to use the subjunctive verb form, in which any such conversation would be correctly conducted.
+Potential projects were breathlessly discussed and imagined, despite Nick’s complete inability to use the subjunctive verb form, in which any such conversation would be correctly conducted.
 
 One such project, creating a communal space for users to discuss and share information on the fact that both power and water go out several unscheduled times per day, was considered particularly interesting. 
 

@@ -7,8 +7,13 @@
 	$articles = new SimpleXMLElement($feed);
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
+			<!-- <ul class="new" style="display:none;">
+				<li>Hyphen-ation</li>
+				<li></li>
+				<li></li>
+			</ul> -->
+			<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:60px; left:150px; z-index:99;" />
 			<li class="column twelve_units contained">
-				<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:50px; left:225px; z-index:99;" />
 				<ul>
 					<li class="column three_units contained">
 						<ul>
@@ -29,7 +34,8 @@
 					<li class="column three_units">
 						<ul>
 							<li class="block dog_ear right">
-								<h3><a href="#/instruction" id="suggestion"><em>Slightly Better!</em> Legibility after the Jump</a></h3>
+								<section><a href="#/instruction"><em>Slightly Better!</em> Legibility after the Jump</a></section>
+								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="block ear">
@@ -45,7 +51,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="block edition">
-						<cite><?php echo $edition; ?> -- <?php echo $title; ?> -- Updated: <em>Mid Month</em></cite>
+						<cite><a id="issue"><?php echo $edition; ?></a> -- <em><?php echo $title; ?></em> -- <a href="letters.php">Read Letters to the Editor</a></cite>
 					</li>
 					<li class="block rule"></li>
 				</ul>
@@ -137,8 +143,8 @@
 							</li>
 							<li class="column three_units">
 								<ul>
-									<li class="space leader hyphenate"></li>
-									<!-- <li data-article="2" data-column="2" class="block leader hyphenate"></li> -->
+									<!-- <li class="space leader hyphenate"></li> -->
+									<li data-article="2" data-column="2" class="block leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="column three_units">

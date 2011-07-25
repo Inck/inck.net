@@ -1,23 +1,23 @@
 Privacy is Boring
 April 20th, 2011
 
-Your iPhone's been tracking your location for a year, and that's okay.
+Your iPhone’s been tracking your location for a year, and that’s okay.
 
-Keep in mind that your location history is only kept indirectly on a file on your computer. It isn't being sent to Apple or Google or the government. 
+Keep in mind that your location history is only kept indirectly on a file on your computer. It isn’t being sent to Apple or Google or the government. 
 
 But why would you care if it was? More to the point, why do you think Apple or Google or the government would care?
 
 No one cares where you are. 
 
-Your friends and family might care, but hopefully you trust them with that information. A crazy ex might care, but that's a personal problem not a technical one. A high-tech burglar might care, but if you're the target of high-tech burglars then you should just have your phone butler travel in a separate jet.
+Your friends and family might care, but hopefully you trust them with that information. A crazy ex might care, but that’s a personal problem not a technical one. A high-tech burglar might care, but if you’re the target of high-tech burglars then you should just have your phone butler travel in a separate jet.
 
 So set those paranoias aside for a second, and if you have an iPhone backed up on your computer unencrypted, go <a href="http://petewarden.github.com/iPhoneTracker/">download the iPhone Tracker application</a> and launch it.
 
-It's awesome.
+It’s awesome.
 
-Right there's the story of the last year of your life. Take five minutes to move the time slider around the year; reflect on where you went, and remember what you did there. Are there dots you didn't recognize right away? A camping trip you had forgotten about? A quick visit home?
+Right there’s the story of the last year of your life. Take five minutes to move the time slider around the year; reflect on where you went, and remember what you did there. Are there dots you didn’t recognize right away? A camping trip you had forgotten about? A quick visit home?
 
-Look at the size of the circles where you live, like warm bubbles inflated around you by the time you've spent in one place working, learning where things are, building relationships with the people near by.
+Look at the size of the circles where you live, like warm bubbles inflated around you by the time you’ve spent in one place working, learning where things are, building relationships with the people near by.
 
 Maybe you moved this year, and you can see the two sets of circles around your old and new homes, one growing against the other as you slide forward in time towards today.
 
@@ -25,8 +25,8 @@ Now imagine dragging the slider across five years, twenty years, a whole life si
 
 Your hometown would grow and complicate for years until your college town bloomed briefly and then the big city you moved to, the place you grew up showing seasonal green shoots, then where you settled down, where you raised your children growing to rival in size the site of your own childhood.
 
-The notion of an exhaustive history of where you've been could be scary, I guess, in the wrong hands. 
+The notion of an exhaustive history of where you’ve been could be scary, I guess, in the wrong hands. 
 
 It could also be beautiful and powerful in your own, an automatic scrapbook kept in a digital drawer, thumbed through yearly as it assembles new pages for you, new memorials built in the background by technological chroniclers.
 
-The risk of your phone telling someone where you've been is dwarfed by the reward of it telling you that same thing.
+The risk of your phone telling someone where you’ve been is dwarfed by the reward of it telling you that same thing.

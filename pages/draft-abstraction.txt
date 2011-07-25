@@ -1,7 +1,0 @@
-Large organizations fail due to their need to abstract between subsections of themselves in order to function.
-
-Government abstracts between people and their laws. 
-
-Financial products abstract between people and their money.
-
-We accept abstractions--money, regulatons, spokespersons--as a part of the daily things we do because we believe in the notion of abstraction, of substitution: That this thing can be said to equal that thing, and there after be used in that thing's place.
