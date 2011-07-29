@@ -17,7 +17,7 @@
 				<ul>
 					<li class="column three_units contained">
 						<ul>
-							<li class="block ear">
+							<li class="module ear">
 								<div>
 									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">99¢</a></strong>
 								</div>
@@ -26,19 +26,19 @@
 					</li>
 					<li class="column six_units">
 						<ul>
-							<li class="block flag">
+							<li class="module flag">
 								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
 							</li>
 						</ul>
 					</li>
 					<li class="column three_units">
 						<ul>
-							<li class="block dog_ear right">
+							<li class="module dog_ear right">
 								<section><a href="#/instruction"><em>Slightly Better!</em> Legibility after the Jump</a></section>
 								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
-							<li class="block ear">
+							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
 									<p>Occasional Rain, Warming. Distant Winds Out of the West.</p>
@@ -50,10 +50,10 @@
 			</li>
 			<li class="column twelve_units contained">
 				<ul>
-					<li class="block edition">
+					<li class="module edition">
 						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em><?php echo $title; ?></em> -- <a href="letters.php">Read Letters to the Editor</a></cite>
 					</li>
-					<li class="block rule"></li>
+					<li class="module rule"></li>
 				</ul>
 			</li>
 			<li class="column nine_units contained">
@@ -64,7 +64,7 @@
 	$banner = $a1[0];
 	if($banner) {
 ?>
-					<li class="block banner">
+					<li class="module banner">
 						<h1><a href="page.php?number=<?php echo $article; ?>" id="<?php echo $article; ?>"><?php echo $banner; ?></a></h1>
 					</li>
 <?php
@@ -72,7 +72,7 @@
 ?>
 					<li class="column three_units contained">
 						<ul>
-							<li data-article="1" data-column="1" class="block leader first front hyphenate">
+							<li data-article="1" data-column="1" class="module leader first front hyphenate">
 <?php
 	$indent =
 "								";
@@ -85,24 +85,24 @@
 					</li>
 					<li class="column six_units">
 						<ul>
-							<li class="block cut">
+							<li class="module cut">
 								<?php echo $cut; ?>
 							</li>
 							<li class="column three_units contained">
 								<ul>
-									<li data-article="1" data-column="2" class="block leader hyphenate"></li>
+									<li data-article="1" data-column="2" class="module leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="column three_units">
 								<ul>
-									<li data-article="1" data-column="3" class="block leader hyphenate"></li>
+									<li data-article="1" data-column="3" class="module leader hyphenate"></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 					<li class="column nine_units contained">
 						<ul>
-							<li class="block sidebar">
+							<li class="module sidebar">
 								<h3>Common English Metrical Feet</h3>
 								<table>
 									<tr>
@@ -130,7 +130,7 @@
 							</li>
 							<li class="column three_units contained">
 								<ul>
-									<li data-article="2" data-column="1" class="block leader hyphenate">
+									<li data-article="2" data-column="1" class="module leader hyphenate">
 <?php
 	$indent =
 "										";
@@ -144,12 +144,12 @@
 							<li class="column three_units">
 								<ul>
 									<!-- <li class="space leader hyphenate"></li> -->
-									<li data-article="2" data-column="2" class="block leader hyphenate"></li>
+									<li data-article="2" data-column="2" class="module leader hyphenate"></li>
 								</ul>
 							</li>
 							<li class="column three_units">
 								<ul>
-									<li data-article="3" data-column="1" class="block leader hyphenate">
+									<li data-article="3" data-column="1" class="module leader hyphenate">
 <?php
 	$indent =
 "										";
@@ -166,7 +166,7 @@
 			</li>
 			<li class="column three_units">
 				<ul>
-					<li data-article="4" data-column="1" class="block leader hyphenate">
+					<li data-article="4" data-column="1" class="module leader hyphenate">
 <?php
 	$indent =
 "						";

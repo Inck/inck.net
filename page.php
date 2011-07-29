@@ -38,7 +38,7 @@
 ?>
 			<li class="column one_unit">
 				<ul>
-					<li class="block flag secondary">
+					<li class="module flag secondary">
 						<h3><a href="./"><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></a></h3>
 					</li>
 				</ul>
@@ -46,7 +46,7 @@
 			<li class="space nine_units"></li>
 			<li class="column two_units">
 				<ul>
-					<li class="block edition secondary">
+					<li class="module edition secondary">
 						<cite><?php echo $edition; ?></cite>
 						<cite>Page <?php echo $number;  ?></cite>
 					</li>
@@ -54,12 +54,12 @@
 			</li>
 			<li class="column twelve_units contained">
 				<ul>
-					<li class="block rule"></li>
+					<li class="module rule"></li>
 				</ul>
 			</li>
 			<li class="column five_units contained rule_at_right">
 				<ul>
-					<li id="main_article" data-article="1" data-column="1" class="block leader legible continued">
+					<li id="main_article" data-article="1" data-column="1" class="module leader legible continued">
 						<h1><?php if($words_read) echo "Continued from '"; echo $title; if($words_read) echo "'"; ?></h1>
 						<cite>by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
 <?php
@@ -109,10 +109,10 @@
 ?>
 			<li class="column two_units">
 				<ul>
-					<li class="block letter_header prompt">
+					<li class="module letter_header prompt">
 						<h2>Your Letter:</h2>
 					</li>
-					<li class="block letter">
+					<li class="module letter">
 						<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
 						<p class="prompt">Dear Sir:</p>
 <?php
@@ -144,7 +144,7 @@
 						<ul>
 							<li class="column four_units contained">
 								<ul>
-									<li class="block letter postcard prompt">
+									<li class="module letter postcard prompt">
 										<h2>Dear Sir:</h2>
 										<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="prompt"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='prompt' }" tabindex="1" rows="10" cols="100"><?php if($_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
 										<label for="name">Sincerely,</label>
@@ -154,7 +154,7 @@
 							</li>
 							<li class="column three_units">
 								<ul>
-									<li class="block postcard_post">
+									<li class="module postcard_post">
 <?php
 	if($user_message) {
 ?>
@@ -166,13 +166,13 @@
 											<input type="submit" value="<?php echo "Apply\nPostage"; ?>" onmousedown="this.className='hover';this.value='I';" tabindex="3" />
 										</label>
 									</li>
-									<li class="block postcard_address">
+									<li class="module postcard_address">
 										<address>Write in the space to the left, and sign</address>
 										<address>below it. Apply postage to send.</address>
 										<address>Are you a person? <label><input type="radio" name="is_computer" value="no"<?php if($_POST['is_computer'] == "no") { ?> checked="checked"<?php } ?> /> Yes.</label> <label><input type="radio" name="is_computer" value="beep"<?php if($_POST['is_computer'] != "no") { ?> checked="checked"<?php } ?>  /> Beep.</label></address>
 										<input type="hidden" id="letter_submitted" name="letter_submitted" value="true" />
 									</li>
-									<li class="block postcard_corner">
+									<li class="module postcard_corner">
 										<div></div>
 									</li>
 								</ul>
@@ -200,9 +200,9 @@
 			$time = array_shift($lines);
 			$name = array_pop($lines);
 ?>
-							<li class="block letter_box">
+							<li class="module letter_box">
 								<ul>
-									<li class="block letter">
+									<li class="module letter">
 										<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
 										<p class="prompt">Dear Sir:</p>
 <?php
@@ -237,9 +237,9 @@
 				$time = array_shift($lines);
 				$name = array_pop($lines);
 ?>
-							<li class="block letter_box">
+							<li class="module letter_box">
 								<ul>
-									<li class="block letter">
+									<li class="module letter">
 										<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
 										<p class="prompt">Dear Sir:</p>
 <?php

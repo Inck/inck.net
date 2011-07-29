@@ -1,5 +1,4 @@
 .space { height:1px; }
-
 <?php
 // header("Content-Type: text/css");
 
@@ -25,7 +24,6 @@ foreach($words as $number => $word) {
 }
 
 ?> { float: left; margin-left: <?php echo $margin / 10 . 'em'; ?>; }
-
 <?php
 foreach($words as $number => $word) {
 	if($number == 1) {
@@ -38,14 +36,8 @@ foreach($words as $number => $word) {
 <?php
 }
 ?>
-
 #page { width:<?php echo ($site + $margin) / 10 . 'em'; ?>; margin:0 auto; }
-
 #grid { width:<?php echo $site / 10 . 'em'; ?>; padding-left:<?php echo $margin / 10 . 'em'; ?>; }
-
 .contained { margin-left:0; } /* ToDo: Change 'contained' to 'first' or 'first_child'. Move in all markup to succeed 'block'? */
-
 .rule_at_right ul { padding-right:1.9em; border-right:.1em solid #bbb; }
-
-.show#grid { background-image:url('img/grid.png'); background-repeat:repeat-y; }
 

@@ -17,10 +17,12 @@ $directory = opendir('.');
 while($filename = readdir($directory)) {
 	if(substr($filename, -4) == '.css' and substr($filename, 0, 1) != '.') {
 		$handle = fopen($filename, "r");
-		echo fread($handle, filesize($filename)) . "\n";
+		echo "/* " . $filename . " */\n" . fread($handle, filesize($filename)) . "\n";
 		fclose($handle);
 	} elseif(substr($filename, -4) == '.php' and substr($filename, 0, 1) != '.' and $filename != "index.php") {
+		echo "/* " . $filename . " */\n";
 		include($filename);
+		echo "\n";
 	}
 }
 closedir($directory);
