@@ -22,7 +22,6 @@ while($filename = readdir($directory)) {
 	} elseif(substr($filename, -4) == '.php' and substr($filename, 0, 1) != '.' and $filename != "index.php") {
 		echo "/* " . $filename . " */\n";
 		include($filename);
-		echo "\n";
 	}
 }
 closedir($directory);
