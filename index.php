@@ -7,13 +7,13 @@
 	$articles = new SimpleXMLElement($feed);
 	$article = substr($articles->channel->item[0]->guid, 32);
 ?>
-			<!-- <ul class="new" style="display:none;">
-				<li>Hyphen-ation</li>
-				<li></li>
-				<li></li>
-			</ul> -->
-			<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:60px; left:150px; z-index:99;" />
 			<li class="column twelve_units contained">
+				<!-- <ul class="new" style="display:none;">
+					<li>Hyphen-ation</li>
+					<li></li>
+					<li></li>
+				</ul> -->
+				<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:60px; left:150px; z-index:99;" />
 				<ul>
 					<li class="column three_units contained">
 						<ul>
