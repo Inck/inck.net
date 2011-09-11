@@ -1,6 +1,6 @@
 <?php
 	// ToDo: Truncation is happening a few words long. 187 instead of 185, 255 instead of 250, 265 instead of 260. Fix this bullshit.
-	$lines = file("pages/$article.txt", FILE_TEXT);
+	$lines = file("pages/$page.txt", FILE_TEXT);
 	$title = trim(array_shift($lines));
 	$date = trim(array_shift($lines));
 	$lede = explode(' -- ', $lines[1]);
@@ -17,12 +17,12 @@
 		$paragraphs = explode("\n\n", $text);
 		$current = 1;
 		$last = count($paragraphs);
-		$page = strtoupper($article);
+		$page = strtoupper($page);
 	}
 ?>
 <?php echo $indent; ?><article>
 <?php $indent .= "\t"; ?>
-<?php echo $indent; ?><h2><a href="page.php?number=<?php echo $article; ?>"><?php echo $title; ?></a></h2>
+<?php echo $indent; ?><h2><a href="page.php?number=<?php echo $page; ?>"><?php echo $title; ?></a></h2>
 <?php echo $indent; ?><cite>by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
 <?php	
 	foreach($paragraphs as $paragraph) {
@@ -47,8 +47,8 @@
 		}
 
 		if($jump and $current == $last) {
-			$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$article.txt"))) - 1;
-			echo "… <a href=\"page.php?number=$article&amp;from=$jump#$article\" class=\"jumpline\">continued";
+			$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$page.txt"))) - 1;
+			echo "… <a href=\"page.php?number=$page&amp;from=$jump#$page\" class=\"jumpline\">continued";
 			echo ", with " . $words[$number_of_letters];
 			echo " Letter";
 			if($number_of_letters != 1) echo "s";
