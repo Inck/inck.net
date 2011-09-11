@@ -1,4 +1,4 @@
-/* Clearfix all blocks and the grid itself. */
+/* Clearfix all modules and the grid itself. */
 #grid:after, .module:after {
 	content: ".";
 	display: block;
