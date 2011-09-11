@@ -1,4 +1,18 @@
 <?php
+	// From comment by n-jones at fredesign dot net on http://php.net/manual/en/function.system.php.
+	function mysystem($command) {
+		if (!($p=popen("($command)2>&1","r"))) { 
+			return 126;
+		}
+
+		while (!feof($p)) {
+			$line=fgets($p,1000);
+			$out .= $line;
+		}
+		pclose($p);
+		return $out; 
+	}
+
 	// header('HTTP/1.1 301 Moved Permanently');
 	// header('Location: http://inck.net/letters/');
 	if($number = $_GET['number']) {
@@ -16,7 +30,7 @@
 
 		// Comment Submission
 		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-		$default_name = "Mr. Your Name";
+		$default_name = "Your Name";
 		
 		if($_POST['letter_submitted'] == 'true') {
 			if($_POST['is_computer'] == 'beep') { $user_message = "Sender Not Person"; }
@@ -24,8 +38,15 @@
 			elseif(!$_POST['name'] or $_POST['name'] == $default_name) { $user_message = "Name Not Given"; }
 			elseif(strpos(file_get_contents("letters/$number.txt"), $_POST['name']) and strpos(file_get_contents("letters/$number.txt"), $_POST['letter'])) { $user_message = "Duplicate Letter Found"; }
 			else {
-				file_put_contents("letters/$number.txt", time() . "\n\n" . $_POST['letter'] . "\n\n" . $_POST['name'] . "\n\n-----------------\n\n", FILE_APPEND);
+				$letters_file = "letters/$number.txt";
+				file_put_contents($letters_file, time() . "\n\n" . $_POST['letter'] . "\n\n" . $_POST['name'] . "\n\n-----------------\n\n", FILE_APPEND);
 				unset($_POST);
+				
+				// Commit letter to Git.
+				$path = getenv('PATH');
+				putenv("PATH=/usr/local/git/libexec/git-core:$path");
+				`git add $letters_file`;
+				`git commit -m 'Someone added a new comment.'`;
 				$letter_published = true;
 			}
 		}
