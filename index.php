@@ -2,10 +2,10 @@
 	$title = "Early Evening-In Edition";
 	include 'inc/head.php';
 	
-	// Get article list from feed.
-	$feed = `php feed.php`;
-	$articles = new SimpleXMLElement($feed);
-	$article = substr($articles->channel->item[0]->guid, 32);
+	// Get a1 data.
+	$a1 = explode("\n", file_get_contents("pages/a1"));
+	$banner = $a1[0];
+	$cut = $a1[1];
 ?>
 			<li class="column twelve_units contained">
 				<!-- <ul class="new" style="display:none;">
@@ -41,7 +41,7 @@
 							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
-									<p>Occasional Rain, Warming. Distant Winds Out of the West.</p>
+									<p>Raining and Cool. Twister Warnings Moving to the North.</p>
 								</div>
 							</li>
 						</ul>
@@ -59,13 +59,13 @@
 			<li class="column nine_units contained">
 				<ul>
 <?php
-	$a1 = explode("\n", file_get_contents("pages/a1"));
-	$cut = $a1[1];
-	$banner = $a1[0];
+	$article = explode(' ', $a1[2]);
+	$page = $article[0];
+	$jump = $article[1];
 	if($banner) {
 ?>
 					<li class="module banner">
-						<h1><a href="page.php?number=<?php echo $article; ?>" id="<?php echo $article; ?>"><?php echo $banner; ?></a></h1>
+						<h1><a href="page.php?number=<?php echo $page; ?>" id="<?php echo $page; ?>"><?php echo $banner; ?></a></h1>
 					</li>
 <?php
 	}
@@ -76,8 +76,6 @@
 <?php
 	$indent =
 "								";
-	$jump = $a1[2];
-	$article = substr($articles->channel->item[0]->guid, 32);
 	include 'inc/article.php';
 ?>
 							</li>
@@ -134,8 +132,9 @@
 <?php
 	$indent =
 "										";
-	$jump = $a1[4];
-	$article = substr($articles->channel->item[2]->guid, 32);
+	$article = explode(' ', $a1[4]);
+	$page = $article[0];
+	$jump = $article[1];
 	include 'inc/article.php';
 ?>
 									</li>
@@ -153,8 +152,9 @@
 <?php
 	$indent =
 "										";
-	$jump = $a1[5];
-	$article = substr($articles->channel->item[3]->guid, 32);
+	$article = explode(' ', $a1[5]);
+	$page = $article[0];
+	$jump = $article[1];
 	include 'inc/article.php';
 ?>
 									</li>
@@ -170,8 +170,9 @@
 <?php
 	$indent =
 "						";
-	$jump = $a1[3];
-	$article = substr($articles->channel->item[1]->guid, 32);
+	$article = explode(' ', $a1[3]);
+	$page = $article[0];
+	$jump = $article[1];
 	include 'inc/article.php';
 ?>
 					</li>
