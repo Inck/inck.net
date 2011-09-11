@@ -23,7 +23,7 @@ foreach($words as $number => $word) {
 	if($is_not_last) echo ",\n";
 }
 
-?> { float: left; margin-left: <?php echo $margin / 10 . 'em'; ?>; }
+?> { float:left; margin-left:<?php echo $margin / 10 . 'em'; ?>; }
 <?php
 foreach($words as $number => $word) {
 	if($number == 1) {
