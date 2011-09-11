@@ -17,7 +17,6 @@
 		$paragraphs = explode("\n\n", $text);
 		$current = 1;
 		$last = count($paragraphs);
-		$page = strtoupper($page);
 	}
 ?>
 <?php echo $indent; ?><article>
