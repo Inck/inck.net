@@ -31,7 +31,7 @@ The worst culprit has been the print media industry. Their core product is exact
 
 Which brings me to the other kind of bullshit that apps are, besides technology bullshit. Apps aren’t even a technology. They’re a package. They’re a shiny box. Granted, that includes a collection of interface design conventions, a marketing strategy, business model, and distribution system, but that’s just what a quality digital box looks like. (Apple has always made great boxes.) What matters most is that it’s a box that makes people want to buy its contents.
 
-Web pages have historically been something we accessed, as opposed to acquired. It was created by academics, and so has the feel of a library, if not just one enormous book. It consists of names, numbers, indexes and catalogs. Access, especially to information, is something we expect for free. Acquisition, even of information, is something we accept paying for.
+Web pages have historically been something we accessed, as opposed to acquired. The web was created by academics, and so has the feel of a library, if not just one enormous book. It consists of names, numbers, indexes and catalogs. Access, especially to information, is something we expect for free. Acquisition, even of information, is something we accept paying for.
 
 And the difference between access and acquisition is just positioning; it’s bullshit, but it’s important bullshit. If you take a website, give it a physical design metaphor and a big icon, have people ‘download’ rather than ‘view’ it, and make it persist on a screen that belongs to them, then suddenly you’ve gone from viewing a document, to having a thing. (I’m not saying all that’s easy, just that it has nothing to do with code.)
 
