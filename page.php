@@ -30,7 +30,7 @@
 
 		// Comment Submission
 		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-		$default_name = "Your Name";
+		$default_name = "Publius Ovidius Naso";
 		
 		if($_POST['letter_submitted'] == 'true') {
 			if($_POST['is_computer'] == 'beep') { $user_message = "Sender Not Person"; }
