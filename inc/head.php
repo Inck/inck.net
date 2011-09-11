@@ -9,9 +9,9 @@
 	<meta charset="UTF-8"/>
 	<link rel="icon" href="img/favicon.gif" />
 	<link rel="stylesheet" type="text/css" href="css/lib" />
-	<link rel="stylesheet" type="text/css" href="css/inck" />
-	<link rel="stylesheet" type="text/css" href="css/clips" />
+	<link rel="stylesheet" type="text/css" href="css/global" />
 	<link rel="stylesheet" type="text/css" href="css/modules" />
+	<link rel="stylesheet" type="text/css" href="css/elements" />
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
 	<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
