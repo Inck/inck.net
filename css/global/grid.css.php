@@ -38,6 +38,6 @@ foreach($words as $number => $word) {
 ?>
 #page { width:<?php echo ($site + $margin) / 10 . 'em'; ?>; margin:0 auto; }
 #grid { width:<?php echo $site / 10 . 'em'; ?>; padding-left:<?php echo $margin / 10 . 'em'; ?>; }
-.contained { margin-left:0; } /* ToDo: Change 'contained' to 'first' or 'first_child'. Move in all markup to succeed 'block'? */
+.contained { margin-left:0; } /* ToDo: Change 'contained' to 'first' or 'first_child'. Move in all markup to succeed 'module'? */
 .rule_at_right ul { padding-right:1.9em; border-right:.1em solid #bbb; }
 
