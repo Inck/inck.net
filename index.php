@@ -101,29 +101,35 @@
 					<li class="column nine_units contained">
 						<ul>
 							<li class="module sidebar">
-								<h3>Common English Metrical Feet</h3>
+								<h3><?php echo $a1[6]?></h3>
 								<table>
+<?php
+	$data = array_slice($a1, 7);
+	$column_index = 1;
+	foreach($data as $row) {
+		$columns = explode(',', $row);
+?>
 									<tr>
-										<th></th>
-										<th>Iamb</th>
-										<th>Trochee</th>
-										<th>Spondee</th>
-										<th>Dactyl</th>
+<?php
+		$row_index = 1;
+		foreach($columns as $column) {
+			if($row_index == 1 or $column_index == 1) {
+?>
+										<th><?php echo $column; ?></th>
+<?php
+			} else {
+?>
+										<td><?php echo $column; ?></td>
+<?php
+			}
+			$row_index++;
+		}
+		$column_index++;
+?>
 									</tr>
-									<tr>
-										<th>Scansion</th>
-										<td>˘ /</td>
-										<td>/ ˘</td>
-										<td>/ ˘ ˘</td>
-										<td>˘ ˘ /</td>
-									</tr>
-									<tr>
-										<th>Example</th>
-										<td>destroy</td>
-										<td>always</td>
-										<td>everything</td>
-										<td>entertains</td>
-									</tr>
+<?php
+	}
+?>
 								</table>
 							</li>
 							<li class="column three_units contained">
