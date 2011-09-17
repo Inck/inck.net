@@ -1,4 +1,4 @@
-Inck is Ink
+Inck is Like Ink
 July 25th, 2011
 
 Inck is an ongoing experiment in grid-based frontend development, databaseless content management, HTML5 and CSS3 techniques, whimsical layout, and the recombination of design, content and code.
