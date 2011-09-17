@@ -6,7 +6,7 @@
 .nine_units .sidebar td { width:290px; }
 .sidebar th { min-width:2em; }
 .sidebar th,
-.sidebar td { padding:.5em; }
+.sidebar td { padding:.5em; vertical-align:baseline; }
 .sidebar dt { float:left; }
 .sidebar dd { float:right; }
 .sidebar dt:after { content:': '; }
