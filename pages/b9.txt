@@ -5,7 +5,7 @@ Inck is an ongoing experiment in grid-based frontend development, databaseless c
 
 I write, design, and build Inck as one project, switching between writing code and words when I feel like it, or when a change to one suggests a change to the other.
 
-Inck’s ‘content management system’ consists of <a href="pages">text files</a> parsed for linebreaks and nothing else, formatted beyond that with HTML. The front page is configured with a simple list of values for article breaks, an optional banner headline, and an image embed, in the file ‘<a href="pages/a1">a1</a>’.
+Inck’s ‘content management system’ consists of <a href="pages">text files</a> parsed for linebreaks and nothing else, formatted beyond that with HTML. The front page is configured with a simple list of articles, word counts for where to break them, an optional banner headline, an image embed, and CSV data to populate the sidebar, all in the file ‘<a href="pages/a1">a1</a>’.
 
 Because everything is a file, everything--content and code--is managed through a version control system, originally Subversion and now Git.
 
