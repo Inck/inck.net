@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/modules" />
 	<link rel="stylesheet" type="text/css" href="css/elements" />
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
-	<title>Inck ~ <?php if(isset($characters_read)) { echo "Continued from "; } echo $title; ?></title>
+	<title>Inck ~ <?php echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 	<script src="js/lib/hyphenator/Hyphenator.js"></script>
 	<script src="js/lib/jquery-1.3.2.min.js"></script>

@@ -1,5 +1,5 @@
 <?php
-	$title = "Early Evening-In Edition";
+	$title = "Things on the Internet from Nicholas Hall";
 	include 'inc/head.php';
 	
 	// Get a1 data.
@@ -51,7 +51,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em><?php echo $title; ?></em> -- <a href="letters.php">Letters to the Editor</a></cite>
+						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Early Evening-In Edition</em> -- <a href="letters.php">Letters to the Editor</a></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>
