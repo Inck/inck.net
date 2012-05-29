@@ -252,7 +252,7 @@
 					</li>
 					<li class="space one_unit"></li>
 <?php
-		if((count($letters) - 1) and array_slice($letters, count($letters) / 2)) {
+		if((count($letters)) and array_slice($letters, count($letters) / 2)) {
 ?>
 					<li class="column three_units">
 						<ul>
