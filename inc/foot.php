@@ -1,7 +1,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="footer">
-						<small class="copyright">©2011 by Nicholas Hall. All rights are reserved.</small>
+						<small class="copyright">©2010 to 2012 by Nicholas Hall. All rights reserved.</small>
 						<p>This website is designed for view in a <a href="http://www.apple.com/safari/">standard</a> <a href="http://www.google.com/chrome/">browser</a> on a Mac. <a href="http://validator.w3.org/check?uri=http://inck.net/">Validate as HTML5.</a> <a href="css/global">Read the colophon.</a></p>
 					</li>
 				</ul>

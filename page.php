@@ -209,14 +209,18 @@
 		$letters_together = file_get_contents("letters/$number.txt");
 		$letters = explode("\n\n-----------------\n\n", $letters_together); array_pop($letters);
 		$letters = array_reverse($letters);
+		$letter_responses = array();
 ?>
 			<li class="column seven_units">
 				<ul>
-					<li class="column two_units contained">
+					<li class="column three_units contained">
 						<a name="letters"></a>
 						<ul>
 <?php
-		foreach(array_slice($letters, 0, ceil(count($letters) / 2)) as $letter) {
+		foreach($letters as $letter) {
+			$response = explode("\n\n---------\n\n", $letter);
+			$letter = $response[0];
+			$letter_responses[] = $response[1];
 			$lines = explode("\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
@@ -246,17 +250,18 @@
 ?>
 						</ul>
 					</li>
-					<li class="space two_units"></li>
+					<li class="space one_unit"></li>
 <?php
-		if((count($letters) - 1) and array_slice($letters, count($letters) / 2)) {
+		if((count($letters)) and array_slice($letters, count($letters) / 2)) {
 ?>
-					<li class="column two_units">
+					<li class="column three_units">
 						<ul>
 <?php
-			foreach(array_slice($letters, count($letters) / 2) as $letter) {
-				$lines = explode("\n", $letter);
-				$time = array_shift($lines);
-				$name = array_pop($lines);
+			foreach($letter_responses as $letter) {
+				if($letter) {
+					$lines = explode("\n", $letter);
+					$time = strtotime(array_shift($lines));
+					$name = array_pop($lines);
 ?>
 							<li class="module letter_box">
 								<ul>
@@ -264,14 +269,14 @@
 										<em><?php if(date('zY') != date('zY', $time)) { echo date('F jS, Y', $time); } else { echo date('g:i a', $time); } ?></em>
 										<p class="prompt">Dear Sir:</p>
 <?php
-				foreach($lines as $line) {
-					$line = trim($line);
-					if($line) {
+					foreach($lines as $line) {
+						$line = trim($line);
+						if($line) {
 ?>
 										<p><?php echo $line; ?></p>
 <?php
+						}
 					}
-				}
 ?>
 										<p class="prompt">Sincerely,</p>
 										<cite><?php echo $name; ?></cite>
@@ -279,6 +284,7 @@
 								</ul>
 							</li>
 <?php
+				}
 			}
 ?>
 						</ul>
@@ -286,7 +292,7 @@
 <?php
 		} else {
 ?>
-					<li class="space two_units"></li>
+					<!-- <li class="space two_units"></li> -->
 <?php
 		}
 ?>

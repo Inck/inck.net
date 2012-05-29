@@ -34,7 +34,7 @@
 					<li class="column three_units">
 						<ul>
 							<li class="module dog_ear right">
-								<section><a href="#/instruction"><em>Slightly Better!</em> Legibility after the Jump</a></section>
+								<section><em>Slightly Better!</em> <a href="#/instruction">Legibility after the Jump</a></section>
 								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
