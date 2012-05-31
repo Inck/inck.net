@@ -1,5 +1,5 @@
 <?php
-	$title = "Writing on Technology by Nicholas Hall";
+	$title = "Writing on The Internet by Nicholas Hall";
 	include 'inc/head.php';
 	
 	// Get a1 data.
