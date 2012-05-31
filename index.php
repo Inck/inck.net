@@ -19,7 +19,7 @@
 						<ul>
 							<li class="module ear">
 								<div>
-									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">$5</a></strong>
+									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">99¢</a></strong>
 								</div>
 							</li>
 						</ul>
@@ -51,7 +51,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Early Summer Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today Is: <?php echo date('l, F jS'); ?></cite>
+						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Early Summer Edition</em> -- <a href="letters.php">Letters to the Editor</a></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>
