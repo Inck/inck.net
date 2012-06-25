@@ -51,7 +51,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Early Summer Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today Is: <?php echo date('l, F jS'); ?></cite>
+						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Early Summer Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today: <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>

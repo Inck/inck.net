@@ -22,7 +22,7 @@
 <?php echo $indent; ?><article>
 <?php $indent .= "\t"; ?>
 <?php echo $indent; ?><h2><a href="page.php?number=<?php echo $page; ?>"><?php echo $title; ?></a></h2>
-<?php echo $indent; ?><cite>Revised by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
+<?php echo $indent; ?><cite>Edited by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
 <?php	
 	foreach($paragraphs as $paragraph) {
 		$paragraph = trim($paragraph);
