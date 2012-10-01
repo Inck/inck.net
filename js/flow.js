@@ -45,7 +45,7 @@ $(function(){
 		// For each column in order, move text into next column until it's short enough.
 		var content = contents[article_index];
 		$.each(columns, function(index, column){
-// console.log("Flowing from "+column.attr('data-column')+" to "+$(columns[index+1]).attr('data-column'));
+// console.log("Flowing from column "+column.attr('data-column')+" to column "+$(columns[index+1]).attr('data-column')+" in article "+$(columns[index+1]).attr('data-article'));
 			for(column_break = $(column).html().length;
 			 	$(column).height() > column_heights[index];
 				column_break--)

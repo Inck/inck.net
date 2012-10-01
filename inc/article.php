@@ -48,10 +48,12 @@
 		if($jump and $current == $last) {
 			$number_of_letters = count(explode("\n\n-----------------\n\n", file_get_contents("letters/$page.txt"))) - 1;
 			echo "… <a href=\"page.php?number=$page&amp;from=$jump#$page\" class=\"jumpline\">continued";
-			echo ", with " . $words[$number_of_letters];
-			echo " Letter";
-			if($number_of_letters != 1) echo "s";
-			echo " to the Editor";
+			if($number_of_letters) {
+				echo " with " . $words[$number_of_letters];
+				echo " Letter";
+				if($number_of_letters != 1) echo "s";
+				// echo " to the Editor";
+			}
 			echo " »</a>";
 		} else {
 			$current++;
