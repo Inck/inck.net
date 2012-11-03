@@ -19,7 +19,7 @@
 						<ul>
 							<li class="module ear">
 								<div>
-									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">$5</a></strong>
+									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">55¢</a></strong>
 								</div>
 							</li>
 						</ul>
