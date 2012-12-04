@@ -1,12 +1,12 @@
 <?php
 	error_reporting(0);
 	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
-	$edition = "Volume Two, Issue Three";
+	$edition = "Volume Three, Issue One";
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta charset="UTF-8"/>
+	<meta charset="utf-8" />
 	<link rel="icon" href="img/favicon.gif" />
 	<link rel="stylesheet" type="text/css" href="css/lib" />
 	<link rel="stylesheet" type="text/css" href="css/global" />
