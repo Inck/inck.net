@@ -1,4 +1,4 @@
-// Awesome abstract reflowing with data attributes.
+// Columnar text flowing based on data attributes.
 $(function(){
 	var columns_count = 0;
 	var articles = new Array;
@@ -21,26 +21,27 @@ $(function(){
 
 	// Flow articles into their columns.
 	$.each(articles, function(article_index, columns){
-		var column_heights = new Array;
-		var flexible_columns = new Array;
+		var flexible_column_indices = new Array;
 		var fixed_columns_total_height = 0;
+		var column_heights = new Array;
 		
 		// Check for fixed heights on any of the target columns.
 		$.each(columns, function(index, column){
-			if(column.css("max-height") == "none") {
-				flexible_columns.push(index);
+			var column_min_height = column.css("min-height").replace('px', '');
+			if(column_min_height == "0") {
+				flexible_column_indices.push(index);
 			} else {
-				fixed_columns_total_height += column_heights[index] = column.height();
-				column.css("max-height", "none");
+				fixed_columns_total_height += parseInt(column_min_height);
+				column_heights[index] = parseInt(column_min_height);
 			}
 		});
 		
-		// Average the remaining height over the reminaing, flexible columns.
-		flexible_columns_height = Math.round((columns[0].height() - fixed_columns_total_height) / flexible_columns.length);
-		$.each(flexible_columns, function(flexible_column_index, flexible_column) {
-			column_heights[flexible_column] = flexible_columns_height + 10; // For some reason there seems to be an extra 10px.
+		// Average the remaining height over the reminaing, flexible columns to create final array of heights.
+		var flexible_columns_height = Math.ceil((columns[0].height() - fixed_columns_total_height) / flexible_column_indices.length) + 21; // For some reason there needs to be an extra line?
+		$.each(flexible_column_indices, function(flexible_column_index_index, flexible_column_index) {
+			column_heights[flexible_column_index] = flexible_columns_height;
 		});
-// console.log(column_heights);
+console.log(column_heights);
 		// Todo: Predict character distribution from pixel distribution, ensuring value is never under, and use as starting point.
 		// For each column in order, move text into next column until it's short enough.
 		var content = contents[article_index];
