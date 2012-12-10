@@ -1,7 +1,7 @@
 <?php
 	error_reporting(0);
 	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
-	$edition = "Volume Three, Issue One";
+	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/8f5987855475641b1b3cf5e0d3c4af0fa74ec616'>8f59878</a>";
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
