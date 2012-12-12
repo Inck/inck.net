@@ -1,5 +1,8 @@
 <?php
+	error_reporting(0);
+	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
 	$title = "Writing on The Internet by Nicholas Hall";
+	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/8f5987855475641b1b3cf5e0d3c4af0fa74ec616'>8f5987855475</a>";
 	include 'inc/head.php';
 	
 	// Get a1 data.
@@ -34,14 +37,14 @@
 					<li class="column three_units">
 						<ul>
 							<li class="module dog_ear right">
-								<section><em>Slightly Better!</em> <a href="#/instruction">Legibility after the Jump</a></section>
+								<section><em>Old!</em><br /> <a href="#/instruction">Inck on GitHub</a></section>
 								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
-									<p>Hot and Difficult. Unknown Rains through Tonight.</p>
+									<p>Claimed rains.<br /> Unknown Cold. Feels Like 98°.</p>
 								</div>
 							</li>
 						</ul>
@@ -51,7 +54,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Late-Fall Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today is <?php echo date('l, F jS'); ?></cite>
+						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>After-Fall Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today is <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>

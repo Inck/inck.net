@@ -82,7 +82,7 @@
 				<ul>
 					<li id="main_article" class="module leader legible continued">
 						<h1><?php if($words_read) echo "Continued from '"; echo $title; if($words_read) echo "'"; ?></h1>
-						<cite>Edited by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
+						<cite>edited by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
 <?php
 	$indent =
 "						";
