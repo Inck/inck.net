@@ -2,7 +2,7 @@
 	error_reporting(0);
 	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
 	$title = "Writing on The Internet by Nicholas Hall";
-	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/8f5987855475641b1b3cf5e0d3c4af0fa74ec616'>8f5987855475</a>";
+	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/6e7c36a41f9d20b86e3242532ebb04cc1a6b33ea'>6e7c36a41f9d</a>";
 	include 'inc/head.php';
 	
 	// Get a1 data.
@@ -37,7 +37,7 @@
 					<li class="column three_units">
 						<ul>
 							<li class="module dog_ear right">
-								<section><em>Old!</em><br /> <a href="#/instruction">Inck on GitHub</a></section>
+								<section><em>Old!</em><br /> <a href="http://github.com/Inck/inck.net">Inck on GitHub</a></section>
 								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
