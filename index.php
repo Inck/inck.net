@@ -2,7 +2,9 @@
 	error_reporting(0);
 	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
 	$title = "Writing on The Internet by Nicholas Hall";
-	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/6e7c36a41f9d20b86e3242532ebb04cc1a6b33ea'>6e7c36a41f9d</a>";
+	$commit = `git rev-parse HEAD`;
+	$truncated_commit = substr($commit, 0, 12);
+	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/$commit'>$truncated_commit</a>";
 	include 'inc/head.php';
 	
 	// Get a1 data.
