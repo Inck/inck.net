@@ -45,8 +45,8 @@
 				// Commit letter to Git.
 				$path = getenv('PATH');
 				putenv("PATH=/usr/local/git/libexec/git-core:$path");
-				`git add $letters_file`;
-				`git commit -m 'Someone added a new comment.'`;
+				`sudo -u ec2-user git add $letters_file`;
+				`sudo -u ec2-user git commit -m 'Someone added a new comment.'`;
 				$letter_published = true;
 			}
 		}
