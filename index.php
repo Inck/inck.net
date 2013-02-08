@@ -3,7 +3,7 @@
 	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
 	$title = "Writing on The Internet by Nicholas Hall";
 	$commit = `git rev-parse HEAD`;
-	$truncated_commit = substr($commit, 0, 12);
+	$truncated_commit = substr($commit, 0, 10);
 	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/$commit'>$truncated_commit</a>";
 	include 'inc/head.php';
 	
@@ -39,7 +39,7 @@
 					<li class="column three_units">
 						<ul>
 							<li class="module dog_ear right">
-								<section><em>Old!</em><br /> <a href="http://github.com/Inck/inck.net">Inck on GitHub</a></section>
+								<section><em>Old!</em><br /> <a href="http://github.com/Inck/inck.net">Fork Inck on GitHub</a></section>
 								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
