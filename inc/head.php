@@ -1,3 +1,10 @@
+<?php
+	date_default_timezone_set('GMT');
+	$commit = `git rev-parse HEAD`;
+	$truncated_commit = substr($commit, 0, 8);
+	$issue = 1; // Get lowest-number open issue from GitHub API.
+	$edition = "Volume <a href='https://github.com/Inck/inck.net/commit/$commit'>$truncated_commit</a>, <a href='https://github.com/Inck/inck.net/issues/$issue'>Issue $issue</a>";
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>

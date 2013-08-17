@@ -1,10 +1,5 @@
 <?php
 	error_reporting(0);
-	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty");
-	$title = "Writing on The Internet by Nicholas Hall";
-	$commit = `git rev-parse HEAD`;
-	$truncated_commit = substr($commit, 0, 10);
-	$edition = "Volume Three, Issue <a href='https://github.com/Inck/inck.net/commit/$commit'>$truncated_commit</a>";
 	include 'inc/head.php';
 	
 	// Get a1 data.
@@ -56,7 +51,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>After-Fall Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today is <?php echo date('l, F jS'); ?></cite>
+						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Mid-Summer Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today is <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>

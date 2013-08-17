@@ -3,6 +3,8 @@
 	$lines = file("pages/$page.txt", FILE_TEXT);
 	$title = trim(array_shift($lines));
 	$date = trim(array_shift($lines));
+	$commit = `git rev-parse HEAD`; // ToDo: Get last commit with changes to this article.
+	$truncated_commit = substr($commit, 0, 6);
 	$lede = explode(' -- ', $lines[1]);
 	if($lede[1]) { // If there was a dateline.
 		$dateline = trim($lede[0]);
@@ -37,7 +39,7 @@
 <?php echo $indent; ?><article>
 <?php $indent .= "\t"; ?>
 <?php echo $indent; ?><h2><a href="page.php?number=<?php echo $page; ?>"><?php echo $title; ?></a></h2>
-<?php echo $indent; ?><cite>edited by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
+<?php echo $indent; ?><cite>by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?> at <a href='https://github.com/Inck/inck.net/commit/<?php echo $commit; ?>'><?php echo $truncated_commit; ?></a></em></cite>
 <?php	
 	foreach($paragraphs as $paragraph) {
 		$paragraph = trim($paragraph);
