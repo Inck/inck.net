@@ -1,5 +1,7 @@
 <?php
 	error_reporting(0);
+	$words = array("no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty-one", "twenty-two", "twenty-three", "twenty-four", "twenty-five", "twenty-six", "twenty-seven", "twenty-eight", "twenty-nine", "thirty", "thirty-one", "thirty-two", "thirty-three", "thirty-four", "thirty-five");
+	$title = "Words on The Internet by Nicholas Hall";
 	include 'inc/head.php';
 	
 	// Get a1 data.
@@ -15,7 +17,7 @@
 				</ul> -->
 				<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:60px; left:150px; z-index:99;" />
 				<ul>
-					<li class="column three_units contained">
+					<li class="column four_units contained">
 						<ul>
 							<li class="module ear">
 								<div>
@@ -24,24 +26,24 @@
 							</li>
 						</ul>
 					</li>
-					<li class="column six_units">
+					<li class="column four_units">
 						<ul>
 							<li class="module flag">
 								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
 							</li>
 						</ul>
 					</li>
-					<li class="column three_units">
+					<li class="column four_units">
 						<ul>
 							<li class="module dog_ear right">
-								<section><em>Old!</em><br /> <a href="http://github.com/Inck/inck.net">Fork Inck on GitHub</a></section>
+								<section><em>Nerds!</em><br /> <a href="http://github.com/Inck/inck.net">Fork Inck on GitHub</a></section>
 								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
-									<p>Claimed rains.<br /> Unknown Cold. Feels Like 98°.</p>
+									<p>Expected rain. Warmth throughout. Feels like 98.6°F.</p>
 								</div>
 							</li>
 						</ul>

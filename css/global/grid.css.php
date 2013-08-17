@@ -19,8 +19,8 @@ foreach($words as $number => $word) {
 		echo "." . $word . "_units";
 	}
 	
-	$is_not_last = $words[$number + 1];
-	if($is_not_last) echo ",\n";
+	$next_number = $number + 1;
+	if(isset($words[$next_number])) echo ",\n";
 }
 
 ?> { float:left; margin-left:<?php echo $margin / 10 . 'em'; ?>; }
