@@ -10,12 +10,6 @@
 	$cut = $a1[1];
 ?>
 			<li class="column twelve_units contained">
-				<!-- <ul class="new" style="display:none;">
-					<li>Hyphen-ation</li>
-					<li></li>
-					<li></li>
-				</ul> -->
-				<img src="img/instruction_to_jump.png" alt="click through to read easier" class="instruction" style="display:none; position:absolute; top:60px; left:150px; z-index:99;" />
 				<ul>
 					<li class="column four_units contained">
 						<ul>
@@ -37,7 +31,6 @@
 						<ul>
 							<li class="module dog_ear right">
 								<section><em>Nerds!</em><br /> <a href="http://github.com/Inck/inck.net">Fork Inck on GitHub</a></section>
-								<!-- <section><em>New Things!</em><input type="checkbox" id="new" name="new" /> <a href="#/new"><label for="new">Show</label></a></section> -->
 								<div class="page_corner"><div class="page_fold"></div></div>
 							</li>
 							<li class="module ear">
@@ -53,7 +46,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><!-- <a id="issue"> --><?php echo $edition; ?><!-- </a> --> -- <em>Mid-Summer Edition</em> -- <!-- <a href="letters.php">Letters to the Editor</a> -->Today is <?php echo date('l, F jS'); ?></cite>
+						<cite><?php echo $edition; ?> -- <em>Mid-Summer Edition</em> -- Today is <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>
