@@ -22,7 +22,7 @@
 		$commit = `git rev-parse HEAD`; // ToDo: Get last commit with changes to this article.
 		$truncated_commit = substr($commit, 0, 6);
 		$lede = explode(' -- ', $lines[1]);
-		if($lede[1]) { // If there was a dateline.
+		if(isset($lede[1]) and $lede[1]) { // If there was a dateline.
 			$dateline = trim($lede[0]);
 			$lines[1] = $lede[1];
 		}
@@ -169,9 +169,9 @@
 								<ul>
 									<li class="module letter postcard prompt">
 										<h2>Dear Sir:</h2>
-										<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="prompt"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='prompt' }" tabindex="1" rows="10" cols="100"><?php if($_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
+										<textarea id="letter" name="letter" <?php if(!$_POST or $_POST['letter'] == $default_letter) { echo 'class="prompt"'; } ?> onfocus="if(this.value=='<?php echo $default_letter; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_letter; ?>'; this.className='prompt' }" tabindex="1" rows="10" cols="100"><?php if(isset($_POST['letter']) and $_POST['letter']) { echo stripslashes($_POST['letter']); } else { echo $default_letter; } ?></textarea>
 										<label for="name">Sincerely,</label>
-										<input type="text" id="name" name="name" <?php if(!$_POST or $_POST['name'] == $default_name) { echo 'class="prompt"'; } ?> value="<?php if($_POST['name']) { echo stripslashes($_POST['name'])	; } else { echo $default_name; } ?>" onfocus="if(this.value=='<?php echo $default_name; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_name; ?>'; this.className='prompt' }" tabindex="2" />
+										<input type="text" id="name" name="name" <?php if(!$_POST or $_POST['name'] == $default_name) { echo 'class="prompt"'; } ?> value="<?php if(isset($_POST['name']) and $_POST['name']) { echo stripslashes($_POST['name'])	; } else { echo $default_name; } ?>" onfocus="if(this.value=='<?php echo $default_name; ?>') { this.value=''; this.className='' }" onblur="if(this.value=='') { this.value='<?php echo $default_name; ?>'; this.className='prompt' }" tabindex="2" />
 									</li>
 								</ul>
 							</li>
@@ -179,7 +179,7 @@
 								<ul>
 									<li class="module postcard_post">
 <?php
-	if($user_message) {
+	if(isset($user_message) and $user_message) {
 ?>
 										<p>Letter Undelivered<br /> <?php echo $user_message; ?> <span>||| | | || | ||| ||</span></p>
 <?php
@@ -222,7 +222,7 @@
 		foreach($letters as $letter) {
 			$response = explode("\n\n---------\n\n", $letter);
 			$letter = $response[0];
-			$letter_responses[] = $response[1];
+			if(isset($response[1])) $letter_responses[] = $response[1];
 			$lines = explode("\n", $letter);
 			$time = array_shift($lines);
 			$name = array_pop($lines);
