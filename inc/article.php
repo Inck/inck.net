@@ -8,15 +8,30 @@
 		$dateline = trim($lede[0]);
 		$lines[1] = $lede[1];
 	}
-	$text = implode('', $lines);
-	$paragraphs = explode("\n\n", $text);
+
+	// Make a truncated copy of the article paragraphs array.
+	$paragraphs = array();
 	if($jump) {
-		$jump_words = explode(' ', $text);
-		$jump_truncation = array_slice($jump_words, 0, $jump);
-		$text = implode(' ', $jump_truncation);
-		$paragraphs = explode("\n\n", $text);
+		$words_to_jump = $jump;
+		foreach($lines as $paragraph) {
+			if(isset($paragraph[1])) {
+				$paragraph = trim($paragraph);
+				if(isset($words_to_jump) and $words_to_jump > 0) {
+					$paragraph_words = explode(' ', $paragraph);
+					$words_printing = count($paragraph_words);
+					if($words_printing <= $words_to_jump) { // If this paragraph is all printing.
+						$paragraphs[] = $paragraph;
+					} elseif($words_to_jump > 0) { // If this paragraph is partially printing.
+						$paragraphs[] = implode(' ', array_slice($paragraph_words, 0, $words_to_jump));
+					}
+				}
+				$words_to_jump -= $words_printing;
+			}
+		}
 		$current = 1;
 		$last = count($paragraphs);
+	} else {
+		$paragraphs = explode("\n\n", $text);
 	}
 ?>
 <?php echo $indent; ?><article>

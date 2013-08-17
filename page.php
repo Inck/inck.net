@@ -26,13 +26,13 @@
 		}
 		$text = implode('', $lines);
 		$paragraphs = explode("\n\n", $text);
-		$words_read = $_GET['from'];
+		if(isset($_GET['from'])) $words_read_left = $_GET['from'];
 
 		// Comment Submission
 		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
 		$default_name = "Marcus Tullius Cicero";
 		
-		if($_POST['letter_submitted'] == 'true') {
+		if(isset($_POST['letter_submitted']) and $_POST['letter_submitted'] == 'true') {
 			if($_POST['is_computer'] == 'beep') { $user_message = "Sender Not Person"; }
 			elseif(!$_POST['letter'] or $_POST['letter'] == $default_letter) { $user_message = "Words Not Written"; }
 			elseif(!$_POST['name'] or $_POST['name'] == $default_name) { $user_message = "Name Not Given"; }
@@ -88,17 +88,17 @@
 "						";
 	foreach($paragraphs as $paragraph) {
 		$paragraph = trim($paragraph);
-		if($words_read > 0) {
-			$words_read -= $words_printing;
+		if(isset($words_read_left) and $words_read_left > 0) {
 			$words = explode(' ', $paragraph);
 			$words_printing = count($words);
-			if($words_printing <= $words_read) {
-				echo $indent . "<p class='read'>"; if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
-			} elseif($words_read > 0) {
-				echo $indent . "<p><a name='$number'></a><span class='read'>" . implode(' ', array_slice($words, 0, $words_read)) . "</span> " . implode(' ', array_slice($words, $words_read)) . "</p>\n";
+			if($words_printing <= $words_read_left) {
+				echo $indent . "<p class='read'>"; if(isset($dateline)) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
+			} elseif($words_read_left > 0) {
+				echo $indent . "<p><a name='$number'></a><span class='read'>" . implode(' ', array_slice($words, 0, $words_read_left)) . "</span> " . implode(' ', array_slice($words, $words_read_left)) . "</p>\n";
 			} else {
 				echo $indent . "<p>" . $paragraph . "</p>\n";
 			}
+			$words_read_left -= $words_printing;
 		} else {
 			// If there are linebreaks and no HTML.
 			if(preg_match("|\n|", $paragraph) and !preg_match("|</|", $paragraph)) {
@@ -110,7 +110,7 @@
 				}
  				echo "</p>\n";
 			} else {
-				echo $indent . "<p>"; if($dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
+				echo $indent . "<p>"; if(isset($dateline) and $dateline) { ?><span class="dateline"><?php echo $dateline; ?></span><?php unset($dateline); } echo $paragraph . "</p>\n";
 			}
 		}
 	}
