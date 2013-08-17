@@ -17,11 +17,11 @@
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
 	<title>Inck ~ <?php echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
-	<script src="js/lib/hyphenator/Hyphenator.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="js/flow.js"></script>
-	<script src="js/show.js"></script>
+	<script src="js/lib/hyphenator/Hyphenator.js"></script>
 	<script> Hyphenator.run(); </script>
+	<script src="js/show.js"></script>
 </head>
 <body>
 	<div id="page">
