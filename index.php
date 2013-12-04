@@ -46,7 +46,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite><?php echo $edition; ?> -- <em>Mid-Summer Edition</em> -- Today is <?php echo date('l, F jS'); ?></cite>
+						<cite>Volume 1, <a href='https://github.com/Inck/inck.net/issues/' id='issue_link'>Issue 1</a>, <a href='https://github.com/Inck/inck.net/' id='commit_link'>Commit </a> -- <em>Previous Edition</em> -- Today is <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>
@@ -179,6 +179,25 @@
 					</li>
 				</ul>
 			</li>
+			<script>
+				$.ajax({
+					url:'https://api.github.com/repos/Inck/inck.net/commits',
+					dataType: 'json',
+					success:function(data){
+						var commit = data[0].sha;
+						$('#commit_link').text('Commit '+commit.substring(0, 6)).attr('href', 'https://github.com/Inck/inck.net/commit/'+commit);
+					}
+				});
+
+				$.ajax({
+					url:'https://api.github.com/repos/Inck/inck.net/issues?state=open&direction=asc',
+					dataType: 'json',
+					success:function(data){
+						var issue = data.shift().number
+						$('#issue_link').text('Issue '+issue).attr('href', 'https://github.com/Inck/inck.net/issues/'+issue);
+					}
+				});
+			</script>
 <?php
 	include 'inc/foot.php';
 ?>
