@@ -46,7 +46,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite>Volume 1, <a href='https://github.com/Inck/inck.net/issues/' id='issue_link'>Issue 1</a>, <a href='https://github.com/Inck/inck.net/' id='commit_link'>Commit </a> -- <em>Previous Edition</em> -- Today is <?php echo date('l, F jS'); ?></cite>
+						<cite>Volume 3, <a href='https://github.com/Inck/inck.net/issues/' id='issue_link'>Issue 1</a>, <a href='https://github.com/Inck/inck.net/' id='commit_link'>Commit </a> -- <em>Ancient Edition</em> -- Today is <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>
