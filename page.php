@@ -19,8 +19,6 @@
 		$lines = file("pages/$number.txt", FILE_TEXT);
 		$title = trim(array_shift($lines));
 		$date = trim(array_shift($lines));
-		$commit = `git rev-parse HEAD`; // ToDo: Get last commit with changes to this article.
-		$truncated_commit = substr($commit, 0, 6);
 		$lede = explode(' -- ', $lines[1]);
 		if(isset($lede[1]) and $lede[1]) { // If there was a dateline.
 			$dateline = trim($lede[0]);
@@ -71,7 +69,7 @@
 				<ul>
 					<li class="module edition secondary">
 						<cite><?php echo $edition; ?></cite>
-						<cite>Page <?php echo $number;  ?></cite>
+						<cite>Page <?php echo chr(97 + mt_rand(0, 25)).rand(0,99);  ?></cite>
 					</li>
 				</ul>
 			</li>
@@ -84,7 +82,7 @@
 				<ul>
 					<li id="main_article" class="module leader legible continued">
 						<h1><?php echo $title; if(isset($words_read_left) and $words_read_left) echo "<span class='read'> Continued</span>"; ?></h1>
-						<cite>by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em> at <a href='https://github.com/Inck/inck.net/commit/<?php echo $commit; ?>'><?php echo $truncated_commit; ?></a></cite>
+						<cite>by <a href="http://twitter.com/#!/inck">Nicholas Hall</a> on <em><?php echo $date; ?></em></cite>
 <?php
 	$indent =
 "						";

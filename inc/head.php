@@ -1,5 +1,6 @@
 <?php
 	date_default_timezone_set('GMT');
+	$edition = "Ancient Edition";
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -19,6 +20,25 @@
 	<script src="js/lib/hyphenator/Hyphenator.js"></script>
 	<script> Hyphenator.run(); </script>
 	<script src="js/show.js"></script>
+	<script>
+		$.ajax({
+			url:'https://api.github.com/repos/Inck/inck.net/commits',
+			dataType: 'json',
+			success:function(data){
+				var commit = data[0].sha;
+				$('#commit_link').text('Commit '+commit.substring(0, 6)).attr('href', 'https://github.com/Inck/inck.net/commit/'+commit);
+			}
+		});
+
+		$.ajax({
+			url:'https://api.github.com/repos/Inck/inck.net/issues?state=open&direction=asc',
+			dataType: 'json',
+			success:function(data){
+				var issue = data.shift().number
+				$('#issue_link').text('Issue '+issue).attr('href', 'https://github.com/Inck/inck.net/issues/'+issue);
+			}
+		});
+	</script>
 </head>
 <body>
 	<div id="page">
