@@ -9,7 +9,7 @@ header("Content-Type: text/css");
 	with twenty pixel gutters. The 
 	baseline grid is twenty-one pixels. 
 	The text is printed in #555, on acid-
-	free #fffffc.
+	free #fffffd.
 */
 
 <?php
