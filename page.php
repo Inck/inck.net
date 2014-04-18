@@ -31,7 +31,7 @@
 		// Comment Submission
 		$default_letter = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
 		$default_name = "Marcus Tullius Cicero";
-		
+/*		
 		if(isset($_POST['letter_submitted']) and $_POST['letter_submitted'] == 'true') {
 			if($_POST['is_computer'] == 'beep') { $user_message = "Sender Not Person"; }
 			elseif(!$_POST['letter'] or $_POST['letter'] == $default_letter) { $user_message = "Words Not Written"; }
@@ -49,7 +49,7 @@
 				`sudo -u ec2-user git commit -m 'Someone added a new comment.'`;
 				$letter_published = true;
 			}
-		}
+		}*/
 	} else {
 		$number = "that does not exist.";
 		exit;
@@ -183,8 +183,9 @@
 <?php
 	}
 ?>
+										<p>Letters Undelivered<br /> Delivery Service Disabled Due to Robots <span>||| | | || | ||| ||</span></p>
 										<label>
-											<input type="submit" value="<?php echo "Apply\nPostage"; ?>" onmousedown="this.className='hover';this.value='I';" tabindex="3" />
+											<input type="button" value="<?php echo "Apply\nPostage"; ?>" onmousedown="this.className='hover';this.value='I';" tabindex="3" />
 										</label>
 									</li>
 									<li class="module postcard_address">
