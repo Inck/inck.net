@@ -15,6 +15,7 @@
 	<title>Inck ~ <?php echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+	<script src="//fast.eager.io/OYZlhvHFzw.js"></script>
 	<script src="js/lib/jquery.min.js"></script>
 	<script src="js/flow.js"></script>
 	<script src="js/lib/hyphenator/Hyphenator.js"></script>
