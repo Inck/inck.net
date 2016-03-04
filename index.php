@@ -23,7 +23,7 @@
 					<li class="column ten_units">
 						<ul>
 							<li class="module flag">
-								<h3>The <span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span> Some Times</h3>
+								<h3>The <span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span> Some-Times</h3>
 							</li>
 						</ul>
 					</li>
