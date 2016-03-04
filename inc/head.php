@@ -18,8 +18,6 @@
 	<script src="http://fast.fonts.net/jsapi/e217dff1-f657-4cb5-a930-1af06e484bac.js"></script>
 	<script src="js/lib/jquery.min.js"></script>
 	<script src="js/flow.js"></script>
-	<script src="js/lib/hyphenator/Hyphenator.js"></script>
-	<script> Hyphenator.run(); </script>
 	<script src="js/show.js"></script>
 	<script>
 		$.ajax({
