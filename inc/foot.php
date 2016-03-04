@@ -1,8 +1,8 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="footer">
-						<small class="copyright">©2010 to 2012 by Nicholas Hall. All rights reserved.</small>
-						<p>This website is designed for view in a <a href="http://www.apple.com/safari/">standard</a> <a href="http://www.google.com/chrome/">browser</a> on a Mac. <a href="css/global">Read the colophon.</a></p>
+						<small class="copyright">©2002 to <?php echo date('Y') ?> by Nicholas Hall. All rights reserved.</small>
+						<p>This website is designed for view in <a href="http://www.apple.com/safari/">Safari</a> on a Mac. <a href="css/global">Read the colophon.</a></p>
 					</li>
 				</ul>
 			</li>

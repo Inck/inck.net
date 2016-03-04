@@ -1,6 +1,6 @@
 <?php
 	date_default_timezone_set('GMT');
-	$edition = "Ancient Edition";
+	$edition = "Dark Financial Times Edition";
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
