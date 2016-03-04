@@ -11,32 +11,32 @@
 ?>
 			<li class="column twelve_units contained">
 				<ul>
-					<li class="column four_units contained">
+					<li class="column one_unit contained">
 						<ul>
 							<li class="module ear">
 								<div>
-									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">55¢</a></strong>
+									<strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8HQL3CPDL6R34">5<sup>⁵</sup><span id="letter_¢">¢</span></a></strong>
 								</div>
 							</li>
 						</ul>
 					</li>
-					<li class="column four_units">
+					<li class="column ten_units">
 						<ul>
 							<li class="module flag">
-								<h3><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></h3>
+								<h3>The <span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span> Some Times</h3>
 							</li>
 						</ul>
 					</li>
-					<li class="column four_units">
+					<li class="column one_unit">
 						<ul>
-							<li class="module dog_ear right">
+							<!-- <li class="module dog_ear right">
 								<section><em>Nerds!</em><br /> <a href="http://github.com/Inck/inck.net">Fork Inck on GitHub</a></section>
 								<div class="page_corner"><div class="page_fold"></div></div>
-							</li>
+							</li> -->
 							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
-									<p>Expected rain. Warmth throughout. Feels like 98.6°F.</p>
+									<p>Feels like 98.6°F.</p>
 								</div>
 							</li>
 						</ul>
@@ -46,7 +46,7 @@
 			<li class="column twelve_units contained">
 				<ul>
 					<li class="module edition">
-						<cite>Volume 3, <a href='https://github.com/Inck/inck.net/issues/' id='issue_link'>Issue 1</a>, <a href='https://github.com/Inck/inck.net/' id='commit_link'>Commit </a> -- <em><?php echo $edition; ?></em> -- Today is <?php echo date('l, F jS'); ?></cite>
+						<cite>Volume 3, <a href='https://github.com/Inck/inck.net/issues/' id='issue_link'>Issue 1</a>, <a href='https://github.com/Inck/inck.net/' id='commit_link'>Commit </a> ~ <em><?php echo $edition; ?></em> ~ Today is <?php echo date('l, F jS'); ?></cite>
 					</li>
 					<li class="module rule"></li>
 				</ul>

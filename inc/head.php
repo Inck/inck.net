@@ -12,9 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="css/modules" />
 	<link rel="stylesheet" type="text/css" href="css/elements" />
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
-	<title>Inck ~ <?php echo $title; ?></title>
+	<title>The Inck Some Times ~ <?php echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+	<script src="http://fast.fonts.net/jsapi/e217dff1-f657-4cb5-a930-1af06e484bac.js"></script>
 	<script src="js/lib/jquery.min.js"></script>
 	<script src="js/flow.js"></script>
 	<script src="js/lib/hyphenator/Hyphenator.js"></script>

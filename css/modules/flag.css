@@ -1,8 +1,8 @@
 .flag { margin:3em auto 0; text-align:center; }
-.flag h3 { font-family:'Hoefler Text'; font-size:10em; line-height:.6em; color:black; }
-.flag h3 .letter_i { letter-spacing:-.04em; font-family:'Prince Valiant'; font-size:1.1em; position:relative; top:.01em; }
-.flag h3 .letter_n { letter-spacing:-.05em; }
-.flag h3 .letter_c { letter-spacing:-.04em; }
+.flag h3 { font-family:'FetteGotischW01-Regular'; font-size:12em; line-height:.6em; color:black; letter-spacing:-.1em;}
+.flag h3 .letter_i { letter-spacing:-.09em; }
+.flag h3 .letter_n { letter-spacing:-.07em; }
+.flag h3 .letter_c { letter-spacing:-.05em; }
 .flag h3 .letter_k { }
 .flag.secondary { text-align:left; margin:1.7em 0 1em; }
 .flag.secondary h3 { display:inline; font-size:2.5em; font-weight:bold; line-height:1em; }
