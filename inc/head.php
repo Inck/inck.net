@@ -7,6 +7,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="img/favicon.gif" />
+	<link rel="stylesheet" type="text/css" href="//fast.fonts.net/cssapi/e217dff1-f657-4cb5-a930-1af06e484bac.css"/>
 	<link rel="stylesheet" type="text/css" href="css/lib" />
 	<link rel="stylesheet" type="text/css" href="css/global" />
 	<link rel="stylesheet" type="text/css" href="css/modules" />
@@ -15,7 +16,6 @@
 	<title>The Inck Some Times ~ <?php echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-	<script src="http://fast.fonts.net/jsapi/e217dff1-f657-4cb5-a930-1af06e484bac.js"></script>
 	<script src="js/lib/jquery.min.js"></script>
 	<script src="js/flow.js"></script>
 	<script src="js/show.js"></script>
