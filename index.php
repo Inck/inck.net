@@ -29,10 +29,6 @@
 					</li>
 					<li class="column one_unit">
 						<ul>
-							<!-- <li class="module dog_ear right">
-								<section><em>Nerds!</em><br /> <a href="http://github.com/Inck/inck.net">Fork Inck on GitHub</a></section>
-								<div class="page_corner"><div class="page_fold"></div></div>
-							</li> -->
 							<li class="module ear">
 								<div>
 									<h2>The Weather</h2>
