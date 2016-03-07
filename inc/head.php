@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/modules" />
 	<link rel="stylesheet" type="text/css" href="css/elements" />
 	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/inck/" title="RSS" />
-	<title>The Inck Some Times ~ <?php echo $title; ?></title>
+	<title>The Inck Some-Times ~ <?php echo $title; ?></title>
 	<!--[if lt IE 9]]><script type="text/javascript" src="js/scold.js"></script><![endif]-->
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 	<script src="js/lib/jquery.min.js"></script>
