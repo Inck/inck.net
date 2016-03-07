@@ -57,14 +57,13 @@
 	
 	include('inc/head.php');
 ?>
-			<li class="column one_unit">
+			<li class="column ten_units contained">
 				<ul>
 					<li class="module flag secondary">
-						<h3><a href="./"><span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span></a></h3>
+						<h3><a href="./">The <span class="letter_i">I</span><span class="letter_n">n</span><span class="letter_c">c</span><span class="letter_k">k</span> Some-Times</a></h3>
 					</li>
 				</ul>
 			</li>
-			<li class="space nine_units"></li>
 			<li class="column two_units">
 				<ul>
 					<li class="module edition secondary">
