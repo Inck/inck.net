@@ -1,8 +1,9 @@
 .ear { font-family:'Times New Roman', serif; text-align:center; }
 .ear div { min-height:8em; margin:3.2em 0 0; padding:.1em; border:solid #aaa; border-width:1px; }
 .ear strong { font-size:4em; line-height:1.6em; }
-.ear sup { font-size:.4em; position:absolute; }
+.ear sup { font-size:.4em; vertical-align:top; }
 .ear address { font-size:1.2em; margin-top:.4em; }
 .ear h2 { font-size:1.2em; line-height:1.6em; margin-top:.5em; text-transform:uppercase; }
 .ear p { font-size:1.2em; line-height:1.1em; }
-.ear a { font-family:'Hoefler Text', serif; }
+.ear a { font-family:'Hoefler Text', serif; color:black; }
+.ear a:hover { text-decoration:none; }
