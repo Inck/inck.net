@@ -6,7 +6,7 @@
 		{ "src": "css/modules/*.php", "use": "@now/php" },
 		{ "src": "css/global/*.php", "use": "@now/php" },
 		{ "src": "css/lib/*.php", "use": "@now/php" },
-		{ "src": "pages/*", "use": "@now/static" },
+		{ "src": "pages/*.txt", "use": "@now/static" },
 		{ "src": "img/*", "use": "@now/static" },
 		{ "src": "js/*.js", "use": "@now/static" },
 		{ "src": "js/lib/*.js", "use": "@now/static" },
