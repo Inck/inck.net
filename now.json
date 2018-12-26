@@ -1,6 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "*.php", "use": "@now/php" }
-  ]
+	"version": 2,
+	"directoryListing": [
+		"/css",
+		"/img",
+		"/js"
+	],
+	"builds": [
+		{ "src": "*.php", "use": "@now/php" }
+	]
 }
