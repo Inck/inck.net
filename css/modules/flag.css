@@ -1,4 +1,4 @@
-@font-face { font-family:Fette Gotisch; src:url("/img/DSFetteGotisch.ttf"); }
+@font-face { font-family:Fette Gotisch; src:url("/img/FetteGotisch.ttf"); }
 .flag { margin:3em auto 0; text-align:center; }
 .flag h3 { font-family:'Fette Gotisch'; font-size:12em; line-height:.6em; color:black; letter-spacing:-.1em;}
 .flag h3 .letter_i { letter-spacing:-.09em; }

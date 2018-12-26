@@ -1,0 +1,16 @@
+{
+	"version": 2,
+	"builds": [
+		{ "src": "*.php", "use": "@now/php" },
+		{ "src": "css/elements/*.php", "use": "@now/php" },
+		{ "src": "css/modules/*.php", "use": "@now/php" },
+		{ "src": "css/global/*.php", "use": "@now/php" },
+		{ "src": "css/lib/*.php", "use": "@now/php" },
+		{ "src": "img/*", "use": "@now/static" },
+		{ "src": "js/*.js", "use": "@now/static" },
+		{ "src": "js/lib/*.js", "use": "@now/static" },
+		{ "src": "js/lib/hyphenator/*.js", "use": "@now/static" },
+		{ "src": "js/lib/hyphenator/patterns/*.js", "use": "@now/static" }
+
+	]
+}
