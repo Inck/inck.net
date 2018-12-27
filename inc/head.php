@@ -1,6 +1,6 @@
 <?php
 	date_default_timezone_set('GMT');
-	$edition = "When the Internet Was Fine Edition";
+	$edition = "Late Aughts Edition";
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
