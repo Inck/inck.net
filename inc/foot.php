@@ -2,7 +2,7 @@
 				<ul>
 					<li class="footer">
 						<small class="copyright">©2002 to <?php echo date('Y') ?> by Nicholas Hall. All rights reserved.</small>
-						<p>This website is designed for view in <a href="http://www.apple.com/safari/">Safari</a> on a Mac. <a href="css/global">Read the colophon.</a></p>
+						<p>This website was designed for view on a computer. <a href="css/global">Read the colophon.</a></p>
 					</li>
 				</ul>
 			</li>

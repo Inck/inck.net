@@ -3,12 +3,13 @@ header("Content-Type: text/css");
 ?>
 /*
 	Inck is set in fourteen pixel Hoefler
-	Text if viewed on a Mac. The grid is 
-	twelve hundred pixels divided into 
+	Text using Cloud.typography. The grid 
+	is twelve hundred pixels divided into 
 	twelve columns of eighty pixels each 
 	with twenty pixel gutters. The 
 	baseline grid is twenty-one pixels. 
-	The text is printed in black, on acid-
+	The text is printed in black and the 
+	links in your browser default on acid-
 	free rgb(242, 231, 233).
 */
 
