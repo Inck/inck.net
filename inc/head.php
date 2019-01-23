@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="img/favicon.gif" />
-	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7860032/6037012/css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7860032/6663012/css/fonts.css" />
 	<link rel="stylesheet" type="text/css" href="https://fast.fonts.net/cssapi/e217dff1-f657-4cb5-a930-1af06e484bac.css"/>
 	<link rel="stylesheet" type="text/css" href="css/lib" />
 	<link rel="stylesheet" type="text/css" href="css/global" />
