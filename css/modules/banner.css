@@ -1,3 +1,2 @@
 .banner { margin-bottom:0; }
-.banner h1 { font-size:6.2em; line-height:1.1em; letter-spacing:-1px; margin-top:0.28em; /* : ( */ position:relative; top:.14em }
-.letter_y { margin-left:4px; }
+.banner h1 { font-family:"Hoefler Titling A"; font-weight:700; font-size:6.2em; line-height:1.1em; margin-top:0.28em; /* : ( */ position:relative; top:.14em }
